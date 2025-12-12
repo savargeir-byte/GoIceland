@@ -14,7 +14,7 @@ import 'pin_details_sheet.dart';
 
 class MapScreen extends StatefulWidget {
   final TrailModel? trail;
-  
+
   const MapScreen({super.key, this.trail});
 
   @override
@@ -34,7 +34,7 @@ class _MapScreenState extends State<MapScreen> {
   void initState() {
     super.initState();
     _loadPins();
-    
+
     // If trail provided, zoom to trail start
     if (widget.trail != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -310,13 +310,13 @@ class _MapScreenState extends State<MapScreen> {
 
   void _searchPlaces(String query) {
     if (query.isEmpty) return;
-    
+
     // Search through POIs
     final results = _pois.where((poi) {
       return poi.name.toLowerCase().contains(query.toLowerCase()) ||
-             poi.type.toLowerCase().contains(query.toLowerCase());
+          poi.type.toLowerCase().contains(query.toLowerCase());
     }).toList();
-    
+
     if (results.isNotEmpty) {
       final index = _pois.indexOf(results.first);
       setState(() => _selectedIndex = index);

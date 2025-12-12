@@ -209,9 +209,9 @@ class _PremiumPlaceCardState extends State<PremiumPlaceCard> {
                       children: [
                         ...List.generate(5, (index) {
                           return Icon(
-                            index < (widget.poi.rating ?? 0).round() 
-                              ? Icons.star 
-                              : Icons.star_border,
+                            index < (widget.poi.rating ?? 0).round()
+                                ? Icons.star
+                                : Icons.star_border,
                             size: 14,
                             color: const Color(0xFFFFB800),
                           );
@@ -293,7 +293,7 @@ class _PlaceImage extends StatelessWidget {
 
   final String? imageUrl;
   final String? category;
-  
+
   List<Color> _getCategoryGradient() {
     switch (category?.toLowerCase()) {
       case 'waterfall':
@@ -322,7 +322,7 @@ class _PlaceImage extends StatelessWidget {
         return [Colors.teal.shade300, Colors.teal.shade600];
     }
   }
-  
+
   IconData _getCategoryIcon() {
     switch (category?.toLowerCase()) {
       case 'waterfall':
@@ -356,10 +356,9 @@ class _PlaceImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Use imageUrl if available, otherwise use placeholder
-    final effectiveUrl = imageUrl != null && imageUrl!.isNotEmpty 
-        ? imageUrl!
-        : null;
-    
+    final effectiveUrl =
+        imageUrl != null && imageUrl!.isNotEmpty ? imageUrl! : null;
+
     if (effectiveUrl == null) {
       // Category-specific gradient with icon
       final colors = _getCategoryGradient();
@@ -380,7 +379,7 @@ class _PlaceImage extends StatelessWidget {
         ),
       );
     }
-    
+
     return Image.network(
       effectiveUrl,
       width: double.infinity,

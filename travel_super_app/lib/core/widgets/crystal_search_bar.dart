@@ -1,5 +1,7 @@
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
+
 import '../theme/crystal_theme.dart';
 
 /// Crystal glassmorphism search bar with mic and filter

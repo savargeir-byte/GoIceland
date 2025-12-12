@@ -5,7 +5,7 @@ import '../../data/models/trail_model.dart';
 
 class TrailsScreen extends StatefulWidget {
   final void Function(TrailModel)? onTrailSelected;
-  
+
   const TrailsScreen({super.key, this.onTrailSelected});
 
   @override
@@ -69,13 +69,15 @@ class _TrailsScreenState extends State<TrailsScreen> {
                           '${trail.lengthKm.toStringAsFixed(1)} km • ${trail.formattedDuration} • ${trail.elevationGain}m',
                         ),
                         trailing: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 6),
                           decoration: BoxDecoration(
                             color: _getDifficultyColor(trail.difficulty),
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: _getDifficultyColor(trail.difficulty).withOpacity(0.3),
+                                color: _getDifficultyColor(trail.difficulty)
+                                    .withOpacity(0.3),
                                 blurRadius: 8,
                                 offset: const Offset(0, 2),
                               ),

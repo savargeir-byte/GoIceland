@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+
 import '../../app.dart';
-import '../../core/theme/crystal_theme.dart';
-import '../../core/widgets/crystal_search_bar.dart';
-import '../../core/widgets/crystal_place_card.dart';
 import '../../core/services/distance_service.dart';
+import '../../core/theme/crystal_theme.dart';
+import '../../core/widgets/crystal_place_card.dart';
+import '../../core/widgets/crystal_search_bar.dart';
 import '../../data/api/poi_api.dart';
 import '../../data/models/poi_model.dart';
-import '../weather/premium_weather_banner.dart';
 
 class CrystalHomeScreen extends StatefulWidget {
   const CrystalHomeScreen({super.key});
@@ -180,20 +180,20 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                       child: CrystalButton(
                         onTap: () => _onCategoryChanged(cat['id'] as String),
                         isSelected: isSelected,
-                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Icon(
                               cat['icon'] as IconData,
                               color: isSelected ? Colors.white : CrystalTheme.primary,
-                              size: 24,
+                              size: 22,
                             ),
-                            const SizedBox(height: 6),
+                            const SizedBox(height: 2),
                             Text(
                               cat['label'] as String,
                               style: TextStyle(
-                                fontSize: 12,
+                                fontSize: 10,
                                 fontWeight: FontWeight.w600,
                                 color: isSelected ? Colors.white : const Color(0xFF1A202C),
                               ),

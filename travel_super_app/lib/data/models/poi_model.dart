@@ -27,13 +27,17 @@ class PoiModel extends Equatable {
     // Handle different coordinate formats
     final coords = json['coordinates'] as Map<String, dynamic>?;
     final lat = coords?['lat'] ?? json['lat'] ?? json['latitude'];
-    final lng = coords?['lng'] ?? coords?['lon'] ?? json['lon'] ?? json['lng'] ?? json['longitude'];
-    
+    final lng = coords?['lng'] ??
+        coords?['lon'] ??
+        json['lon'] ??
+        json['lng'] ??
+        json['longitude'];
+
     // Skip if no valid coordinates
     if (lat == null || lng == null) {
       throw FormatException('Missing coordinates for POI: ${json['name']}');
     }
-    
+
     return PoiModel(
       id: json['id'] as String? ?? '',
       name: json['name'] as String? ?? 'Unknown',

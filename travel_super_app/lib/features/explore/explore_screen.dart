@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
+import '../../core/widgets/premium_place_card.dart';
 import '../../data/api/poi_api.dart';
 import '../../data/models/poi_model.dart';
-import '../../core/widgets/premium_place_card.dart';
 
 class ExploreScreen extends StatelessWidget {
   const ExploreScreen({super.key});

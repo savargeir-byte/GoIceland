@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../core/theme/crystal_theme.dart';
 import '../../data/models/poi_model.dart';
 

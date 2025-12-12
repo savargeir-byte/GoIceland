@@ -7,7 +7,7 @@ class PoiApi {
   PoiApi({FirebaseFirestore? firestore}) : _firestore = firestore;
 
   final FirebaseFirestore? _firestore;
-  
+
   // Cache to avoid repeated queries
   static final Map<String, List<PoiModel>> _cache = {};
   static DateTime? _lastFetch;
@@ -16,20 +16,21 @@ class PoiApi {
 
   Future<List<PoiModel>> fetchFeatured() async {
     // Check cache first (valid for 5 minutes)
-    if (_cache.containsKey('featured') && 
-        _lastFetch != null && 
+    if (_cache.containsKey('featured') &&
+        _lastFetch != null &&
         DateTime.now().difference(_lastFetch!).inMinutes < 5) {
       print('✅ Using cached featured data');
       return _cache['featured']!;
     }
-    
+
     if (Firebase.apps.isEmpty && _firestore == null) {
       print('⚠️ Firebase not initialized - using mock data');
       return _fallback;
     }
     try {
       print('🔥 Fetching from Firebase collection: places');
-      final snapshot = await _db.collection('places').limit(20).get(); // Reduced from 50
+      final snapshot =
+          await _db.collection('places').limit(20).get(); // Reduced from 50
       print('✅ Got ${snapshot.docs.length} documents from Firebase');
       final pois = <PoiModel>[];
       for (var doc in snapshot.docs) {
@@ -51,13 +52,13 @@ class PoiApi {
   Future<List<PoiModel>> fetchByCategory(String category) async {
     // Check cache first
     final cacheKey = 'category_$category';
-    if (_cache.containsKey(cacheKey) && 
-        _lastFetch != null && 
+    if (_cache.containsKey(cacheKey) &&
+        _lastFetch != null &&
         DateTime.now().difference(_lastFetch!).inMinutes < 5) {
       print('✅ Using cached $category data');
       return _cache[cacheKey]!;
     }
-    
+
     if (Firebase.apps.isEmpty && _firestore == null) {
       // Map UI categories to database categories
       final dbCategory = _mapCategory(category);
@@ -66,16 +67,16 @@ class PoiApi {
     try {
       final dbCategory = _mapCategory(category);
       print('🔍 Fetching category: $dbCategory');
-      
+
       // Fetch without orderBy to avoid index requirements - reduced limit
       final snapshot = await _db
           .collection('places')
           .where('category', isEqualTo: dbCategory)
           .limit(30) // Reduced from 100
           .get();
-      
+
       print('✅ Got ${snapshot.docs.length} $dbCategory POIs');
-      
+
       final pois = <PoiModel>[];
       for (var doc in snapshot.docs) {
         try {
@@ -84,10 +85,10 @@ class PoiApi {
           print('⚠️ Skipped document ${doc.id}: $e');
         }
       }
-      
+
       // Sort by rating in memory
       pois.sort((a, b) => (b.rating ?? 0).compareTo(a.rating ?? 0));
-      
+
       _cache[cacheKey] = pois;
       _lastFetch = DateTime.now();
       return pois;

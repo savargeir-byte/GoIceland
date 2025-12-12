@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../app.dart';
-
 import '../../core/animations/micro_animations.dart';
 import '../../core/animations/scroll_effects.dart';
 import '../../core/services/distance_service.dart';
