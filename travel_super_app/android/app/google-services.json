@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "384960133218",
+    "project_id": "go-iceland",
+    "storage_bucket": "go-iceland.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384960133218:android:b91f4d530bffb45082f93b",
+        "android_client_info": {
+          "package_name": "go.iceland.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYl4LXGoOPa5Ir8oAFnK061Zw51qpO8ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

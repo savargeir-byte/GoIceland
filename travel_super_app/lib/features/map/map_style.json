@@ -1,0 +1,17 @@
+{
+  "version": 8,
+  "name": "Fresh Explorer Light",
+  "sources": {
+    "mapbox-streets": {
+      "type": "vector",
+      "url": "mapbox://mapbox.mapbox-streets-v8"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {"background-color": "#F7F9FB"}
+    }
+  ]
+}

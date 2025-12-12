@@ -1,0 +1,9 @@
+# GO ICELAND - Python Dependencies
+
+requests>=2.31.0
+firebase-admin>=6.5.0
+python-dotenv>=1.0.0
+Pillow>=10.0.0
+
+# Optional: for more robust geohash
+# geohash2>=1.1

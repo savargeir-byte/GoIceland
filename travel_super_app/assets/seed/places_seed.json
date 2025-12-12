@@ -1,0 +1,619 @@
+[
+  {
+    "id": "seljalandsfoss",
+    "name": "Seljalandsfoss",
+    "type": "waterfall",
+    "lat": 63.6156,
+    "lng": -19.9894,
+    "rating": 4.8,
+    "images": ["seljalandsfoss.jpg"],
+    "description": "Fræg foss þar sem hægt er að ganga bak við strauminn.",
+    "meta": {
+      "region": "Suðurland",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "skogafoss",
+    "name": "Skógafoss",
+    "type": "waterfall",
+    "lat": 63.5321,
+    "lng": -19.5119,
+    "rating": 4.7,
+    "images": ["skogafoss.jpg"],
+    "description": "Einn stærsti og fallegasti foss á Íslandi með 60m falli.",
+    "meta": {
+      "region": "Suðurland",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "gullfoss",
+    "name": "Gullfoss",
+    "type": "waterfall",
+    "lat": 64.3275,
+    "lng": -20.1218,
+    "rating": 4.8,
+    "images": ["gullfoss.jpg"],
+    "description": "Gullna hringurinn - stórkostlegur tvíþrepa foss í Hvítá.",
+    "meta": {
+      "region": "Gullni hringurinn",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "dettifoss",
+    "name": "Dettifoss",
+    "type": "waterfall",
+    "lat": 65.8147,
+    "lng": -16.3846,
+    "rating": 4.6,
+    "images": ["dettifoss.jpg"],
+    "description": "Öflugasti foss Evrópu með 500m³/s vatnsrennsli.",
+    "meta": {
+      "region": "Norðausturland",
+      "parkingFee": false,
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "godafoss",
+    "name": "Goðafoss",
+    "type": "waterfall",
+    "lat": 65.6833,
+    "lng": -17.5500,
+    "rating": 4.5,
+    "images": ["godafoss.jpg"],
+    "description": "Fossinn guðanna - fallegur hálfhringslaga foss.",
+    "meta": {
+      "region": "Norðurland",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "svartifoss",
+    "name": "Svartifoss",
+    "type": "waterfall",
+    "lat": 64.0278,
+    "lng": -16.9750,
+    "rating": 4.6,
+    "images": ["svartifoss.jpg"],
+    "description": "Foss umkringdur dökkum basaltsúlum í Skaftafelli.",
+    "meta": {
+      "region": "Austurland - Vatnajökull",
+      "parkingFee": false,
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "kirkjufellsfoss",
+    "name": "Kirkjufellsfoss",
+    "type": "waterfall",
+    "lat": 64.9244,
+    "lng": -23.3119,
+    "rating": 4.7,
+    "images": ["kirkjufellsfoss.jpg"],
+    "description": "Myndrænn foss með Kirkjufell fjalli í baksýn.",
+    "meta": {
+      "region": "Vesturland",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "blue_lagoon",
+    "name": "Blue Lagoon",
+    "type": "hot_spring",
+    "lat": 63.8804,
+    "lng": -22.4495,
+    "rating": 4.5,
+    "images": ["blue_lagoon.jpg"],
+    "description": "Heimsfrægur heilsulind með bláu jökulvatni.",
+    "meta": {
+      "region": "Reykjanes",
+      "parkingFee": false,
+      "entranceFee": true,
+      "bookingRequired": true
+    }
+  },
+  {
+    "id": "sky_lagoon",
+    "name": "Sky Lagoon",
+    "type": "hot_spring",
+    "lat": 64.1252,
+    "lng": -22.0147,
+    "rating": 4.6,
+    "images": ["sky_lagoon.jpg"],
+    "description": "Nýtt spa með útsýni yfir Atlantshafið.",
+    "meta": {
+      "region": "Reykjanes",
+      "entranceFee": true,
+      "bookingRequired": true
+    }
+  },
+  {
+    "id": "reykjadalur",
+    "name": "Reykjadalur Hot River",
+    "type": "hot_spring",
+    "lat": 64.0005,
+    "lng": -21.2242,
+    "rating": 4.7,
+    "images": ["reykjadalur.jpg"],
+    "description": "Heit á sem rennur niður dalinn - frábær útibaðstaður.",
+    "meta": {
+      "region": "Suðurland",
+      "parkingFee": false,
+      "accessibility": "moderate",
+      "hikeRequired": true
+    }
+  },
+  {
+    "id": "myvatn_nature_baths",
+    "name": "Mývatn Nature Baths",
+    "type": "hot_spring",
+    "lat": 65.6378,
+    "lng": -16.8597,
+    "rating": 4.5,
+    "images": ["myvatn.jpg"],
+    "description": "Náttúruleg heita lind við Mývatn.",
+    "meta": {
+      "region": "Norðurland",
+      "entranceFee": true
+    }
+  },
+  {
+    "id": "landmannalaugar",
+    "name": "Landmannalaugar",
+    "type": "hot_spring",
+    "lat": 63.9903,
+    "lng": -19.0612,
+    "rating": 4.9,
+    "images": ["landmannalaugar.jpg"],
+    "description": "Hálendisparadís með heitum laugum og litríkum fjöllum.",
+    "meta": {
+      "region": "Hálendi Íslands",
+      "accessibility": "difficult",
+      "seasonalAccess": true
+    }
+  },
+  {
+    "id": "geysir",
+    "name": "Geysir",
+    "type": "geothermal",
+    "lat": 64.3142,
+    "lng": -20.3017,
+    "rating": 4.7,
+    "images": ["geysir.jpg"],
+    "description": "Strokkur geysir sem sprettur á 5-10 mín fresti.",
+    "meta": {
+      "region": "Gullni hringurinn",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "thingvellir",
+    "name": "Þingvellir",
+    "type": "national_park",
+    "lat": 64.2558,
+    "lng": -21.1294,
+    "rating": 4.8,
+    "images": ["thingvellir.jpg"],
+    "description": "UNESCO heimsminjaskrá - þar sem Alþingi var sett.",
+    "meta": {
+      "region": "Gullni hringurinn",
+      "parkingFee": true,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "jokulsarlon",
+    "name": "Jökulsárlón",
+    "type": "glacier_lagoon",
+    "lat": 64.0486,
+    "lng": -16.1797,
+    "rating": 4.9,
+    "images": ["jokulsarlon.jpg"],
+    "description": "Stórbrotið jökulvatn með ísjöklum og selum.",
+    "meta": {
+      "region": "Austurland",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "diamond_beach",
+    "name": "Diamond Beach",
+    "type": "beach",
+    "lat": 64.0397,
+    "lng": -16.1708,
+    "rating": 4.8,
+    "images": ["diamond_beach.jpg"],
+    "description": "Svört sandfjara með glært jöklaís.",
+    "meta": {
+      "region": "Austurland",
+      "parkingFee": false,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "reynisfjara",
+    "name": "Reynisfjara",
+    "type": "beach",
+    "lat": 63.4039,
+    "lng": -19.0458,
+    "rating": 4.6,
+    "images": ["reynisfjara.jpg"],
+    "description": "Svört sandfjara með basaltsúlum og Reynisdrangar.",
+    "meta": {
+      "region": "Suðurland",
+      "parkingFee": false,
+      "accessibility": "easy",
+      "warning": "Dangerous waves"
+    }
+  },
+  {
+    "id": "vik",
+    "name": "Vík í Mýrdal",
+    "type": "village",
+    "lat": 63.4186,
+    "lng": -19.0064,
+    "rating": 4.5,
+    "images": ["vik.jpg"],
+    "description": "Fallegt þorp á suðurströndinni með rauðri kirkju.",
+    "meta": {
+      "region": "Suðurland",
+      "services": ["restaurant", "hotel", "gas_station"]
+    }
+  },
+  {
+    "id": "hofn",
+    "name": "Höfn",
+    "type": "village",
+    "lat": 64.2539,
+    "lng": -15.2097,
+    "rating": 4.4,
+    "images": ["hofn.jpg"],
+    "description": "Humarbær austurlands með útsýni að Vatnajökli.",
+    "meta": {
+      "region": "Austurland",
+      "services": ["restaurant", "hotel", "gas_station", "grocery"]
+    }
+  },
+  {
+    "id": "akureyri",
+    "name": "Akureyri",
+    "type": "city",
+    "lat": 65.6835,
+    "lng": -18.1037,
+    "rating": 4.6,
+    "images": ["akureyri.jpg"],
+    "description": "Höfuðborg norðursins með líflegu menningarlífi.",
+    "meta": {
+      "region": "Norðurland",
+      "services": ["restaurant", "hotel", "gas_station", "grocery", "hospital"]
+    }
+  },
+  {
+    "id": "husavik",
+    "name": "Húsavík",
+    "type": "village",
+    "lat": 66.0449,
+    "lng": -17.3389,
+    "rating": 4.7,
+    "images": ["husavik.jpg"],
+    "description": "Hvalaskoðunar höfuðborg Íslands.",
+    "meta": {
+      "region": "Norðurland",
+      "services": ["restaurant", "hotel", "whale_watching"]
+    }
+  },
+  {
+    "id": "hornstrandir",
+    "name": "Hornstrandir",
+    "type": "nature_reserve",
+    "lat": 66.4678,
+    "lng": -22.4586,
+    "rating": 4.9,
+    "images": ["hornstrandir.jpg"],
+    "description": "Ósnert náttúruperlur Vestfjarða með tófum.",
+    "meta": {
+      "region": "Vestfirðir",
+      "accessibility": "expert",
+      "seasonalAccess": true
+    }
+  },
+  {
+    "id": "latrabjarg",
+    "name": "Látrabjarg",
+    "type": "cliff",
+    "lat": 65.5022,
+    "lng": -24.5333,
+    "rating": 4.7,
+    "images": ["latrabjarg.jpg"],
+    "description": "Vestasta punktur Íslands með milljónum sjófugla.",
+    "meta": {
+      "region": "Vestfirðir",
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "dynjandi",
+    "name": "Dynjandi",
+    "type": "waterfall",
+    "lat": 65.7319,
+    "lng": -23.1997,
+    "rating": 4.8,
+    "images": ["dynjandi.jpg"],
+    "description": "Stórkostlegur fossahrúga í Vestfjörðum.",
+    "meta": {
+      "region": "Vestfirðir",
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "snaefellsjokull",
+    "name": "Snæfellsjökull",
+    "type": "glacier",
+    "lat": 64.8056,
+    "lng": -23.7764,
+    "rating": 4.7,
+    "images": ["snaefellsjokull.jpg"],
+    "description": "Töfrandi jökull á Snæfellsnesi - einn hinna níu orkustaða jarðar.",
+    "meta": {
+      "region": "Vesturland",
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "arnarstapi",
+    "name": "Arnarstapi",
+    "type": "coastal_village",
+    "lat": 64.7597,
+    "lng": -23.6244,
+    "rating": 4.6,
+    "images": ["arnarstapi.jpg"],
+    "description": "Fornt sjávarþorp með dramatískum klettagróðri.",
+    "meta": {
+      "region": "Vesturland",
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "hvitserkur",
+    "name": "Hvítserkur",
+    "type": "rock_formation",
+    "lat": 65.6072,
+    "lng": -20.6394,
+    "rating": 4.5,
+    "images": ["hvitserkur.jpg"],
+    "description": "15m hátt basaltklettagróður í hafinu.",
+    "meta": {
+      "region": "Norðvesturland",
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "askja",
+    "name": "Askja",
+    "type": "volcanic_crater",
+    "lat": 65.0333,
+    "lng": -16.7667,
+    "rating": 4.8,
+    "images": ["askja.jpg"],
+    "description": "Stór gosstöð í Dyngjufjöllum með Víti gosvatninu.",
+    "meta": {
+      "region": "Hálendi Íslands",
+      "accessibility": "expert",
+      "seasonalAccess": true,
+      "requiresFourWheelDrive": true
+    }
+  },
+  {
+    "id": "krafla",
+    "name": "Krafla",
+    "type": "volcanic_area",
+    "lat": 65.7167,
+    "lng": -16.7833,
+    "rating": 4.6,
+    "images": ["krafla.jpg"],
+    "description": "Virkt eldfjallasvæði með Víti gíg og jarðhitavirkjun.",
+    "meta": {
+      "region": "Norðurland",
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "hverir",
+    "name": "Hverir",
+    "type": "geothermal",
+    "lat": 65.6406,
+    "lng": -16.8092,
+    "rating": 4.5,
+    "images": ["hverir.jpg"],
+    "description": "Líflegur jarðhitasvæði með leirhverum og gufulopum.",
+    "meta": {
+      "region": "Norðurland",
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "dimmuborgir",
+    "name": "Dimmuborgir",
+    "type": "lava_formation",
+    "lat": 65.5897,
+    "lng": -16.9089,
+    "rating": 4.6,
+    "images": ["dimmuborgir.jpg"],
+    "description": "Dramatískar hraunmyndanir - 'Dimmu borgir'.",
+    "meta": {
+      "region": "Norðurland",
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "grjotagja",
+    "name": "Grjótagjá",
+    "type": "cave",
+    "lat": 65.6292,
+    "lng": -16.8817,
+    "rating": 4.4,
+    "images": ["grjotagja.jpg"],
+    "description": "Heit laug í lítilli gjá (Game of Thrones staðsetning).",
+    "meta": {
+      "region": "Norðurland",
+      "accessibility": "easy",
+      "warning": "Too hot for bathing"
+    }
+  },
+  {
+    "id": "hvammsvik",
+    "name": "Hvammsvík",
+    "type": "hot_spring",
+    "lat": 64.4189,
+    "lng": -21.6817,
+    "rating": 4.5,
+    "images": ["hvammsvik.jpg"],
+    "description": "Heitar náttúrulaugar við sjávarsíðuna.",
+    "meta": {
+      "region": "Vesturland",
+      "entranceFee": true
+    }
+  },
+  {
+    "id": "kerid",
+    "name": "Kerið",
+    "type": "volcanic_crater",
+    "lat": 64.0414,
+    "lng": -20.8856,
+    "rating": 4.5,
+    "images": ["kerid.jpg"],
+    "description": "Rauður goshylur með bláum vatni.",
+    "meta": {
+      "region": "Gullni hringurinn",
+      "entranceFee": true,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "hekla",
+    "name": "Hekla",
+    "type": "volcano",
+    "lat": 63.9810,
+    "lng": -19.7031,
+    "rating": 4.6,
+    "images": ["hekla.jpg"],
+    "description": "Eitt virkasta eldfjall Íslands - 'Hliðin á helvíti'.",
+    "meta": {
+      "region": "Suðurland",
+      "accessibility": "expert",
+      "warning": "Active volcano"
+    }
+  },
+  {
+    "id": "eyjafjallajokull",
+    "name": "Eyjafjallajökull",
+    "type": "glacier",
+    "lat": 63.6333,
+    "lng": -19.6167,
+    "rating": 4.5,
+    "images": ["eyjafjallajokull.jpg"],
+    "description": "Fræg eldfjall sem gjósaði 2010.",
+    "meta": {
+      "region": "Suðurland",
+      "accessibility": "moderate"
+    }
+  },
+  {
+    "id": "solheimajokull",
+    "name": "Sólheimajökull",
+    "type": "glacier",
+    "lat": 63.5294,
+    "lng": -19.3717,
+    "rating": 4.6,
+    "images": ["solheimajokull.jpg"],
+    "description": "Aðgengilegur jökultunga fyrir göngu á jökli.",
+    "meta": {
+      "region": "Suðurland",
+      "accessibility": "moderate",
+      "guidedToursAvailable": true
+    }
+  },
+  {
+    "id": "fjadrargljufur",
+    "name": "Fjaðrárgljúfur",
+    "type": "canyon",
+    "lat": 63.7728,
+    "lng": -18.1753,
+    "rating": 4.7,
+    "images": ["fjadrargljufur.jpg"],
+    "description": "Stórkostlegt 100m djúpt gljúfur.",
+    "meta": {
+      "region": "Suðurland",
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "thorsmork",
+    "name": "Þórsmörk",
+    "type": "valley",
+    "lat": 63.6906,
+    "lng": -19.4847,
+    "rating": 4.8,
+    "images": ["thorsmork.jpg"],
+    "description": "Grænasta svæði Íslands - gróðursælt dalur.",
+    "meta": {
+      "region": "Suðurland",
+      "accessibility": "difficult",
+      "requiresFourWheelDrive": true
+    }
+  },
+  {
+    "id": "vestmannaeyjar",
+    "name": "Vestmannaeyjar",
+    "type": "islands",
+    "lat": 63.4427,
+    "lng": -20.2728,
+    "rating": 4.7,
+    "images": ["vestmannaeyjar.jpg"],
+    "description": "Eyjaklasi með Heimaey og Eldfelli gosi.",
+    "meta": {
+      "region": "Suðurland",
+      "accessibility": "ferry",
+      "services": ["restaurant", "hotel", "ferry"]
+    }
+  },
+  {
+    "id": "stokksnes",
+    "name": "Stokksnes",
+    "type": "peninsula",
+    "lat": 64.2389,
+    "lng": -14.9942,
+    "rating": 4.8,
+    "images": ["stokksnes.jpg"],
+    "description": "Dramatísk svört sandfjara með Vestrahorn fjalli.",
+    "meta": {
+      "region": "Austurland",
+      "entranceFee": true,
+      "accessibility": "easy"
+    }
+  },
+  {
+    "id": "seydisfjordur",
+    "name": "Seyðisfjörður",
+    "type": "village",
+    "lat": 65.2620,
+    "lng": -14.0147,
+    "rating": 4.6,
+    "images": ["seydisfjordur.jpg"],
+    "description": "Litrík þorpið í austfjörðum með listaskapandi andrúmslofti.",
+    "meta": {
+      "region": "Austurland",
+      "services": ["restaurant", "hotel", "ferry"]
+    }
+  }
+]

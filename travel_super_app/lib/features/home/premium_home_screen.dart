@@ -1,0 +1,181 @@
+import 'package:flutter/material.dart';
+
+import '../../core/animations/micro_animations.dart';
+import '../../core/animations/scroll_effects.dart';
+import '../../core/services/distance_service.dart';
+import '../../core/widgets/animated_category_chip.dart';
+import '../../core/widgets/bottom_sheet.dart';
+import '../../core/widgets/premium_place_card.dart';
+import '../../data/api/poi_api.dart';
+import '../../data/models/poi_model.dart';
+import '../map/pin_details_sheet.dart';
+import '../weather/premium_weather_banner.dart';
+import '../weather/weather_banner.dart';
+
+class PremiumHomeScreen extends StatefulWidget {
+  const PremiumHomeScreen({super.key});
+
+  @override
+  State<PremiumHomeScreen> createState() => _PremiumHomeScreenState();
+}
+
+class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
+  final _poiApi = PoiApi();
+  final _distanceService = DistanceService();
+  late Future<List<PoiModel>> _featuredFuture;
+  Map<String, PoiDistanceInfo> _distanceInfo = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _featuredFuture = _loadFeatured();
+  }
+
+  Future<List<PoiModel>> _loadFeatured() async {
+    final pois = await _poiApi.fetchFeatured();
+    _distanceInfo = await _distanceService.getMultiplePoiDistances(pois);
+    return pois;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: CustomScrollView(
+        physics: const PremiumScrollPhysics(),
+        slivers: [
+          SliverAppBar(
+            pinned: true,
+            floating: true,
+            elevation: 0,
+            title: Text(
+              'GO ICELAND',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            actions: const [
+              Padding(
+                padding: EdgeInsets.only(right: 16),
+                child: CircleAvatar(child: Icon(Icons.person)),
+              ),
+            ],
+          ),
+          SliverToBoxAdapter(
+            child: FadeInAnimation(
+              duration: const Duration(milliseconds: 800),
+              child: FutureBuilder<_WeatherModel?>(
+                future: _loadWeather(),
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return const WeatherBanner();
+                  }
+                  final weather = snapshot.data!;
+                  return PremiumWeatherBanner(
+                    temperature: weather.temperature,
+                    description: weather.description,
+                    location: weather.location,
+                    onRefresh: () => setState(() {}),
+                  );
+                },
+              ),
+            ),
+          ),
+          const SliverToBoxAdapter(
+            child: SizedBox(height: 8),
+          ),
+          SliverToBoxAdapter(
+            child: SlideInAnimation(
+              delay: const Duration(milliseconds: 200),
+              offset: const Offset(0, 20),
+              child: const CategoryChipList(),
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 12),
+            sliver: SliverToBoxAdapter(
+              child: SlideInAnimation(
+                delay: const Duration(milliseconds: 400),
+                offset: const Offset(0, 15),
+                child: Row(
+                  children: [
+                    Text(
+                      'Today\'s picks',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    const Spacer(),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text('See all'),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 300,
+              child: FutureBuilder<List<PoiModel>>(
+                future: _featuredFuture,
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                  final pois = snapshot.data!;
+                  return ListView.separated(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    scrollDirection: Axis.horizontal,
+                    physics: const BouncingScrollPhysics(),
+                    itemBuilder: (_, index) {
+                      final poi = pois[index];
+                      final info = _distanceInfo[poi.id];
+                      return SlideInAnimation(
+                        delay: Duration(milliseconds: 500 + (index * 100)),
+                        offset: const Offset(30, 0),
+                        child: PremiumPlaceCard(
+                          poi: poi,
+                          distance: info?.distance,
+                          travelTime: info?.travelTime,
+                          onTap: () => _openPoi(poi),
+                        ),
+                      );
+                    },
+                    separatorBuilder: (_, __) => const SizedBox(width: 16),
+                    itemCount: pois.length,
+                  );
+                },
+              ),
+            ),
+          ),
+          const SliverPadding(padding: EdgeInsets.only(bottom: 100)),
+        ],
+      ),
+    );
+  }
+
+  Future<_WeatherModel?> _loadWeather() async {
+    // Stub: integrate with WeatherService
+    // For now return fallback data
+    return const _WeatherModel(
+      temperature: 8,
+      description: 'Partly cloudy',
+      location: 'Reykjavík',
+    );
+  }
+
+  void _openPoi(PoiModel poi) {
+    AppBottomSheet.show(
+      context: context,
+      child: PinDetailsSheet(poi: poi),
+    );
+  }
+}
+
+class _WeatherModel {
+  const _WeatherModel({
+    required this.temperature,
+    required this.description,
+    required this.location,
+  });
+  final double temperature;
+  final String description;
+  final String location;
+}

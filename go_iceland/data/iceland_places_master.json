@@ -1,0 +1,115 @@
+{
+  "updated": "2025-12-12T00:00:00Z",
+  "version": "1.0",
+  "total": 4972,
+  "places": [
+    {
+      "id": "skogafoss",
+      "name": "Skógafoss",
+      "category": "waterfall",
+      "region": "South",
+      "coordinates": {
+        "lat": 63.5321,
+        "lng": -19.5115
+      },
+      "description": "One of Iceland's most famous waterfalls, 60m high",
+      "rating": 4.8,
+      "images": [
+        "https://example.com/skogafoss1.jpg"
+      ],
+      "metadata": {
+        "difficulty": "easy",
+        "parking": true,
+        "accessible": true
+      }
+    },
+    {
+      "id": "seljalandsfoss",
+      "name": "Seljalandsfoss",
+      "category": "waterfall",
+      "region": "South",
+      "coordinates": {
+        "lat": 63.6156,
+        "lng": -19.9889
+      },
+      "description": "Unique waterfall you can walk behind",
+      "rating": 4.7,
+      "images": [],
+      "metadata": {
+        "difficulty": "easy",
+        "parking": true,
+        "accessible": false
+      }
+    },
+    {
+      "id": "gullfoss",
+      "name": "Gullfoss",
+      "category": "waterfall",
+      "region": "South",
+      "coordinates": {
+        "lat": 64.3271,
+        "lng": -20.1219
+      },
+      "description": "Golden Falls - powerful two-tiered waterfall",
+      "rating": 4.9,
+      "images": [],
+      "metadata": {
+        "difficulty": "easy",
+        "parking": true,
+        "accessible": true
+      }
+    },
+    {
+      "id": "hotel-borg",
+      "name": "Hotel Borg",
+      "category": "hotel",
+      "region": "Capital Region",
+      "coordinates": {
+        "lat": 64.1466,
+        "lng": -21.9426
+      },
+      "description": "Historic luxury hotel in downtown Reykjavik",
+      "rating": 4.5,
+      "images": [],
+      "metadata": {
+        "stars": "4",
+        "opening_hours": {
+          "type": "24/7",
+          "always_open": true
+        },
+        "website": "https://hotelborg.is",
+        "phone": "+354-551-1440"
+      }
+    },
+    {
+      "id": "restaurant-grillmarket",
+      "name": "Grillmarkaðurinn",
+      "category": "restaurant",
+      "region": "Capital Region",
+      "coordinates": {
+        "lat": 64.1472,
+        "lng": -21.9416
+      },
+      "description": "Upscale restaurant featuring Icelandic ingredients",
+      "rating": 4.6,
+      "images": [],
+      "metadata": {
+        "cuisine": "icelandic",
+        "opening_hours": {
+          "type": "structured",
+          "days": {
+            "monday": [{"open": "17:00", "close": "22:00"}],
+            "tuesday": [{"open": "17:00", "close": "22:00"}],
+            "wednesday": [{"open": "17:00", "close": "22:00"}],
+            "thursday": [{"open": "17:00", "close": "22:00"}],
+            "friday": [{"open": "17:00", "close": "23:00"}],
+            "saturday": [{"open": "17:00", "close": "23:00"}],
+            "sunday": [{"open": "17:00", "close": "22:00"}]
+          }
+        },
+        "website": "https://grillmarkadurinn.is",
+        "phone": "+354-571-7777"
+      }
+    }
+  ]
+}

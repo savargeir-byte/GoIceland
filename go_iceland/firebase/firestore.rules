@@ -1,0 +1,59 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    
+    // Places - Public read, no public write
+    match /places/{placeId} {
+      allow read: if true;
+      allow write: if false;  // Only admin can write via backend
+    }
+    
+    // Trails - Public read, no public write
+    match /trails/{trailId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    
+    // Collections - Public read, no public write
+    match /collections/{collectionId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    
+    // User saved places - Only owner can read/write
+    match /users/{userId}/saved_places/{placeId} {
+      allow read, write: if isOwner(userId);
+    }
+    
+    // User check-ins - Only owner can read/write
+    match /users/{userId}/check_ins/{checkInId} {
+      allow read, write: if isOwner(userId);
+    }
+    
+    // Reviews - Authenticated users can create/update their own
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if isAuthenticated();
+      allow update, delete: if isAuthenticated() && 
+                               resource.data.userId == request.auth.uid;
+    }
+    
+    // Photos - Anyone can read, authenticated users can create
+    match /photos/{photoId} {
+      allow read: if true;
+      allow create: if isAuthenticated();
+      allow update, delete: if isAuthenticated() && 
+                               resource.data.userId == request.auth.uid;
+    }
+  }
+}

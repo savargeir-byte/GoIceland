@@ -1,0 +1,303 @@
+[
+  {
+    "id": "laugavegur",
+    "name": "Laugavegurinn",
+    "difficulty": "Hard",
+    "lengthKm": 55,
+    "durationMin": 240,
+    "elevationGain": 1200,
+    "startLat": 63.9903,
+    "startLng": -19.0612,
+    "gpxUrl": "https://storage.googleapis.com/travel-app/trails/laugavegur.gpx",
+    "polyline": [
+      {"lat": 63.9903, "lng": -19.0612},
+      {"lat": 63.9850, "lng": -19.0500},
+      {"lat": 63.9800, "lng": -19.0400},
+      {"lat": 63.9750, "lng": -19.0300},
+      {"lat": 64.0617, "lng": -19.0139}
+    ],
+    "images": ["laugavegur.jpg"],
+    "region": "Hálendi Íslands",
+    "description": "Ein frægasta gönguleið Íslands frá Landmannalaugum að Þórsmörk."
+  },
+  {
+    "id": "fimmvorduhals",
+    "name": "Fimmvörðuháls",
+    "difficulty": "Expert",
+    "lengthKm": 25,
+    "durationMin": 720,
+    "elevationGain": 1000,
+    "startLat": 63.6325,
+    "startLng": -19.4672,
+    "polyline": [
+      {"lat": 63.6325, "lng": -19.4672},
+      {"lat": 63.6350, "lng": -19.4600},
+      {"lat": 63.6400, "lng": -19.4500},
+      {"lat": 63.6450, "lng": -19.4400},
+      {"lat": 63.6906, "lng": -19.4847}
+    ],
+    "images": ["fimmvorduhals.jpg"],
+    "region": "Suðurland",
+    "description": "Krefjandi leið milli jöklanna Eyjafjallajökuls og Mýrdalsjökuls."
+  },
+  {
+    "id": "glymur",
+    "name": "Glymur",
+    "difficulty": "Moderate",
+    "lengthKm": 7,
+    "durationMin": 180,
+    "elevationGain": 350,
+    "startLat": 64.3908,
+    "startLng": -21.2508,
+    "polyline": [
+      {"lat": 64.3908, "lng": -21.2508},
+      {"lat": 64.3920, "lng": -21.2450},
+      {"lat": 64.3950, "lng": -21.2400},
+      {"lat": 64.3980, "lng": -21.2350},
+      {"lat": 64.4000, "lng": -21.2300}
+    ],
+    "images": ["glymur.jpg"],
+    "region": "Vesturland",
+    "description": "Gönguleið að næsthæsta fossi Íslands (198m)."
+  },
+  {
+    "id": "reykjadalur_trail",
+    "name": "Reykjadalur",
+    "difficulty": "Easy",
+    "lengthKm": 6.8,
+    "durationMin": 90,
+    "elevationGain": 280,
+    "startLat": 64.0005,
+    "startLng": -21.2242,
+    "polyline": [
+      {"lat": 64.0005, "lng": -21.2242},
+      {"lat": 64.0020, "lng": -21.2200},
+      {"lat": 64.0050, "lng": -21.2150},
+      {"lat": 64.0080, "lng": -21.2100},
+      {"lat": 64.0100, "lng": -21.2050}
+    ],
+    "images": ["reykjadalur_trail.jpg"],
+    "region": "Suðurland",
+    "description": "Vinsæl gönguferð að heitri á í Reykjadal."
+  },
+  {
+    "id": "hornstrandir_trail",
+    "name": "Hornstrandir",
+    "difficulty": "Expert",
+    "lengthKm": 50,
+    "durationMin": 300,
+    "elevationGain": 800,
+    "startLat": 66.4678,
+    "startLng": -22.4586,
+    "polyline": [
+      {"lat": 66.4678, "lng": -22.4586},
+      {"lat": 66.4650, "lng": -22.4500},
+      {"lat": 66.4600, "lng": -22.4400},
+      {"lat": 66.4550, "lng": -22.4300},
+      {"lat": 66.4500, "lng": -22.4200}
+    ],
+    "images": ["hornstrandir_trail.jpg"],
+    "region": "Vestfirðir",
+    "description": "Ósnert náttúruperlur Vestfjarða - aðeins aðgengilegt með bát."
+  },
+  {
+    "id": "askja_trail",
+    "name": "Askja",
+    "difficulty": "Expert",
+    "lengthKm": 8,
+    "durationMin": 240,
+    "elevationGain": 450,
+    "startLat": 65.0333,
+    "startLng": -16.7667,
+    "polyline": [
+      {"lat": 65.0333, "lng": -16.7667},
+      {"lat": 65.0320, "lng": -16.7600},
+      {"lat": 65.0300, "lng": -16.7550},
+      {"lat": 65.0280, "lng": -16.7500},
+      {"lat": 65.0250, "lng": -16.7450}
+    ],
+    "images": ["askja_trail.jpg"],
+    "region": "Hálendi Íslands",
+    "description": "Ganga að Víti gosvanti í Öskju - þarf fjallajeppa til að komast að."
+  },
+  {
+    "id": "svartifoss_trail",
+    "name": "Svartifoss",
+    "difficulty": "Easy",
+    "lengthKm": 3.7,
+    "durationMin": 60,
+    "elevationGain": 150,
+    "startLat": 64.0278,
+    "startLng": -16.9750,
+    "polyline": [
+      {"lat": 64.0278, "lng": -16.9750},
+      {"lat": 64.0290, "lng": -16.9700},
+      {"lat": 64.0300, "lng": -16.9650},
+      {"lat": 64.0310, "lng": -16.9600},
+      {"lat": 64.0320, "lng": -16.9550}
+    ],
+    "images": ["svartifoss_trail.jpg"],
+    "region": "Vatnajökull",
+    "description": "Auðveld gönguleið að Svartifossi í Skaftafelli."
+  },
+  {
+    "id": "thorsmork_valahnukur",
+    "name": "Valahnúkur",
+    "difficulty": "Moderate",
+    "lengthKm": 4.5,
+    "durationMin": 120,
+    "elevationGain": 340,
+    "startLat": 63.6906,
+    "startLng": -19.4847,
+    "polyline": [
+      {"lat": 63.6906, "lng": -19.4847},
+      {"lat": 63.6920, "lng": -19.4800},
+      {"lat": 63.6950, "lng": -19.4750},
+      {"lat": 63.6980, "lng": -19.4700},
+      {"lat": 63.7000, "lng": -19.4650}
+    ],
+    "images": ["valahnukur.jpg"],
+    "region": "Suðurland",
+    "description": "Toppganga í Þórsmörk með útsýni yfir Eyjafjallajökul."
+  },
+  {
+    "id": "snaefellsjokull_summit",
+    "name": "Snæfellsjökull tindur",
+    "difficulty": "Expert",
+    "lengthKm": 14,
+    "durationMin": 420,
+    "elevationGain": 1446,
+    "startLat": 64.8056,
+    "startLng": -23.7764,
+    "polyline": [
+      {"lat": 64.8056, "lng": -23.7764},
+      {"lat": 64.8070, "lng": -23.7700},
+      {"lat": 64.8100, "lng": -23.7650},
+      {"lat": 64.8130, "lng": -23.7600},
+      {"lat": 64.8150, "lng": -23.7550}
+    ],
+    "images": ["snaefellsjokull_summit.jpg"],
+    "region": "Vesturland",
+    "description": "Krefjandi tindaganga á töfrajökil Snæfellsness."
+  },
+  {
+    "id": "hverfjall",
+    "name": "Hverfjall",
+    "difficulty": "Easy",
+    "lengthKm": 4.2,
+    "durationMin": 60,
+    "elevationGain": 170,
+    "startLat": 65.6039,
+    "startLng": -16.8728,
+    "polyline": [
+      {"lat": 65.6039, "lng": -16.8728},
+      {"lat": 65.6050, "lng": -16.8700},
+      {"lat": 65.6070, "lng": -16.8650},
+      {"lat": 65.6090, "lng": -16.8600},
+      {"lat": 65.6100, "lng": -16.8550}
+    ],
+    "images": ["hverfjall.jpg"],
+    "region": "Norðurland",
+    "description": "Stígur upp á gíginn Hverfjall við Mývatn."
+  },
+  {
+    "id": "dyrholaey",
+    "name": "Dyrhólaey",
+    "difficulty": "Easy",
+    "lengthKm": 2,
+    "durationMin": 45,
+    "elevationGain": 80,
+    "startLat": 63.3972,
+    "startLng": -19.1239,
+    "polyline": [
+      {"lat": 63.3972, "lng": -19.1239},
+      {"lat": 63.3980, "lng": -19.1200},
+      {"lat": 63.3990, "lng": -19.1150},
+      {"lat": 63.4000, "lng": -19.1100},
+      {"lat": 63.4010, "lng": -19.1050}
+    ],
+    "images": ["dyrholaey.jpg"],
+    "region": "Suðurland",
+    "description": "Stuttur gönguferð að Dyrhólaey vitanum með lunda."
+  },
+  {
+    "id": "esjan",
+    "name": "Esjan",
+    "difficulty": "Moderate",
+    "lengthKm": 6.4,
+    "durationMin": 150,
+    "elevationGain": 780,
+    "startLat": 64.2833,
+    "startLng": -21.6167,
+    "polyline": [
+      {"lat": 64.2833, "lng": -21.6167},
+      {"lat": 64.2850, "lng": -21.6100},
+      {"lat": 64.2880, "lng": -21.6050},
+      {"lat": 64.2910, "lng": -21.6000},
+      {"lat": 64.2940, "lng": -21.5950}
+    ],
+    "images": ["esjan.jpg"],
+    "region": "Höfuðborgarsvæðið",
+    "description": "Vinsælasti fjallgöngustaður Reykjavíkur."
+  },
+  {
+    "id": "litla_hraun",
+    "name": "Litla Hraun",
+    "difficulty": "Easy",
+    "lengthKm": 5,
+    "durationMin": 90,
+    "elevationGain": 50,
+    "startLat": 64.0847,
+    "startLng": -21.1861,
+    "polyline": [
+      {"lat": 64.0847, "lng": -21.1861},
+      {"lat": 64.0860, "lng": -21.1800},
+      {"lat": 64.0880, "lng": -21.1750},
+      {"lat": 64.0900, "lng": -21.1700},
+      {"lat": 64.0920, "lng": -21.1650}
+    ],
+    "images": ["litla_hraun.jpg"],
+    "region": "Suðurland",
+    "description": "Auðveld gönguferð í hraunlandslagi."
+  },
+  {
+    "id": "kerlingarfjoll",
+    "name": "Kerlingarfjöll",
+    "difficulty": "Hard",
+    "lengthKm": 12,
+    "durationMin": 300,
+    "elevationGain": 600,
+    "startLat": 64.6500,
+    "startLng": -19.3000,
+    "polyline": [
+      {"lat": 64.6500, "lng": -19.3000},
+      {"lat": 64.6520, "lng": -19.2950},
+      {"lat": 64.6550, "lng": -19.2900},
+      {"lat": 64.6580, "lng": -19.2850},
+      {"lat": 64.6600, "lng": -19.2800}
+    ],
+    "images": ["kerlingarfjoll.jpg"],
+    "region": "Hálendi Íslands",
+    "description": "Litríkur hálendissvæði með jarðhitasvæðum."
+  },
+  {
+    "id": "hvannadalshnjukur",
+    "name": "Hvannadalshnjúkur",
+    "difficulty": "Expert",
+    "lengthKm": 22,
+    "durationMin": 720,
+    "elevationGain": 2110,
+    "startLat": 64.0083,
+    "startLng": -16.6611,
+    "polyline": [
+      {"lat": 64.0083, "lng": -16.6611},
+      {"lat": 64.0100, "lng": -16.6550},
+      {"lat": 64.0130, "lng": -16.6500},
+      {"lat": 64.0160, "lng": -16.6450},
+      {"lat": 64.0190, "lng": -16.6400}
+    ],
+    "images": ["hvannadalshnjukur.jpg"],
+    "region": "Vatnajökull",
+    "description": "Hæsti tindur Íslands (2110m) á Öræfajökli."
+  }
+]

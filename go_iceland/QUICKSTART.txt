@@ -1,0 +1,41 @@
+🌋 GO ICELAND - QUICKSTART GUIDE
+================================
+
+📥 1. SETUP (5 minutes)
+-----------------------
+cd go_iceland
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+📁 2. GET FIREBASE KEY
+----------------------
+1. https://console.firebase.google.com/
+2. Project Settings → Service Accounts
+3. Generate New Private Key
+4. Save to: firebase/serviceAccountKey.json
+
+🚀 3. RUN PIPELINE (10-15 minutes)
+----------------------------------
+python etl/fetch_iceland_pois.py        # Fetch OSM data
+python etl/enrich_pois.py              # Clean & categorize  
+python etl/utils_geohash.py            # Add geohash
+python firebase/upload_to_firestore.py # Upload to Firestore
+
+✅ 4. VERIFY
+------------
+Open: https://console.firebase.google.com/project/go-iceland/firestore
+Check: /places collection has 2000-4500 documents
+
+📸 5. OPTIONAL: MAP PREVIEWS
+----------------------------
+$env:MAPBOX_TOKEN="pk.your_token"
+python etl/download_previews.py
+
+🔥 6. DEPLOY RULES
+------------------
+firebase deploy --only firestore:rules
+
+DONE! 🎉
+--------
+Your Iceland POI database is live!

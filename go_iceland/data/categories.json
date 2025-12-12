@@ -1,0 +1,92 @@
+{
+  "waterfall": {
+    "name": "Waterfall",
+    "icon": "waterfall.svg",
+    "color": "#00BCD4"
+  },
+  "hot_spring": {
+    "name": "Hot Spring",
+    "icon": "hot_spring.svg",
+    "color": "#FF5722"
+  },
+  "restaurant": {
+    "name": "Restaurant",
+    "icon": "restaurant.svg",
+    "color": "#FF9800"
+  },
+  "viewpoint": {
+    "name": "Viewpoint",
+    "icon": "viewpoint.svg",
+    "color": "#9C27B0"
+  },
+  "museum": {
+    "name": "Museum",
+    "icon": "museum.svg",
+    "color": "#795548"
+  },
+  "landmark": {
+    "name": "Landmark",
+    "icon": "landmark.svg",
+    "color": "#607D8B"
+  },
+  "hiking_route": {
+    "name": "Hiking Route",
+    "icon": "hike.svg",
+    "color": "#4CAF50"
+  },
+  "peak": {
+    "name": "Mountain Peak",
+    "icon": "peak.svg",
+    "color": "#9E9E9E"
+  },
+  "volcano": {
+    "name": "Volcano",
+    "icon": "volcano.svg",
+    "color": "#F44336"
+  },
+  "accommodation": {
+    "name": "Accommodation",
+    "icon": "hotel.svg",
+    "color": "#3F51B5"
+  },
+  "camping": {
+    "name": "Camping",
+    "icon": "camping.svg",
+    "color": "#8BC34A"
+  },
+  "beach": {
+    "name": "Beach",
+    "icon": "beach.svg",
+    "color": "#00BCD4"
+  },
+  "cave": {
+    "name": "Cave",
+    "icon": "cave.svg",
+    "color": "#424242"
+  },
+  "hotel": {
+    "name": "Hotel",
+    "icon": "hotel.svg",
+    "color": "#3F51B5"
+  },
+  "guesthouse": {
+    "name": "Guesthouse",
+    "icon": "guesthouse.svg",
+    "color": "#5C6BC0"
+  },
+  "hostel": {
+    "name": "Hostel",
+    "icon": "hostel.svg",
+    "color": "#7E57C2"
+  },
+  "cafe": {
+    "name": "Cafe",
+    "icon": "cafe.svg",
+    "color": "#795548"
+  },
+  "bar": {
+    "name": "Bar",
+    "icon": "bar.svg",
+    "color": "#FF6F00"
+  }
+}
