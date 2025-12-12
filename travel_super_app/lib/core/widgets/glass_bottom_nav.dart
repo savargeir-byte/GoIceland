@@ -16,6 +16,7 @@ class GlassBottomNav extends StatelessWidget {
   static const _items = [
     _NavItem(icon: Icons.explore, label: 'Home'),
     _NavItem(icon: Icons.map, label: 'Map'),
+    _NavItem(icon: Icons.hiking, label: 'Trails'),
     _NavItem(icon: Icons.grid_view, label: 'Explore'),
     _NavItem(icon: Icons.person, label: 'Profile'),
   ];

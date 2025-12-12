@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../data/models/place_model.dart';
 import '../../data/models/trail_model.dart';
-import '../../features/trail/trail_map_view.dart';
+// import '../../features/trail/trail_map_view.dart'; // Temporarily disabled
 
 /// Large place card for Today's Picks section - prominent image with gradient overlay
 class LargePlaceCard extends StatelessWidget {
@@ -268,12 +268,16 @@ class TrailListTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap ??
           () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => TrailMapView(trail: trail),
-              ),
+            // TODO: Re-enable when trail map is converted to flutter_map
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Trail map coming soon!')),
             );
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (_) => TrailMapView(trail: trail),
+            //   ),
+            // );
           },
       child: Container(
         margin: const EdgeInsets.only(bottom: 16),

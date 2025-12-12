@@ -2,25 +2,27 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:mapbox_maps_flutter/mapbox_maps_flutter.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong2/latlong.dart';
 
 import '../../core/theme/color_palette.dart';
 import '../../core/widgets/bottom_sheet.dart';
 import '../../data/api/poi_api.dart';
 import '../../data/models/poi_model.dart';
+import '../../data/models/trail_model.dart';
 import 'pin_details_sheet.dart';
 
 class MapScreen extends StatefulWidget {
-  const MapScreen({super.key});
+  final TrailModel? trail;
+  
+  const MapScreen({super.key, this.trail});
 
   @override
   State<MapScreen> createState() => _MapScreenState();
 }
 
 class _MapScreenState extends State<MapScreen> {
-  MapboxMap? _mapboxMap;
-  PointAnnotationManager? _annotationManager;
+  final MapController _mapController = MapController();
   final _poiApi = PoiApi();
   final _searchController = TextEditingController();
   List<PoiModel> _pois = const [];
@@ -32,6 +34,16 @@ class _MapScreenState extends State<MapScreen> {
   void initState() {
     super.initState();
     _loadPins();
+    
+    // If trail provided, zoom to trail start
+    if (widget.trail != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _mapController.move(
+          LatLng(widget.trail!.startLat, widget.trail!.startLng),
+          12.0,
+        );
+      });
+    }
   }
 
   Future<void> _loadPins() async {
@@ -47,7 +59,6 @@ class _MapScreenState extends State<MapScreen> {
           _isLoading = false;
         });
       }
-      await _showPoisOnMap();
     } catch (e) {
       if (mounted) {
         setState(() {
@@ -61,27 +72,26 @@ class _MapScreenState extends State<MapScreen> {
     }
   }
 
-  void _onMapCreated(MapboxMap mapboxMap) {
-    _mapboxMap = mapboxMap;
-    _showPoisOnMap();
+  void _onPoiTap(PoiModel poi) {
+    final index = _pois.indexOf(poi);
+    if (index != -1) {
+      setState(() => _selectedIndex = index);
+      _mapController.move(
+        LatLng(poi.latitude, poi.longitude),
+        13.0,
+      );
+    }
   }
 
   @override
   void dispose() {
-    unawaited(_annotationManager?.deleteAll());
-    _annotationManager = null;
     _searchController.dispose();
+    _mapController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    final token =
-        dotenv.isInitialized ? dotenv.env['MAPBOX_ACCESS_TOKEN'] : null;
-    if (token != null) {
-      MapboxOptions.setAccessToken(token);
-    }
-
     return Scaffold(
       body: Stack(
         children: [
@@ -91,7 +101,7 @@ class _MapScreenState extends State<MapScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.error_outline, size: 64, color: Colors.grey),
+                  const Icon(Icons.error_outline, size: 64, color: Colors.grey),
                   const SizedBox(height: 16),
                   Text(
                     _errorMessage!,
@@ -107,36 +117,54 @@ class _MapScreenState extends State<MapScreen> {
                 ],
               ),
             )
-          else if (token == null)
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(Icons.map_outlined, size: 64, color: Colors.grey),
-                  const SizedBox(height: 16),
-                  const Text(
-                    'Mapbox token vantar',
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Bættu MAPBOX_ACCESS_TOKEN við .env',
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                ],
-              ),
-            )
           else
-            MapWidget(
-              key: const ValueKey('mapbox-map'),
-              styleUri: MapboxStyles.OUTDOORS,
-              cameraOptions: CameraOptions(
-                center: Point(
-                  coordinates: Position(-21.8174, 64.1265),
-                ),
-                zoom: 6,
+            FlutterMap(
+              mapController: _mapController,
+              options: MapOptions(
+                initialCenter: const LatLng(64.1265, -21.8174), // Reykjavik
+                initialZoom: 6.0,
+                minZoom: 5.0,
+                maxZoom: 18.0,
               ),
-              onMapCreated: _onMapCreated,
+              children: [
+                TileLayer(
+                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                  userAgentPackageName: 'com.goiceland.app',
+                  maxZoom: 19,
+                ),
+                // Trail polyline layer
+                if (widget.trail != null && widget.trail!.polyline.isNotEmpty)
+                  PolylineLayer(
+                    polylines: [
+                      Polyline(
+                        points: widget.trail!.polyline
+                            .map((p) => LatLng(p['lat']!, p['lng']!))
+                            .toList(),
+                        color: Colors.blue,
+                        strokeWidth: 4.0,
+                      ),
+                    ],
+                  ),
+                MarkerLayer(
+                  markers: _pois.map((poi) {
+                    return Marker(
+                      point: LatLng(poi.latitude, poi.longitude),
+                      width: 40,
+                      height: 40,
+                      child: GestureDetector(
+                        onTap: () => _onPoiTap(poi),
+                        child: Icon(
+                          Icons.location_on,
+                          size: 40,
+                          color: _pois.indexOf(poi) == _selectedIndex
+                              ? ColorPalette.primary
+                              : Colors.red,
+                        ),
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ],
             ),
 
           // Loading indicator
@@ -147,6 +175,8 @@ class _MapScreenState extends State<MapScreen> {
                 child: CircularProgressIndicator(),
               ),
             ),
+
+          // Search bar
           Positioned(
             top: 54,
             left: 16,
@@ -163,10 +193,18 @@ class _MapScreenState extends State<MapScreen> {
                   border: InputBorder.none,
                   contentPadding: EdgeInsets.all(16),
                 ),
-                onSubmitted: (_) => _openFilters(),
+                onSubmitted: (query) {
+                  if (query.toLowerCase().contains('surprise')) {
+                    _openSurprise();
+                  } else {
+                    _searchPlaces(query);
+                  }
+                },
               ),
             ),
           ),
+
+          // Action buttons
           Positioned(
             top: 130,
             right: 16,
@@ -175,10 +213,20 @@ class _MapScreenState extends State<MapScreen> {
                 _RoundButton(
                     icon: Icons.filter_alt_outlined, onPressed: _openFilters),
                 const SizedBox(height: 12),
-                _RoundButton(icon: Icons.my_location, onPressed: () {}),
+                _RoundButton(
+                  icon: Icons.my_location,
+                  onPressed: () {
+                    _mapController.move(
+                      const LatLng(64.1265, -21.8174),
+                      6.0,
+                    );
+                  },
+                ),
               ],
             ),
           ),
+
+          // Hero spot card
           if (_pois.isNotEmpty)
             Positioned(
               top: 200,
@@ -190,6 +238,8 @@ class _MapScreenState extends State<MapScreen> {
                     _openPoi(_pois[_selectedIndex.clamp(0, _pois.length - 1)]),
               ),
             ),
+
+          // Surprise me button
           Positioned(
             bottom: 120,
             right: 16,
@@ -200,67 +250,39 @@ class _MapScreenState extends State<MapScreen> {
               backgroundColor: ColorPalette.primary,
             ),
           ),
+
+          // Preview carousel
           if (_pois.isNotEmpty)
             Positioned(
+              bottom: 32,
               left: 0,
               right: 0,
-              bottom: 16,
               child: SizedBox(
-                height: 150,
+                height: 180,
                 child: ListView.separated(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (_, index) => _SpotPreviewCard(
-                    poi: _pois[index],
-                    isSelected: index == _selectedIndex,
-                    onTap: () => _focusOnPoi(index),
-                  ),
-                  separatorBuilder: (_, __) => const SizedBox(width: 12),
                   itemCount: _pois.length,
+                  itemBuilder: (context, index) {
+                    return _SpotPreviewCard(
+                      poi: _pois[index],
+                      isSelected: index == _selectedIndex,
+                      onTap: () {
+                        setState(() => _selectedIndex = index);
+                        _mapController.move(
+                          LatLng(_pois[index].latitude, _pois[index].longitude),
+                          13.0,
+                        );
+                      },
+                    );
+                  },
+                  separatorBuilder: (_, __) => const SizedBox(width: 12),
                 ),
               ),
             ),
         ],
       ),
     );
-  }
-
-  void _openFilters() {
-    AppBottomSheet.show(
-      context: context,
-      child: Padding(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Filters', style: Theme.of(context).textTheme.headlineSmall),
-            const SizedBox(height: 12),
-            Wrap(
-              spacing: 12,
-              children: [
-                FilterChip(
-                    label: const Text('Food'),
-                    selected: true,
-                    onSelected: (_) {}),
-                FilterChip(label: const Text('Photo'), onSelected: (_) {}),
-                FilterChip(label: const Text('Nature'), onSelected: (_) {}),
-                FilterChip(label: const Text('Wellness'), onSelected: (_) {}),
-              ],
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('Apply'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  void _openSurprise() {
-    if (_pois.isEmpty) return;
-    _openPoi(_pois.first);
   }
 
   void _openPoi(PoiModel poi) {
@@ -270,61 +292,79 @@ class _MapScreenState extends State<MapScreen> {
     );
   }
 
-  Future<void> _showPoisOnMap() async {
-    if (_mapboxMap == null || _pois.isEmpty) return;
-    _annotationManager ??=
-        await _mapboxMap!.annotations.createPointAnnotationManager();
-    await _annotationManager!.deleteAll();
-    for (final poi in _pois) {
-      await _annotationManager!.create(
-        PointAnnotationOptions(
-          geometry: Point(
-            coordinates: Position(poi.longitude, poi.latitude),
-          ),
-          iconImage: 'marker-15',
-          textField: poi.name,
-          textOffset: const [0, -1.2],
-          textSize: 10,
-        ),
-      );
-    }
+  void _openFilters() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Filters coming soon!')),
+    );
   }
 
-  Future<void> _focusOnPoi(int index) async {
-    if (_mapboxMap == null || index >= _pois.length) return;
-    final poi = _pois[index];
-    setState(() => _selectedIndex = index);
-    await _mapboxMap!.flyTo(
-      CameraOptions(
-        center: Point(coordinates: Position(poi.longitude, poi.latitude)),
-        zoom: 12,
-      ),
-      MapAnimationOptions(duration: 1200, startDelay: 0),
+  void _openSurprise() {
+    if (_pois.isEmpty) return;
+    final randomIndex = DateTime.now().millisecond % _pois.length;
+    setState(() => _selectedIndex = randomIndex);
+    _mapController.move(
+      LatLng(_pois[randomIndex].latitude, _pois[randomIndex].longitude),
+      13.0,
     );
-    _openPoi(poi);
+  }
+
+  void _searchPlaces(String query) {
+    if (query.isEmpty) return;
+    
+    // Search through POIs
+    final results = _pois.where((poi) {
+      return poi.name.toLowerCase().contains(query.toLowerCase()) ||
+             poi.type.toLowerCase().contains(query.toLowerCase());
+    }).toList();
+    
+    if (results.isNotEmpty) {
+      final index = _pois.indexOf(results.first);
+      setState(() => _selectedIndex = index);
+      _mapController.move(
+        LatLng(results.first.latitude, results.first.longitude),
+        13.0,
+      );
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Found ${results.length} results')),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('No results found')),
+      );
+    }
   }
 }
 
 class _RoundButton extends StatelessWidget {
   const _RoundButton({required this.icon, required this.onPressed});
-
   final IconData icon;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.white,
-      shape: const CircleBorder(),
-      elevation: 4,
-      child: IconButton(icon: Icon(icon), onPressed: onPressed),
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        shape: BoxShape.circle,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 8,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: IconButton(
+        icon: Icon(icon),
+        onPressed: onPressed,
+        color: Colors.black87,
+      ),
     );
   }
 }
 
 class _HeroSpotCard extends StatelessWidget {
   const _HeroSpotCard({required this.poi, required this.onTap});
-
   final PoiModel poi;
   final VoidCallback onTap;
 
@@ -335,20 +375,31 @@ class _HeroSpotCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28),
           color: Colors.white,
-          boxShadow: const [
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
             BoxShadow(
-                blurRadius: 24, offset: Offset(0, 10), color: Colors.black26)
+              color: Colors.black.withOpacity(0.15),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
           ],
         ),
         child: Row(
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(20),
-              child: AspectRatio(
-                aspectRatio: 1,
-                child: _PoiImage(imageUrl: poi.image),
+              borderRadius: BorderRadius.circular(12),
+              child: Image.network(
+                poi.image ?? 'https://via.placeholder.com/80',
+                width: 80,
+                height: 80,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => Container(
+                  width: 80,
+                  height: 80,
+                  color: Colors.grey[300],
+                  child: const Icon(Icons.image_not_supported),
+                ),
               ),
             ),
             const SizedBox(width: 16),
@@ -356,21 +407,38 @@ class _HeroSpotCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(poi.name,
-                      style: Theme.of(context).textTheme.titleMedium),
-                  Text(poi.type.toUpperCase(),
-                      style: Theme.of(context).textTheme.labelSmall),
+                  Text(
+                    poi.name,
+                    style: const TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    poi.type,
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey[600],
+                    ),
+                  ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      const Icon(Icons.star, color: Colors.amber, size: 18),
+                      const Icon(Icons.star, size: 16, color: Colors.amber),
                       const SizedBox(width: 4),
-                      Text(poi.rating?.toStringAsFixed(1) ?? 'New'),
+                      Text(
+                        poi.rating?.toStringAsFixed(1) ?? 'N/A',
+                        style: const TextStyle(fontWeight: FontWeight.w600),
+                      ),
                     ],
                   ),
                 ],
               ),
             ),
+            const Icon(Icons.arrow_forward_ios, size: 16),
           ],
         ),
       ),
@@ -381,78 +449,86 @@ class _HeroSpotCard extends StatelessWidget {
 class _SpotPreviewCard extends StatelessWidget {
   const _SpotPreviewCard({
     required this.poi,
-    required this.onTap,
     required this.isSelected,
+    required this.onTap,
   });
 
   final PoiModel poi;
-  final VoidCallback onTap;
   final bool isSelected;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 250),
+        duration: const Duration(milliseconds: 200),
         width: 170,
-        padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(22),
           color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
           border: Border.all(
-              color: isSelected ? ColorPalette.primary : Colors.transparent,
-              width: 2),
-          boxShadow: const [
+            color: isSelected ? ColorPalette.primary : Colors.transparent,
+            width: 2,
+          ),
+          boxShadow: [
             BoxShadow(
-                blurRadius: 16, offset: Offset(0, 8), color: Colors.black26)
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
           ],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(14),
-              child: AspectRatio(
-                aspectRatio: 16 / 9,
-                child: _PoiImage(imageUrl: poi.image),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(14)),
+              child: Image.network(
+                poi.image ?? 'https://via.placeholder.com/170x100',
+                width: double.infinity,
+                height: 100,
+                fit: BoxFit.cover,
+                errorBuilder: (_, __, ___) => Container(
+                  width: double.infinity,
+                  height: 100,
+                  color: Colors.grey[300],
+                  child: const Icon(Icons.image_not_supported),
+                ),
               ),
             ),
-            const SizedBox(height: 8),
-            Text(poi.name,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleSmall),
-            Text(poi.type, style: Theme.of(context).textTheme.bodySmall),
+            Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    poi.name,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  const SizedBox(height: 4),
+                  Row(
+                    children: [
+                      const Icon(Icons.star, size: 14, color: Colors.amber),
+                      const SizedBox(width: 4),
+                      Text(
+                        poi.rating?.toStringAsFixed(1) ?? 'N/A',
+                        style: const TextStyle(fontSize: 12),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
-    );
-  }
-}
-
-class _PoiImage extends StatelessWidget {
-  const _PoiImage({this.imageUrl});
-
-  final String? imageUrl;
-
-  @override
-  Widget build(BuildContext context) {
-    if (imageUrl == null || imageUrl!.isEmpty) {
-      return Image.asset('assets/images/placeholder.jpg', fit: BoxFit.cover);
-    }
-    return Image.network(
-      imageUrl!,
-      fit: BoxFit.cover,
-      errorBuilder: (_, __, ___) =>
-          Image.asset('assets/images/placeholder.jpg', fit: BoxFit.cover),
-      loadingBuilder: (_, child, progress) => progress == null
-          ? child
-          : Container(
-              color: Colors.grey.shade200,
-              alignment: Alignment.center,
-              child: const CircularProgressIndicator(strokeWidth: 2),
-            ),
     );
   }
 }

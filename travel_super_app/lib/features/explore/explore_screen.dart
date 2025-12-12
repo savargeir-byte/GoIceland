@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../data/api/poi_api.dart';
+import '../../data/models/poi_model.dart';
+import '../../core/widgets/premium_place_card.dart';
 
 class ExploreScreen extends StatelessWidget {
   const ExploreScreen({super.key});
@@ -62,36 +65,160 @@ class _ExploreSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: item.highlight
-            ? Theme.of(context).colorScheme.primaryContainer
-            : Theme.of(context).cardColor,
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: const [
-          BoxShadow(
-              offset: Offset(0, 8), blurRadius: 20, color: Colors.black12),
-        ],
+    return GestureDetector(
+      onTap: () => _handleTap(context),
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: item.highlight
+              ? Theme.of(context).colorScheme.primaryContainer
+              : Theme.of(context).cardColor,
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: const [
+            BoxShadow(
+                offset: Offset(0, 8), blurRadius: 20, color: Colors.black12),
+          ],
+        ),
+        child: Row(
+          children: [
+            Icon(item.icon, size: 32),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(item.title,
+                      style: Theme.of(context).textTheme.titleMedium),
+                  Text(item.subtitle,
+                      style: Theme.of(context).textTheme.bodySmall),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right),
+          ],
+        ),
       ),
-      child: Row(
-        children: [
-          Icon(item.icon, size: 32),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(item.title,
-                    style: Theme.of(context).textTheme.titleMedium),
-                Text(item.subtitle,
-                    style: Theme.of(context).textTheme.bodySmall),
-              ],
+    );
+  }
+
+  void _handleTap(BuildContext context) {
+    // Navigate to category-specific screens
+    switch (item.title) {
+      case 'Photo Spots':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const _CategoryDetailScreen(
+              title: 'Photo Spots',
+              categories: ['viewpoint', 'waterfall', 'beach'],
             ),
           ),
-          const Icon(Icons.chevron_right),
-        ],
-      ),
+        );
+        break;
+      case 'Food Radar':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const _CategoryDetailScreen(
+              title: 'Food Radar',
+              categories: ['restaurant', 'cafe'],
+            ),
+          ),
+        );
+        break;
+      case 'Hidden Gems':
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const _CategoryDetailScreen(
+              title: 'Hidden Gems',
+              categories: ['cave', 'hot_spring', 'camping'],
+            ),
+          ),
+        );
+        break;
+      case 'Ellie • AI trip concierge':
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('🤖 AI trip planner coming soon!'),
+            duration: Duration(seconds: 2),
+          ),
+        );
+        break;
+    }
+  }
+}
+
+// New category detail screen
+class _CategoryDetailScreen extends StatefulWidget {
+  final String title;
+  final List<String> categories;
+
+  const _CategoryDetailScreen({
+    required this.title,
+    required this.categories,
+  });
+
+  @override
+  State<_CategoryDetailScreen> createState() => _CategoryDetailScreenState();
+}
+
+class _CategoryDetailScreenState extends State<_CategoryDetailScreen> {
+  final _poiApi = PoiApi();
+  List<PoiModel> _pois = [];
+  bool _loading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPois();
+  }
+
+  Future<void> _loadPois() async {
+    setState(() => _loading = true);
+    
+    final allPois = <PoiModel>[];
+    for (final category in widget.categories) {
+      final pois = await _poiApi.fetchByCategory(category);
+      allPois.addAll(pois);
+    }
+    
+    setState(() {
+      _pois = allPois;
+      _loading = false;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text(widget.title)),
+      body: _loading
+          ? const Center(child: CircularProgressIndicator())
+          : _pois.isEmpty
+              ? const Center(child: Text('No places found'))
+              : ListView.builder(
+                  padding: const EdgeInsets.all(16),
+                  itemCount: _pois.length,
+                  itemBuilder: (context, index) {
+                    final poi = _pois[index];
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: SizedBox(
+                        height: 280,
+                        child: PremiumPlaceCard(
+                          poi: poi,
+                          onTap: () {
+                            // TODO: Navigate to detail screen
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('Selected: ${poi.name}')),
+                            );
+                          },
+                        ),
+                      ),
+                    );
+                  },
+                ),
     );
   }
 }

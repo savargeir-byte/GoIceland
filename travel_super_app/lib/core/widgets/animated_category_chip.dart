@@ -69,56 +69,63 @@ class _AnimatedCategoryChipState extends State<AnimatedCategoryChip>
       builder: (context, child) {
         return Transform.scale(
           scale: _scaleAnimation.value,
-          child: GestureDetector(
-            onTap: widget.onTap,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              decoration: BoxDecoration(
-                color:
-                    widget.isSelected ? const Color(0xFF00D4AA) : Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(
+          child: MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: widget.onTap,
+              behavior: HitTestBehavior.opaque,
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                decoration: BoxDecoration(
                   color: widget.isSelected
                       ? const Color(0xFF00D4AA)
-                      : Colors.grey.shade300,
-                  width: 1.5,
-                ),
-                boxShadow: [
-                  if (widget.isSelected)
+                      : Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(
+                    color: widget.isSelected
+                        ? const Color(0xFF00D4AA)
+                        : Colors.grey.shade300,
+                    width: 1.5,
+                  ),
+                  boxShadow: [
+                    if (widget.isSelected)
+                      BoxShadow(
+                        color: const Color(0xFF00D4AA)
+                            .withOpacity(0.4 * _glowAnimation.value),
+                        blurRadius: 16,
+                        offset: const Offset(0, 4),
+                      ),
                     BoxShadow(
-                      color: const Color(0xFF00D4AA)
-                          .withOpacity(0.4 * _glowAnimation.value),
-                      blurRadius: 16,
-                      offset: const Offset(0, 4),
+                      color: Colors.black.withOpacity(0.05),
+                      blurRadius: 8,
+                      offset: const Offset(0, 2),
                     ),
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
-                    blurRadius: 8,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(
-                    widget.icon,
-                    size: 18,
-                    color:
-                        widget.isSelected ? Colors.white : Colors.grey.shade700,
-                  ),
-                  const SizedBox(width: 8),
-                  Text(
-                    widget.label,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
+                  ],
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(
+                      widget.icon,
+                      size: 18,
                       color: widget.isSelected
                           ? Colors.white
                           : Colors.grey.shade700,
                     ),
-                  ),
-                ],
+                    const SizedBox(width: 8),
+                    Text(
+                      widget.label,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        color: widget.isSelected
+                            ? Colors.white
+                            : Colors.grey.shade700,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -130,7 +137,12 @@ class _AnimatedCategoryChipState extends State<AnimatedCategoryChip>
 
 /// Horizontal scrollable list of animated category chips.
 class CategoryChipList extends StatefulWidget {
-  const CategoryChipList({super.key});
+  const CategoryChipList({
+    super.key,
+    this.onCategorySelected,
+  });
+
+  final void Function(String category)? onCategorySelected;
 
   @override
   State<CategoryChipList> createState() => _CategoryChipListState();
@@ -146,7 +158,22 @@ class _CategoryChipListState extends State<CategoryChipList> {
     _CategoryItem(label: 'Nature', icon: Icons.terrain),
     _CategoryItem(label: 'Wellness', icon: Icons.spa),
     _CategoryItem(label: 'Adventure', icon: Icons.hiking),
+    _CategoryItem(label: 'Hotel', icon: Icons.hotel),
+    _CategoryItem(label: 'Museum', icon: Icons.museum),
+    _CategoryItem(label: 'Cave', icon: Icons.landscape),
+    _CategoryItem(label: 'Volcano', icon: Icons.terrain_outlined),
   ];
+
+  void _onCategoryTap(int index) {
+    if (_selectedIndex != index) {
+      setState(() {
+        _selectedIndex = index;
+      });
+      final category = _categories[index].label.toLowerCase();
+      print('Category selected: $category');
+      widget.onCategorySelected?.call(category);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -161,7 +188,7 @@ class _CategoryChipListState extends State<CategoryChipList> {
             label: category.label,
             icon: category.icon,
             isSelected: _selectedIndex == index,
-            onTap: () => setState(() => _selectedIndex = index),
+            onTap: () => _onCategoryTap(index),
           );
         },
         separatorBuilder: (_, __) => const SizedBox(width: 12),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../data/models/poi_model.dart';
 
@@ -39,7 +41,19 @@ class PinDetailsSheet extends StatelessWidget {
             children: [
               Expanded(
                 child: FilledButton.icon(
-                  onPressed: () {},
+                  onPressed: () async {
+                    // Open in Google Maps
+                    final url = Uri.parse('https://www.google.com/maps/search/?api=1&query=${poi.latitude},${poi.longitude}');
+                    if (await canLaunchUrl(url)) {
+                      await launchUrl(url, mode: LaunchMode.externalApplication);
+                    } else {
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(content: Text('Could not open maps')),
+                        );
+                      }
+                    }
+                  },
                   icon: const Icon(Icons.directions),
                   label: const Text('Navigate'),
                 ),
@@ -47,7 +61,14 @@ class PinDetailsSheet extends StatelessWidget {
               const SizedBox(width: 12),
               Expanded(
                 child: OutlinedButton.icon(
-                  onPressed: () {},
+                  onPressed: () async {
+                    // Share POI details
+                    final shareText = '${poi.name}\n${poi.type}\nRating: ${poi.rating ?? "N/A"}\n\nView on map:\nhttps://www.google.com/maps/search/?api=1&query=${poi.latitude},${poi.longitude}';
+                    await Share.share(
+                      shareText,
+                      subject: 'Check out ${poi.name} in Iceland!',
+                    );
+                  },
                   icon: const Icon(Icons.bookmark_border),
                   label: const Text('Save'),
                 ),

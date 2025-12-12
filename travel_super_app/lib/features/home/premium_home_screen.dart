@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../app.dart';
+
 import '../../core/animations/micro_animations.dart';
 import '../../core/animations/scroll_effects.dart';
 import '../../core/services/distance_service.dart';
@@ -24,6 +26,7 @@ class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
   final _distanceService = DistanceService();
   late Future<List<PoiModel>> _featuredFuture;
   Map<String, PoiDistanceInfo> _distanceInfo = {};
+  String _selectedCategory = 'all';
 
   @override
   void initState() {
@@ -32,9 +35,18 @@ class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
   }
 
   Future<List<PoiModel>> _loadFeatured() async {
-    final pois = await _poiApi.fetchFeatured();
+    final pois = _selectedCategory == 'all'
+        ? await _poiApi.fetchFeatured()
+        : await _poiApi.fetchByCategory(_selectedCategory);
     _distanceInfo = await _distanceService.getMultiplePoiDistances(pois);
     return pois;
+  }
+
+  void _onCategoryChanged(String category) {
+    setState(() {
+      _selectedCategory = category;
+      _featuredFuture = _loadFeatured();
+    });
   }
 
   @override
@@ -85,7 +97,9 @@ class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
             child: SlideInAnimation(
               delay: const Duration(milliseconds: 200),
               offset: const Offset(0, 20),
-              child: const CategoryChipList(),
+              child: CategoryChipList(
+                onCategorySelected: _onCategoryChanged,
+              ),
             ),
           ),
           SliverPadding(
@@ -102,7 +116,10 @@ class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
                     ),
                     const Spacer(),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        // Navigate to Explore tab (index 3)
+                        appShellKey.currentState?.switchToTab(3);
+                      },
                       child: const Text('See all'),
                     ),
                   ],
