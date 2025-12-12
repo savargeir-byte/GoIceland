@@ -20,7 +20,7 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
   final _distanceService = DistanceService();
   late Future<List<PoiModel>> _featuredFuture;
   String _selectedCategory = 'all';
-  
+
   final _categories = [
     {'id': 'all', 'label': 'All', 'icon': Icons.apps},
     {'id': 'restaurant', 'label': 'Food', 'icon': Icons.restaurant},
@@ -78,7 +78,8 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                     Row(
                       children: [
                         ShaderMask(
-                          shaderCallback: (bounds) => CrystalTheme.crystalGradient.createShader(bounds),
+                          shaderCallback: (bounds) =>
+                              CrystalTheme.crystalGradient.createShader(bounds),
                           child: const Text(
                             'GO ICELAND',
                             style: TextStyle(
@@ -114,7 +115,7 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                 ),
               ),
             ),
-            
+
             // Weather Banner
             SliverToBoxAdapter(
               child: Padding(
@@ -163,13 +164,14 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                 ),
               ),
             ),
-            
+
             // Category Filters
             SliverToBoxAdapter(
               child: SizedBox(
                 height: 90,
                 child: ListView.builder(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                   scrollDirection: Axis.horizontal,
                   itemCount: _categories.length,
                   itemBuilder: (context, index) {
@@ -180,13 +182,16 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                       child: CrystalButton(
                         onTap: () => _onCategoryChanged(cat['id'] as String),
                         isSelected: isSelected,
-                        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16, vertical: 8),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Icon(
                               cat['icon'] as IconData,
-                              color: isSelected ? Colors.white : CrystalTheme.primary,
+                              color: isSelected
+                                  ? Colors.white
+                                  : CrystalTheme.primary,
                               size: 22,
                             ),
                             const SizedBox(height: 2),
@@ -195,7 +200,9 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w600,
-                                color: isSelected ? Colors.white : const Color(0xFF1A202C),
+                                color: isSelected
+                                    ? Colors.white
+                                    : const Color(0xFF1A202C),
                               ),
                             ),
                           ],
@@ -206,7 +213,7 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                 ),
               ),
             ),
-            
+
             // Section Header
             SliverPadding(
               padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
@@ -214,7 +221,8 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                 child: Row(
                   children: [
                     ShaderMask(
-                      shaderCallback: (bounds) => CrystalTheme.crystalGradient.createShader(bounds),
+                      shaderCallback: (bounds) =>
+                          CrystalTheme.crystalGradient.createShader(bounds),
                       child: const Text(
                         'Today\'s picks',
                         style: TextStyle(
@@ -238,7 +246,7 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                 ),
               ),
             ),
-            
+
             // Featured Places - Horizontal Scroll
             SliverToBoxAdapter(
               child: SizedBox(
@@ -253,7 +261,7 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                         ),
                       );
                     }
-                    
+
                     final pois = snapshot.data!;
                     return ListView.builder(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -276,7 +284,7 @@ class _CrystalHomeScreenState extends State<CrystalHomeScreen> {
                 ),
               ),
             ),
-            
+
             const SliverToBoxAdapter(child: SizedBox(height: 100)),
           ],
         ),

@@ -1,46 +1,268 @@
 import 'package:flutter/material.dart';
 
-import '../../core/widgets/premium_place_card.dart';
-import '../../data/api/poi_api.dart';
-import '../../data/models/poi_model.dart';
+import '../../data/models/place.dart';
+import '../../data/models/poi_category.dart';
+import '../../data/repositories/places_repository.dart';
+import '../widgets/place_card.dart';
+import '../detail/place_detail_screen.dart';
 
-class ExploreScreen extends StatelessWidget {
+/// 🗺️ Explore Screen - Browse all Iceland POIs from Firebase
+class ExploreScreen extends StatefulWidget {
   const ExploreScreen({super.key});
 
-  static const _sections = [
-    _ExploreItem(
-      title: 'Photo Spots',
-      subtitle: 'Curated scenic frames by Ellie',
-      icon: Icons.camera_alt_outlined,
-    ),
-    _ExploreItem(
-      title: 'Food Radar',
-      subtitle: 'Veg-friendly tracker powered by Ellie',
-      icon: Icons.restaurant,
-    ),
-    _ExploreItem(
-      title: 'Hidden Gems',
-      subtitle: 'Crowdsourced by the Firestore community',
-      icon: Icons.park,
-    ),
-    _ExploreItem(
-      title: 'Ellie • AI trip concierge',
-      subtitle: 'Ask for hyper-local plans & Mapbox routes',
-      icon: Icons.auto_awesome,
-      highlight: true,
-    ),
-  ];
+  @override
+  State<ExploreScreen> createState() => _ExploreScreenState();
+}
+
+class _ExploreScreenState extends State<ExploreScreen> {
+  final PlacesRepository _repository = PlacesRepository();
+  String? _selectedCategory;
+  final TextEditingController _searchController = TextEditingController();
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Explore')),
-      body: ListView.separated(
-        padding: const EdgeInsets.all(16),
-        itemBuilder: (_, index) => _ExploreSection(item: _sections[index]),
-        separatorBuilder: (_, __) => const SizedBox(height: 16),
-        itemCount: _sections.length,
+      appBar: AppBar(
+        title: const Text('Explore Iceland'),
+        elevation: 0,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {
+              showSearch(
+                context: context,
+                delegate: _PlaceSearchDelegate(_repository),
+              );
+            },
+          ),
+        ],
       ),
+      body: Column(
+        children: [
+          // Category Filter Chips
+          _buildCategoryFilters(),
+          
+          // Places Grid from Firebase
+          Expanded(
+            child: StreamBuilder<List<Place>>(
+              stream: _selectedCategory == null
+                  ? _repository.getAllPlaces()
+                  : _repository.getPlacesByCategory(_selectedCategory!),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+                
+                if (snapshot.hasError) {
+                  return Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.error_outline, size: 64, color: Colors.red),
+                        const SizedBox(height: 16),
+                        Text('Error: ${snapshot.error}'),
+                        const SizedBox(height: 16),
+                        ElevatedButton(
+                          onPressed: () => setState(() {}),
+                          child: const Text('Retry'),
+                        ),
+                      ],
+                    ),
+                  );
+                }
+                
+                final places = snapshot.data ?? [];
+                
+                if (places.isEmpty) {
+                  return Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.explore_off, size: 64),
+                        const SizedBox(height: 16),
+                        Text(
+                          _selectedCategory == null
+                              ? 'No places found'
+                              : 'No $_selectedCategory places found',
+                        ),
+                      ],
+                    ),
+                  );
+                }
+                
+                return GridView.builder(
+                  padding: const EdgeInsets.all(16),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 0.75,
+                    crossAxisSpacing: 12,
+                    mainAxisSpacing: 12,
+                  ),
+                  itemCount: places.length,
+                  itemBuilder: (context, index) {
+                    return PlaceCard(
+                      place: places[index],
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => PlaceDetailScreen(place: places[index]),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Build category filter chips
+  Widget _buildCategoryFilters() {
+    return Container(
+      height: 56,
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        children: [
+          _buildCategoryChip('All', null),
+          const SizedBox(width: 8),
+          ...IcelandCategories.allCategories.map((cat) =>
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: _buildCategoryChip(cat.displayName, cat.id),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Build individual category chip
+  Widget _buildCategoryChip(String label, String? categoryId) {
+    final isSelected = _selectedCategory == categoryId;
+    
+    return FilterChip(
+      label: Text(label),
+      selected: isSelected,
+      onSelected: (selected) {
+        setState(() {
+          _selectedCategory = selected ? categoryId : null;
+        });
+      },
+      selectedColor: Theme.of(context).primaryColor.withOpacity(0.2),
+    );
+  }
+}
+
+/// Search delegate for places
+class _PlaceSearchDelegate extends SearchDelegate<Place?> {
+  final PlacesRepository _repository;
+
+  _PlaceSearchDelegate(this._repository);
+
+  @override
+  List<Widget> buildActions(BuildContext context) {
+    return [
+      IconButton(
+        icon: const Icon(Icons.clear),
+        onPressed: () => query = '',
+      ),
+    ];
+  }
+
+  @override
+  Widget buildLeading(BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.arrow_back),
+      onPressed: () => close(context, null),
+    );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    return _buildSearchResults();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    return _buildSearchResults();
+  }
+
+  Widget _buildSearchResults() {
+    if (query.isEmpty) {
+      return const Center(
+        child: Text('Enter a search query'),
+      );
+    }
+
+    return StreamBuilder<List<Place>>(
+      stream: _repository.searchPlaces(query),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Center(child: CircularProgressIndicator());
+        }
+
+        final places = snapshot.data ?? [];
+
+        if (places.isEmpty) {
+          return const Center(
+            child: Text('No results found'),
+          );
+        }
+
+        return ListView.builder(
+          itemCount: places.length,
+          itemBuilder: (context, index) {
+            final place = places[index];
+            return ListTile(
+              leading: (place.images != null && place.images!.isNotEmpty)
+                  ? ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Image.network(
+                        place.images!.first,
+                        width: 56,
+                        height: 56,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                  : const Icon(Icons.place),
+              title: Text(place.name),
+              subtitle: Text(place.category),
+              trailing: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.star, size: 16, color: Colors.amber),
+                  const SizedBox(width: 4),
+                  Text(place.rating?.toStringAsFixed(1) ?? '0.0'),
+                ],
+              ),
+              onTap: () {
+                close(context, place);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => PlaceDetailScreen(place: place),
+                  ),
+                );
+              },
+            );
+          },
+        );
+      },
     );
   }
 }

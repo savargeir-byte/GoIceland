@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:provider/provider.dart' as provider;
 
 import 'core/routes/app_routes.dart';
 import 'core/theme/app_theme.dart';
@@ -10,20 +11,28 @@ import 'features/home/crystal_home_screen.dart';
 import 'features/map/map_screen.dart';
 import 'features/trails/trails_screen.dart';
 import 'features/user/profile_screen.dart';
+import 'providers/places_provider.dart';
+import 'providers/filters_provider.dart';
 
 class TravelSuperApp extends StatelessWidget {
   const TravelSuperApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ProviderScope(
-      child: MaterialApp(
-        title: 'GO ICELAND',
-        theme: appTheme,
-        debugShowCheckedModeBanner: false,
-        routes: AppRoutes.routes,
-        onGenerateRoute: AppRoutes.onGenerateRoute,
-        home: AppShell(key: appShellKey),
+    return provider.MultiProvider(
+      providers: [
+        provider.ChangeNotifierProvider(create: (_) => PlacesProvider()),
+        provider.ChangeNotifierProvider(create: (_) => FiltersProvider()),
+      ],
+      child: ProviderScope(
+        child: MaterialApp(
+          title: 'GO ICELAND',
+          theme: appTheme,
+          debugShowCheckedModeBanner: false,
+          routes: AppRoutes.routes,
+          onGenerateRoute: AppRoutes.onGenerateRoute,
+          home: AppShell(key: appShellKey),
+        ),
       ),
     );
   }
