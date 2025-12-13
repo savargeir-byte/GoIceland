@@ -12,6 +12,10 @@ class TrailModel {
   final List<Map<String, double>> polyline; // list of {lat, lng} coordinates
   final List<String> images;
   final String region;
+  final String description; // Detailed description of the trail
+  final List<String> highlights; // Key highlights/attractions
+  final String season; // Best season to visit
+  final List<String> facilities; // Available facilities
 
   TrailModel({
     required this.id,
@@ -26,6 +30,10 @@ class TrailModel {
     this.polyline = const [],
     this.images = const [],
     this.region = '',
+    this.description = '',
+    this.highlights = const [],
+    this.season = 'Sumar',
+    this.facilities = const [],
   });
 
   Map<String, dynamic> toMap() => {
@@ -42,6 +50,10 @@ class TrailModel {
             polyline.map((p) => {'lat': p['lat'], 'lng': p['lng']}).toList(),
         'images': images,
         'region': region,
+        'description': description,
+        'highlights': highlights,
+        'season': season,
+        'facilities': facilities,
       };
 
   factory TrailModel.fromMap(Map<String, dynamic> m) => TrailModel(
@@ -62,6 +74,10 @@ class TrailModel {
             : [],
         images: List<String>.from(m['images'] ?? []),
         region: m['region'] ?? '',
+        description: m['description'] ?? '',
+        highlights: List<String>.from(m['highlights'] ?? []),
+        season: m['season'] ?? 'Sumar',
+        facilities: List<String>.from(m['facilities'] ?? []),
       );
 
   /// Helper to get difficulty color for UI badges
@@ -92,4 +108,10 @@ class TrailModel {
       return '${minutes}m';
     }
   }
+
+  /// Formatted distance for display (e.g., "5.2 km")
+  String get formattedDistance => '${lengthKm.toStringAsFixed(1)} km';
+
+  /// Elevation gain alias for backward compatibility
+  int? get elevation => elevationGain;
 }

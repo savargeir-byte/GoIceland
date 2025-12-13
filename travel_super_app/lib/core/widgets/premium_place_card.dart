@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../data/models/poi_model.dart';
@@ -380,12 +381,17 @@ class _PlaceImage extends StatelessWidget {
       );
     }
 
-    return Image.network(
-      effectiveUrl,
+    return CachedNetworkImage(
+      imageUrl: effectiveUrl,
       width: double.infinity,
       height: double.infinity,
       fit: BoxFit.cover,
-      errorBuilder: (_, __, ___) {
+      placeholder: (context, url) => Container(
+        color: Colors.grey.shade200,
+        alignment: Alignment.center,
+        child: const CircularProgressIndicator(strokeWidth: 2),
+      ),
+      errorWidget: (context, url, error) {
         final colors = _getCategoryGradient();
         return Container(
           decoration: BoxDecoration(
@@ -402,13 +408,6 @@ class _PlaceImage extends StatelessWidget {
           ),
         );
       },
-      loadingBuilder: (_, child, progress) => progress == null
-          ? child
-          : Container(
-              color: Colors.grey.shade200,
-              alignment: Alignment.center,
-              child: const CircularProgressIndicator(strokeWidth: 2),
-            ),
     );
   }
 }

@@ -170,14 +170,14 @@ class _TestPOIScreenState extends State<TestPOIScreen> {
         children: places.take(10).map((place) {
           return ListTile(
             leading: CircleAvatar(
-              child: Text(place.category[0].toUpperCase()),
+              child: Text(place.type[0].toUpperCase()),
             ),
             title: Text(place.name),
             subtitle: Text(
-              '${place.category} • ${place.region ?? "Unknown"}',
+              '${place.type} • ${place.meta?['region'] ?? "Unknown"}',
             ),
-            trailing: place.metadata?['stars'] != null
-                ? Text('⭐ ${place.metadata!['stars']}')
+            trailing: place.meta?['stars'] != null
+                ? Text('⭐ ${place.meta!['stars']}')
                 : null,
           );
         }).toList(),

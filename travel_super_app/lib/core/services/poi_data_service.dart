@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../models/place_model.dart';
+import '../../data/models/place_model.dart';
 
 /// Service fyrir að sækja POI gögn frá Firestore
 ///
@@ -127,7 +127,7 @@ class PoiDataService {
       // Client-side filter for stars (if stars field exists)
       if (minStars != null) {
         results = results.where((place) {
-          final stars = int.tryParse(place.metadata?['stars'] ?? '0');
+          final stars = int.tryParse(place.meta?['stars'] ?? '0');
           return stars != null && stars >= minStars;
         }).toList();
       }
@@ -170,7 +170,7 @@ class PoiDataService {
       // Client-side filter for cuisine
       if (cuisine != null) {
         results = results.where((place) {
-          final placeCuisine = place.metadata?['cuisine']?.toLowerCase();
+          final placeCuisine = place.meta?['cuisine']?.toLowerCase();
           return placeCuisine?.contains(cuisine.toLowerCase()) ?? false;
         }).toList();
       }

@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/theme/crystal_theme.dart';
@@ -9,7 +10,7 @@ class CrystalPlaceCard extends StatefulWidget {
   final VoidCallback onTap;
   final double? width;
   final double? height;
-  
+
   const CrystalPlaceCard({
     super.key,
     required this.poi,
@@ -17,14 +18,14 @@ class CrystalPlaceCard extends StatefulWidget {
     this.width = 280,
     this.height = 320,
   });
-  
+
   @override
   State<CrystalPlaceCard> createState() => _CrystalPlaceCardState();
 }
 
 class _CrystalPlaceCardState extends State<CrystalPlaceCard> {
   bool _isHovered = false;
-  
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
@@ -170,10 +171,10 @@ class _CrystalPlaceCardState extends State<CrystalPlaceCard> {
       ),
     );
   }
-  
+
   Widget _buildImage() {
     final colors = _getCategoryGradient(widget.poi.type);
-    
+
     if (widget.poi.image == null || widget.poi.image!.isEmpty) {
       return Container(
         decoration: BoxDecoration(
@@ -192,11 +193,16 @@ class _CrystalPlaceCardState extends State<CrystalPlaceCard> {
         ),
       );
     }
-    
-    return Image.network(
-      widget.poi.image!,
+
+    return CachedNetworkImage(
+      imageUrl: widget.poi.image!,
       fit: BoxFit.cover,
-      errorBuilder: (_, __, ___) => Container(
+      placeholder: (context, url) => Container(
+        color: Colors.grey.shade200,
+        alignment: Alignment.center,
+        child: const CircularProgressIndicator(strokeWidth: 2),
+      ),
+      errorWidget: (context, url, error) => Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: colors,
@@ -214,7 +220,7 @@ class _CrystalPlaceCardState extends State<CrystalPlaceCard> {
       ),
     );
   }
-  
+
   List<Color> _getCategoryGradient(String category) {
     switch (category.toLowerCase()) {
       case 'waterfall':
@@ -243,7 +249,7 @@ class _CrystalPlaceCardState extends State<CrystalPlaceCard> {
         return [Colors.teal.shade400, Colors.teal.shade700];
     }
   }
-  
+
   IconData _getCategoryIcon(String category) {
     switch (category.toLowerCase()) {
       case 'waterfall':

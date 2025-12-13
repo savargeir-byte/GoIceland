@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../data/models/place.dart';
 import '../../data/models/poi_category.dart';
 import '../../data/repositories/places_repository.dart';
-import '../widgets/place_card.dart';
 import '../detail/place_detail_screen.dart';
+import '../widgets/place_card.dart';
 
 /// 🗺️ Explore Screen - Browse all Iceland POIs from Firebase
 class ExploreScreen extends StatefulWidget {
@@ -47,7 +47,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         children: [
           // Category Filter Chips
           _buildCategoryFilters(),
-          
+
           // Places Grid from Firebase
           Expanded(
             child: StreamBuilder<List<Place>>(
@@ -60,13 +60,14 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     child: CircularProgressIndicator(),
                   );
                 }
-                
+
                 if (snapshot.hasError) {
                   return Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Icon(Icons.error_outline, size: 64, color: Colors.red),
+                        const Icon(Icons.error_outline,
+                            size: 64, color: Colors.red),
                         const SizedBox(height: 16),
                         Text('Error: ${snapshot.error}'),
                         const SizedBox(height: 16),
@@ -78,9 +79,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     ),
                   );
                 }
-                
+
                 final places = snapshot.data ?? [];
-                
+
                 if (places.isEmpty) {
                   return Center(
                     child: Column(
@@ -97,7 +98,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     ),
                   );
                 }
-                
+
                 return GridView.builder(
                   padding: const EdgeInsets.all(16),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -114,7 +115,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => PlaceDetailScreen(place: places[index]),
+                            builder: (_) =>
+                                PlaceDetailScreen(place: places[index]),
                           ),
                         );
                       },
@@ -140,8 +142,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
         children: [
           _buildCategoryChip('All', null),
           const SizedBox(width: 8),
-          ...IcelandCategories.allCategories.map((cat) =>
-            Padding(
+          ...IcelandCategories.allCategories.map(
+            (cat) => Padding(
               padding: const EdgeInsets.only(right: 8),
               child: _buildCategoryChip(cat.displayName, cat.id),
             ),
@@ -154,7 +156,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   /// Build individual category chip
   Widget _buildCategoryChip(String label, String? categoryId) {
     final isSelected = _selectedCategory == categoryId;
-    
+
     return FilterChip(
       label: Text(label),
       selected: isSelected,
@@ -387,29 +389,32 @@ class _CategoryDetailScreen extends StatefulWidget {
 }
 
 class _CategoryDetailScreenState extends State<_CategoryDetailScreen> {
-  final _poiApi = PoiApi();
-  List<PoiModel> _pois = [];
+  final _repository = PlacesRepository();
+  List<Place> _places = [];
   bool _loading = true;
 
   @override
   void initState() {
     super.initState();
-    _loadPois();
+    _loadPlaces();
   }
 
-  Future<void> _loadPois() async {
+  Future<void> _loadPlaces() async {
     setState(() => _loading = true);
-    
-    final allPois = <PoiModel>[];
-    for (final category in widget.categories) {
-      final pois = await _poiApi.fetchByCategory(category);
-      allPois.addAll(pois);
+
+    try {
+      final allPlaces = await _repository.getFeaturedPlaces(limit: 100);
+      final filteredPlaces = allPlaces
+          .where((place) => widget.categories.contains(place.category))
+          .toList();
+
+      setState(() {
+        _places = filteredPlaces;
+        _loading = false;
+      });
+    } catch (e) {
+      setState(() => _loading = false);
     }
-    
-    setState(() {
-      _pois = allPois;
-      _loading = false;
-    });
   }
 
   @override
@@ -418,23 +423,24 @@ class _CategoryDetailScreenState extends State<_CategoryDetailScreen> {
       appBar: AppBar(title: Text(widget.title)),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
-          : _pois.isEmpty
+          : _places.isEmpty
               ? const Center(child: Text('No places found'))
               : ListView.builder(
                   padding: const EdgeInsets.all(16),
-                  itemCount: _pois.length,
+                  itemCount: _places.length,
                   itemBuilder: (context, index) {
-                    final poi = _pois[index];
+                    final place = _places[index];
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 16),
                       child: SizedBox(
                         height: 280,
-                        child: PremiumPlaceCard(
-                          poi: poi,
+                        child: PlaceCard(
+                          place: place,
                           onTap: () {
-                            // TODO: Navigate to detail screen
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(content: Text('Selected: ${poi.name}')),
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => PlaceDetailScreen(place: place),
+                              ),
                             );
                           },
                         ),

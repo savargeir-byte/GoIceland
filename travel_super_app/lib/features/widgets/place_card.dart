@@ -1,5 +1,8 @@
 import 'dart:ui';
+
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+
 import '../../data/models/place.dart';
 
 /// 🎴 Place Card Widget - Crystal glassmorphism design
@@ -44,10 +47,13 @@ class PlaceCard extends StatelessWidget {
                     color: Colors.grey.shade200,
                   ),
                   child: place.imageUrl != null
-                      ? Image.network(
-                          place.imageUrl!,
+                      ? CachedNetworkImage(
+                          imageUrl: place.imageUrl!,
                           fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => const Icon(
+                          placeholder: (context, url) => const Center(
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          ),
+                          errorWidget: (context, url, error) => const Icon(
                             Icons.place,
                             size: 40,
                             color: Colors.grey,

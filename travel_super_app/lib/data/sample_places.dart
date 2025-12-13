@@ -1,4 +1,4 @@
-import '../models/poi_model.dart';
+import 'models/poi_model.dart';
 
 /// 🇮🇸 Mock Iceland POI data for UI testing
 /// This will be replaced with real Firebase data from the Iceland Data Engine

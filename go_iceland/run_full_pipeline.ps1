@@ -1,71 +1,107 @@
-# GO ICELAND - Full ETL Pipeline Runner
-# Runs all steps automatically after fetch completes
+# 🇮🇸 GO ICELAND - COMPLETE DATA PIPELINE
+# One-click script to fetch, enrich, and upload ALL Iceland data
 
-Write-Host "🌋 GO ICELAND - Full Pipeline" -ForegroundColor Cyan
-Write-Host "=" * 50
+Write-Host "🇮🇸 GO ICELAND - COMPLETE DATA PIPELINE" -ForegroundColor Cyan
+Write-Host "=" * 60
+Write-Host ""
 
-# Check if virtual environment is active
-if (-not $env:VIRTUAL_ENV) {
-    Write-Host "Activating virtual environment..." -ForegroundColor Yellow
-    .\venv\Scripts\Activate.ps1
-}
-
-# Step 1: Fetch (skip if already running)
-$rawFile = ".\data\iceland_raw.json"
-if (-not (Test-Path $rawFile)) {
-    Write-Host "`n[1/5] 🌍 Fetching POIs from OpenStreetMap..." -ForegroundColor Cyan
-    python etl/fetch_iceland_pois.py
-    
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "❌ Fetch failed!" -ForegroundColor Red
-        exit 1
-    }
-}
-else {
-    Write-Host "`n[1/5] ✅ Raw data exists, skipping fetch" -ForegroundColor Green
-}
-
-# Step 2: Enrich & Clean
-Write-Host "`n[2/5] 🧹 Enriching and cleaning POIs..." -ForegroundColor Cyan
-python etl/enrich_pois.py
-
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "❌ Enrichment failed!" -ForegroundColor Red
+# Check Python
+$python = Get-Command python -ErrorAction SilentlyContinue
+if (-not $python) {
+    Write-Host "❌ Python not found. Please install Python 3.11+" -ForegroundColor Red
     exit 1
 }
 
-# Step 3: Add Geohash
-Write-Host "`n[3/5] 📍 Adding geohash encoding..." -ForegroundColor Cyan
-python etl/utils_geohash.py
+Write-Host "✅ Python found" -ForegroundColor Green
+Write-Host ""
+
+# Check dependencies
+Write-Host "📦 Checking dependencies..." -ForegroundColor Yellow
+pip show requests firebase-admin > $null 2>&1
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "Installing dependencies..." -ForegroundColor Yellow
+    pip install requests firebase-admin
+}
+
+Write-Host ""
+Write-Host "=" * 60
+Write-Host "STEP 1: FETCH ALL PLACES (2000-4000+ POIs)" -ForegroundColor Cyan
+Write-Host "=" * 60
+Write-Host ""
+
+python etl/fetch_all_places.py
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "❌ Geohash failed!" -ForegroundColor Red
+    Write-Host "❌ Failed to fetch places" -ForegroundColor Red
     exit 1
 }
 
-# Step 4: Optional - Download Previews
-if ($env:MAPBOX_TOKEN) {
-    Write-Host "`n[4/5] 📸 Downloading map previews..." -ForegroundColor Cyan
-    python etl/download_previews.py
-    
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "⚠️ Preview download failed, continuing..." -ForegroundColor Yellow
-    }
-}
-else {
-    Write-Host "`n[4/5] ⏭️ Skipping previews (no MAPBOX_TOKEN)" -ForegroundColor Yellow
-}
+Write-Host ""
+Write-Host "=" * 60
+Write-Host "STEP 2: FETCH ALL TRAILS (400+ with polylines)" -ForegroundColor Cyan
+Write-Host "=" * 60
+Write-Host ""
 
-# Step 5: Upload to Firestore
-Write-Host "`n[5/5] 🔥 Uploading to Firestore..." -ForegroundColor Cyan
-python firebase/upload_to_firestore.py
+python etl/fetch_all_trails.py
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "❌ Upload failed!" -ForegroundColor Red
+    Write-Host "❌ Failed to fetch trails" -ForegroundColor Red
     exit 1
 }
 
-Write-Host "`n==================================================`n" -ForegroundColor White
-Write-Host "✅ Pipeline complete!" -ForegroundColor Green
-Write-Host "Check your data at:" -ForegroundColor Cyan
-Write-Host "https://console.firebase.google.com/project/go-iceland/firestore`n" -ForegroundColor White
+Write-Host ""
+Write-Host "=" * 60
+Write-Host "STEP 3: ENRICH ALL WITH SAGA & CULTURE" -ForegroundColor Cyan
+Write-Host "=" * 60
+Write-Host ""
+
+python etl/enrich_all_descriptions.py
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "❌ Failed to enrich places" -ForegroundColor Red
+    exit 1
+}
+
+Write-Host ""
+Write-Host "=" * 60
+Write-Host "STEP 4: UPLOAD TO FIRESTORE" -ForegroundColor Cyan
+Write-Host "=" * 60
+Write-Host ""
+
+# Check for service account key
+if (-not (Test-Path "firebase/serviceAccountKey.json")) {
+    Write-Host "⚠️  Service account key not found" -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "To upload to Firebase:" -ForegroundColor White
+    Write-Host "1. Download key from Firebase Console" -ForegroundColor White
+    Write-Host "2. Save as firebase/serviceAccountKey.json" -ForegroundColor White
+    Write-Host "3. Run: python firebase/upload_all_to_firestore.py" -ForegroundColor White
+    Write-Host ""
+    Write-Host "✅ Data is ready in data/ directory!" -ForegroundColor Green
+    exit 0
+}
+
+python firebase/upload_all_to_firestore.py
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "❌ Failed to upload to Firestore" -ForegroundColor Red
+    exit 1
+}
+
+Write-Host ""
+Write-Host "=" * 60
+Write-Host "🎉 PIPELINE COMPLETE!" -ForegroundColor Green
+Write-Host "=" * 60
+Write-Host ""
+Write-Host "✅ All places fetched and enriched" -ForegroundColor Green
+Write-Host "✅ All trails fetched with polylines" -ForegroundColor Green
+Write-Host "✅ Data uploaded to Firestore" -ForegroundColor Green
+Write-Host ""
+Write-Host "📂 Output files:" -ForegroundColor Cyan
+Write-Host "   • data/iceland_places_raw.json" -ForegroundColor White
+Write-Host "   • data/iceland_trails_raw.json" -ForegroundColor White
+Write-Host "   • data/iceland_places_enriched.json" -ForegroundColor White
+Write-Host ""
+Write-Host "🇮🇸 GO ICELAND = BEST ferðamanna-app á Íslandi!" -ForegroundColor Green
+Write-Host ""
+

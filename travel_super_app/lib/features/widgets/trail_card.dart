@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../data/models/trail.dart';
+
+import '../../data/models/trail_model.dart';
 
 /// 🥾 Trail Card Widget
 class TrailCard extends StatelessWidget {
-  final Trail trail;
+  final TrailModel trail;
   final VoidCallback? onTap;
 
   const TrailCard({

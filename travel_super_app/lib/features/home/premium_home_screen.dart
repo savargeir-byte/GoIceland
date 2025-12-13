@@ -8,10 +8,13 @@ import '../../core/widgets/animated_category_chip.dart';
 import '../../core/widgets/bottom_sheet.dart';
 import '../../core/widgets/premium_place_card.dart';
 import '../../data/api/poi_api.dart';
+import '../../data/api/trail_api.dart';
 import '../../data/models/poi_model.dart';
+import '../../data/models/trail_model.dart';
 import '../map/pin_details_sheet.dart';
 import '../weather/premium_weather_banner.dart';
 import '../weather/weather_banner.dart';
+import '../widgets/trail_card.dart';
 
 class PremiumHomeScreen extends StatefulWidget {
   const PremiumHomeScreen({super.key});
@@ -22,8 +25,10 @@ class PremiumHomeScreen extends StatefulWidget {
 
 class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
   final _poiApi = PoiApi();
+  final _trailApi = TrailApi();
   final _distanceService = DistanceService();
   late Future<List<PoiModel>> _featuredFuture;
+  late Future<List<TrailModel>> _trailsFuture;
   Map<String, PoiDistanceInfo> _distanceInfo = {};
   String _selectedCategory = 'all';
 
@@ -31,6 +36,7 @@ class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
   void initState() {
     super.initState();
     _featuredFuture = _loadFeatured();
+    _trailsFuture = _trailApi.fetchPopular();
   }
 
   Future<List<PoiModel>> _loadFeatured() async {
@@ -156,6 +162,58 @@ class _PremiumHomeScreenState extends State<PremiumHomeScreen> {
                     },
                     separatorBuilder: (_, __) => const SizedBox(width: 16),
                     itemCount: pois.length,
+                  );
+                },
+              ),
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 12),
+            sliver: SliverToBoxAdapter(
+              child: SlideInAnimation(
+                delay: const Duration(milliseconds: 600),
+                offset: const Offset(0, 15),
+                child: Row(
+                  children: [
+                    const Icon(Icons.terrain, size: 24),
+                    const SizedBox(width: 8),
+                    Text(
+                      'Popular Trails',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    const Spacer(),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text('See all'),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: SizedBox(
+              height: 220,
+              child: FutureBuilder<List<TrailModel>>(
+                future: _trailsFuture,
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                  final trails = snapshot.data!;
+                  return ListView.separated(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    scrollDirection: Axis.horizontal,
+                    physics: const BouncingScrollPhysics(),
+                    itemBuilder: (_, index) {
+                      return SlideInAnimation(
+                        delay: Duration(milliseconds: 700 + (index * 100)),
+                        offset: const Offset(30, 0),
+                        child: TrailCard(trail: trails[index]),
+                      );
+                    },
+                    separatorBuilder: (_, __) => const SizedBox(width: 16),
+                    itemCount: trails.length,
                   );
                 },
               ),

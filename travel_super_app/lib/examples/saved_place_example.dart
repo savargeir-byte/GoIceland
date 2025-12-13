@@ -61,9 +61,9 @@ class _SavedPlaceExampleState extends ConsumerState<SavedPlaceExample> {
       await _service!.toggleSave(
         poiId: poi.id,
         name: poi.name,
-        location: poi.description ?? '',
+        location: poi.type,
         imageUrl: poi.image,
-        category: poi.category?.name,
+        category: poi.type,
         latitude: poi.latitude,
         longitude: poi.longitude,
       );
@@ -101,10 +101,10 @@ class _SavedPlaceExampleState extends ConsumerState<SavedPlaceExample> {
     final examplePoi = PoiModel(
       id: 'example_poi_1',
       name: 'Gullfoss',
+      type: 'waterfall',
       latitude: 64.3271,
       longitude: -20.1222,
       image: 'https://example.com/gullfoss.jpg',
-      description: 'Íslenskt vatnsfoss',
       rating: 4.8,
     );
 

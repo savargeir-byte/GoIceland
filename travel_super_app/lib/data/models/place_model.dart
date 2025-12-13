@@ -47,6 +47,10 @@ class PlaceModel {
         meta: m['meta'] != null ? Map<String, dynamic>.from(m['meta']) : null,
       );
 
+  /// Create PlaceModel from Firestore document data
+  factory PlaceModel.fromFirestore(Map<String, dynamic> data) =>
+      PlaceModel.fromMap(data);
+
   /// Converts PlaceModel to PoiModel for backward compatibility with existing code
   /// Remove this once all code is migrated to use PlaceModel
   Map<String, dynamic> toPoiModel() => {
