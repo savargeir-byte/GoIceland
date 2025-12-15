@@ -130,6 +130,92 @@ class PlaceDetailScreen extends StatelessWidget {
 
                   const SizedBox(height: 24),
 
+                  // Contact Information (phone, website)
+                  if (place.meta != null &&
+                      (place.meta!['phone'] != null ||
+                          place.meta!['website'] != null ||
+                          place.meta!['opening_hours'] != null ||
+                          place.meta!['cuisine'] != null)) ...[
+                    _buildSection(
+                      icon: Icons.info,
+                      title: 'Upplýsingar',
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (place.meta!['cuisine'] != null)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 12),
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.restaurant_menu,
+                                      size: 20, color: Colors.grey),
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      'Matargerð: ${place.meta!['cuisine']}',
+                                      style: const TextStyle(fontSize: 15),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          if (place.meta!['opening_hours'] != null)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 12),
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.access_time,
+                                      size: 20, color: Colors.grey),
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      place.meta!['opening_hours'],
+                                      style: const TextStyle(fontSize: 15),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          if (place.meta!['phone'] != null)
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 12),
+                              child: Row(
+                                children: [
+                                  const Icon(Icons.phone,
+                                      size: 20, color: Colors.grey),
+                                  const SizedBox(width: 8),
+                                  Expanded(
+                                    child: Text(
+                                      place.meta!['phone'],
+                                      style: const TextStyle(
+                                          fontSize: 15, color: Colors.blue),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          if (place.meta!['website'] != null)
+                            Row(
+                              children: [
+                                const Icon(Icons.language,
+                                    size: 20, color: Colors.grey),
+                                const SizedBox(width: 8),
+                                Expanded(
+                                  child: Text(
+                                    place.meta!['website'],
+                                    style: const TextStyle(
+                                        fontSize: 15, color: Colors.blue),
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                ),
+                              ],
+                            ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                  ],
+
                   // Coordinates
                   _buildSection(
                     icon: Icons.map,

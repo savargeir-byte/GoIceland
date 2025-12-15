@@ -2,6 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../../core/constants/categories.dart';
+
 // Removed unused imports
 
 /// 🔍 EXPLORE SCREEN - Browse all places in a list
@@ -35,26 +37,34 @@ class _ExploreScreenState extends State<ExploreScreen> {
               onChanged: (value) => setState(() => _searchQuery = value),
             ),
           ),
-          
+
           // Category filters
           SliverToBoxAdapter(
             child: SizedBox(
               height: 50,
               child: ListView(
                 scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 children: [
                   _categoryChip('All', null),
-                  _categoryChip('Waterfalls', 'waterfall'),
-                  _categoryChip('Glaciers', 'glacier'),
-                  _categoryChip('Hot Springs', 'hot_spring'),
-                  _categoryChip('Beaches', 'beach'),
-                  _categoryChip('Restaurants', 'restaurant'),
+                  ...PlaceCategories.byGroup('nature')
+                      .take(5)
+                      .map((cat) => _categoryChip(
+                            '${cat.emoji} ${cat.label}',
+                            cat.id,
+                          )),
+                  ...PlaceCategories.byGroup('food')
+                      .take(2)
+                      .map((cat) => _categoryChip(
+                            '${cat.emoji} ${cat.label}',
+                            cat.id,
+                          )),
                 ],
               ),
             ),
           ),
-          
+
           // Places list from Firebase
           StreamBuilder<QuerySnapshot>(
             stream: _buildQuery().snapshots(),
@@ -98,23 +108,24 @@ class _ExploreScreenState extends State<ExploreScreen> {
   }
 
   Query<Map<String, dynamic>> _buildQuery() {
-    Query<Map<String, dynamic>> query = FirebaseFirestore.instance.collection('places');
-    
+    Query<Map<String, dynamic>> query =
+        FirebaseFirestore.instance.collection('places');
+
     // Filter by category
     if (_selectedCategory != null) {
       query = query.where('category', isEqualTo: _selectedCategory);
     }
-    
+
     // Sort by rating
     // Note: Requires Firestore index
     // query = query.orderBy('rating', descending: true);
-    
+
     return query.limit(50);
   }
 
   Widget _categoryChip(String label, String? category) {
     final isSelected = _selectedCategory == category;
-    
+
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
@@ -133,7 +144,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
     final rating = (data['rating'] as num?)?.toDouble();
     final region = data['region'] as String?;
     final tags = data['tags'] as List?;
-    
+
     // Get description
     String? description;
     if (data['descriptions'] != null) {
@@ -143,7 +154,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
         description = '${description.substring(0, 100)}...';
       }
     }
-    
+
     // Get image
     String? imageUrl;
     if (data['media'] != null) {
@@ -182,7 +193,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                   ),
                 ),
               ),
-            
+
             // Content
             Expanded(
               child: Padding(
@@ -200,14 +211,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    
+
                     const SizedBox(height: 4),
-                    
+
                     // Category badge
                     Row(
                       children: [
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 2),
                           decoration: BoxDecoration(
                             color: _getCategoryColor(category).withOpacity(0.2),
                             borderRadius: BorderRadius.circular(12),
@@ -223,7 +235,8 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         ),
                         if (region != null) ...[
                           const SizedBox(width: 6),
-                          Icon(Icons.location_on, size: 14, color: Colors.grey[600]),
+                          Icon(Icons.location_on,
+                              size: 14, color: Colors.grey[600]),
                           const SizedBox(width: 2),
                           Text(
                             region,
@@ -235,7 +248,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         ],
                       ],
                     ),
-                    
+
                     if (description != null) ...[
                       const SizedBox(height: 8),
                       Text(
@@ -248,7 +261,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],
-                    
+
                     if (rating != null) ...[
                       const SizedBox(height: 8),
                       Row(
@@ -264,7 +277,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                         ],
                       ),
                     ],
-                    
+
                     // Tags
                     if (tags != null && tags.isNotEmpty) ...[
                       const SizedBox(height: 6),
@@ -286,7 +299,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 ),
               ),
             ),
-            
+
             // Arrow
             const Padding(
               padding: EdgeInsets.all(16),

@@ -1,0 +1,1636 @@
+{
+  "39af68f5f222": {
+    "id": "39af68f5f222",
+    "name": "Gullfoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 64.3276361,
+    "lon": -20.1215374,
+    "latitude": 64.3276361,
+    "longitude": -20.1215374,
+    "country": "IS",
+    "description": {
+      "short": "Gullfoss er foss í Hvítá upp af Haukadal í Árnessýslu á Íslandi, hann er einn vinsælasti ferðamannastaður landsins.",
+      "history": "Gullfoss er foss í Hvítá upp af Haukadal í Árnessýslu á Íslandi, hann er einn vinsælasti ferðamannastaður landsins.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f0/Gullfoss_from_the_Air.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Gullfoss_from_the_Air.jpg/330px-Gullfoss_from_the_Air.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Gullfoss_from_the_Air.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Gullfoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Gullfoss_from_the_Air.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f0/Gullfoss_from_the_Air.jpg"
+    ]
+  },
+  "887ec6e4235e": {
+    "id": "887ec6e4235e",
+    "name": "Stóri Geysir",
+    "type": "hot_spring",
+    "category": "hot_spring",
+    "lat": 64.3138382,
+    "lon": -20.2995104,
+    "latitude": 64.3138382,
+    "longitude": -20.2995104,
+    "country": "IS",
+    "description": {
+      "short": "Geysir í Haukadal er goshver sem nú til dags lætur lítið á sér kræla. Geysir er einn frægasti goshver í heimi. Margir fleiri hverir eru á Geysissvæðinu, til dæmis Strokkur, Smiður og Litli-Strokkur.",
+      "history": "Geysir í Haukadal er goshver sem nú til dags lætur lítið á sér kræla. Geysir er einn frægasti goshver í heimi. Margir fleiri hverir eru á Geysissvæðinu, til dæmis Strokkur, Smiður og Litli-Strokkur.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/ee/GreatGeysirEruption.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/GreatGeysirEruption.jpg/330px-GreatGeysirEruption.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/GreatGeysirEruption.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Geysir",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ee/GreatGeysirEruption.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/ee/GreatGeysirEruption.jpg"
+    ]
+  },
+  "2bd3ab713c0e": {
+    "id": "2bd3ab713c0e",
+    "name": "Þingvellir",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 64.2554098,
+    "lon": -21.128043,
+    "latitude": 64.2554098,
+    "longitude": -21.128043,
+    "country": "IS",
+    "description": {
+      "short": "Þingvellir eru flatir, grasi grónir vellir norðan við Þingvallavatn á bökkum Öxarár, sem rennur eftir völlunum út í Þingvallavatn, sem er stærsta náttúrulega stöðuvatn á Íslandi. Þjóðgarður var stofna",
+      "history": "Þingvellir eru flatir, grasi grónir vellir norðan við Þingvallavatn á bökkum Öxarár, sem rennur eftir völlunum út í Þingvallavatn, sem er stærsta náttúrulega stöðuvatn á Íslandi. Þjóðgarður var stofnaður árið 1928 og nær hann yfir Þingvelli og nánasta umhverfi þeirra. Í Öxará er Öxarárfoss, þar sem áin steypist ofan í Almannagjá. Rennur áin síðan eftir gjánni og svo út úr henni og niður á vellina. Almannagjá er sprunga við vestanverða sigdældina á milli úthafsflekanna tveggja sem Ísland liggur á.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/83/%C3%9Eingvellir_from_the_information_centre.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/%C3%9Eingvellir_from_the_information_centre.JPG/330px-%C3%9Eingvellir_from_the_information_centre.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/8/83/%C3%9Eingvellir_from_the_information_centre.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/%C3%9Eingvellir",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/83/%C3%9Eingvellir_from_the_information_centre.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/83/%C3%9Eingvellir_from_the_information_centre.JPG"
+    ]
+  },
+  "8e5bb213c6b3": {
+    "id": "8e5bb213c6b3",
+    "name": "Skógafoss",
+    "type": "info_center",
+    "category": "info_center",
+    "lat": 63.5297253,
+    "lon": -19.5122825,
+    "latitude": 63.5297253,
+    "longitude": -19.5122825,
+    "country": "IS",
+    "description": {
+      "short": "Skógafoss er 60 metra hár og 25 metra breiður foss í Skógá við Skóga í Rangárþingi eystra. Fossinn var friðlýstur árið 1987 og telst náttúruvætti. Sögusagnir segja að í helli bak við fossinn hafi land",
+      "history": "Skógafoss er 60 metra hár og 25 metra breiður foss í Skógá við Skóga í Rangárþingi eystra. Fossinn var friðlýstur árið 1987 og telst náttúruvætti. Sögusagnir segja að í helli bak við fossinn hafi landnámsmaðurinn Þrasi Þórólfsson kastað gullkistu sinni.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f7/Skogafoss_from_below.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Skogafoss_from_below.JPG/330px-Skogafoss_from_below.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Skogafoss_from_below.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Sk%C3%B3gafoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Skogafoss_from_below.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/Skogafoss_from_below.JPG"
+    ]
+  },
+  "18cd4b7c66d8": {
+    "id": "18cd4b7c66d8",
+    "name": "Sel",
+    "type": "restaurant",
+    "category": "restaurant",
+    "lat": 65.5672585,
+    "lon": -17.037348,
+    "latitude": 65.5672585,
+    "longitude": -17.037348,
+    "country": "IS",
+    "description": {
+      "short": "Seljalandsfoss er 62 metra hár foss í Seljalandsá í Rangárþingi eystra. Fossinn er þekkt ljósmyndamótíf, en hann breyttist talsvert í flóði árið 1976 og kom þá skarð í bjargbrúnina þannig að fossinn b",
+      "history": "Seljalandsfoss er 62 metra hár foss í Seljalandsá í Rangárþingi eystra. Fossinn er þekkt ljósmyndamótíf, en hann breyttist talsvert í flóði árið 1976 og kom þá skarð í bjargbrúnina þannig að fossinn breiðir ekki eins mikið úr sér eins og áður.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/fb/Seljalandsfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-17%2C_DD_116.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Seljalandsfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-17%2C_DD_116.JPG/330px-Seljalandsfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-17%2C_DD_116.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Seljalandsfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-17%2C_DD_116.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Seljalandsfoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Seljalandsfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-17%2C_DD_116.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Seljalandsfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-17%2C_DD_116.JPG"
+    ]
+  },
+  "1e9049079a80": {
+    "id": "1e9049079a80",
+    "name": "Jökulsárlón",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 64.0529108,
+    "lon": -16.1780203,
+    "latitude": 64.0529108,
+    "longitude": -16.1780203,
+    "country": "IS",
+    "description": {
+      "short": "Jökulsárlón er stórt jökullón við rætur Breiðamerkurjökuls í suðurhluta Vatnajökulsþjóðgarðs. Lónið er friðlýst sem hluti af Vatnajökulsþjóðgarði m.a. með það að markmiði að \"vernda landslag, lífríki,",
+      "history": "Jökulsárlón er stórt jökullón við rætur Breiðamerkurjökuls í suðurhluta Vatnajökulsþjóðgarðs. Lónið er friðlýst sem hluti af Vatnajökulsþjóðgarði m.a. með það að markmiði að \"vernda landslag, lífríki, jarðmyndanir og menningarminjar svæðisins og gefa almenningi kost á að kynnast og njóta náttúru þess og sögu.\" Úr lóninu rennur Jökulsá á Breiðamerkursandi.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tourists_at_J%C3%B6kuls%C3%A1rl%C3%B3n.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Tourists_at_J%C3%B6kuls%C3%A1rl%C3%B3n.jpg/330px-Tourists_at_J%C3%B6kuls%C3%A1rl%C3%B3n.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tourists_at_J%C3%B6kuls%C3%A1rl%C3%B3n.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/J%C3%B6kuls%C3%A1rl%C3%B3n",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tourists_at_J%C3%B6kuls%C3%A1rl%C3%B3n.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b6/Tourists_at_J%C3%B6kuls%C3%A1rl%C3%B3n.jpg"
+    ]
+  },
+  "d9be7ab46a04": {
+    "id": "d9be7ab46a04",
+    "name": "Dettifoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 65.8170446,
+    "lon": -16.3839805,
+    "latitude": 65.8170446,
+    "longitude": -16.3839805,
+    "country": "IS",
+    "description": {
+      "short": "Dettifoss er aflmesti foss Íslands og næst vatnsmesti foss Evrópu. Dettifoss er 45 metra hár og rúmlega 100 metra breiður foss í Jökulsá á Fjöllum sem á upptök sín í Vatnajökli. Fossinn er hluti af Va",
+      "history": "Dettifoss er aflmesti foss Íslands og næst vatnsmesti foss Evrópu. Dettifoss er 45 metra hár og rúmlega 100 metra breiður foss í Jökulsá á Fjöllum sem á upptök sín í Vatnajökli. Fossinn er hluti af Vatnajökulsþjóðgarði og er skilgreindur sem Náttúruvætti af Umhverfisstofnun. Nálægt honum eru tveir miklir fossar, Hafragilsfoss neðan hans, en Selfoss ofar í ánni.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/03/Iceland_Dettifoss_1972.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Iceland_Dettifoss_1972.jpg/330px-Iceland_Dettifoss_1972.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Iceland_Dettifoss_1972.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Dettifoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Iceland_Dettifoss_1972.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/03/Iceland_Dettifoss_1972.jpg"
+    ]
+  },
+  "72b8a0b18a07": {
+    "id": "72b8a0b18a07",
+    "name": "Goðafoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 65.6977326,
+    "lon": -17.5036179,
+    "latitude": 65.6977326,
+    "longitude": -17.5036179,
+    "country": "IS",
+    "description": {
+      "short": "Goðafoss er foss í Skjálfandafljóti í Bárðardal. Hann er einn af vatnsmestu fossum landsins. Hann greinist í tvo meginfossa og nokkra smærri og fer það nokkuð eftir vatnsmagni árinnar hversu margir þe",
+      "history": "Goðafoss er foss í Skjálfandafljóti í Bárðardal. Hann er einn af vatnsmestu fossum landsins. Hann greinist í tvo meginfossa og nokkra smærri og fer það nokkuð eftir vatnsmagni árinnar hversu margir þeir eru. Hann er fjölbreytilegur ásýndum eftir vatnsmagni, veðurfari og árstíð og sumum finnst hann ekki síðri yfirlitum í klakaböndum að vetri en í glaðasól að sumri. Goðafoss er 9-17 m hár eftir því hvar mælt er og 30 m breiður. Bárðardalshraun þekur allan botn Bárðardals allt ofan frá Skafeyrum og niður fyrir Þingey. Gljúfrið neðan við Goðafoss er grafið í hraunið. Um það fellur fljótið straumhart og úfið. Skammt neðan við Goðafoss er lágur foss í gljúfrinu sem nefnist Geitafoss. Landið á vesturbakkanum heitir Hrútey. Hún afmarkast af Hrúteyjarkvísl, sem greinist frá fljótinu ofan við Goðafoss en sameinast því aftur alllangt neðan við foss. Fosshóll er á bakkanum austan árinnar. Þar er búskapur, verslun og veitingarekstur. Goðafoss er með frægustu fossum á Íslandi og þangað kemur fjöldi ferðafólks til að skoða og dást að náttúrufegurðinni sem þar getur að líta. Fossinn var friðlýstur sem nátturuvætti árið 2020 en árin á undan höfðu farið fram miklar endurbætur á svæðinu.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/fe/GothafossOverview.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/GothafossOverview.jpg/330px-GothafossOverview.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/GothafossOverview.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Go%C3%B0afoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/GothafossOverview.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/fe/GothafossOverview.jpg"
+    ]
+  },
+  "0bd85467d10a": {
+    "id": "0bd85467d10a",
+    "name": "Kirkja",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 65.5857079,
+    "lon": -16.9024666,
+    "latitude": 65.5857079,
+    "longitude": -16.9024666,
+    "country": "IS",
+    "description": {
+      "short": "Hallgrímskirkja er 74,5 metra há kirkja á Skólavörðuholti í Reykjavík. Hallgrímskirkja sést víða að og er þekkt kennileiti í Reykjavík. Hún er næsthæsta óstagaða mannvirki Íslands. Kirkjan var reist á",
+      "history": "Hallgrímskirkja er 74,5 metra há kirkja á Skólavörðuholti í Reykjavík. Hallgrímskirkja sést víða að og er þekkt kennileiti í Reykjavík. Hún er næsthæsta óstagaða mannvirki Íslands. Kirkjan var reist á árunum 1945–1986 og kennd við sr. Hallgrím Pétursson sálmaskáld. Arkítekt kirkjunnar var Guðjón Samúelsson.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/17/Hallgrimskirkja_8_%2824848207913%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Hallgrimskirkja_8_%2824848207913%29.jpg/330px-Hallgrimskirkja_8_%2824848207913%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Hallgrimskirkja_8_%2824848207913%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hallgr%C3%ADmskirkja",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Hallgrimskirkja_8_%2824848207913%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/17/Hallgrimskirkja_8_%2824848207913%29.jpg"
+    ]
+  },
+  "b084d94b7376": {
+    "id": "b084d94b7376",
+    "name": "Hallgrimsharpan",
+    "type": "other",
+    "category": "other",
+    "lat": 64.1467429,
+    "lon": -21.939594,
+    "latitude": 64.1467429,
+    "longitude": -21.939594,
+    "country": "IS",
+    "description": {
+      "short": "Harpa getur átt við:Harpa — mánuður í eldra tímatali\nHarpa — kvenmannsnafn\nHarpa — strengjahljóðfæri\nHarpa — Tónlistar- og ráðstefnuhús í Reykjavík.",
+      "history": "Harpa getur átt við:Harpa — mánuður í eldra tímatali\nHarpa — kvenmannsnafn\nHarpa — strengjahljóðfæri\nHarpa — Tónlistar- og ráðstefnuhús í Reykjavík.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Harpa",
+    "image": null,
+    "images": []
+  },
+  "4e390fbd5ccd": {
+    "id": "4e390fbd5ccd",
+    "name": "Landmannalaugar",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 63.9905112,
+    "lon": -19.0604906,
+    "latitude": 63.9905112,
+    "longitude": -19.0604906,
+    "country": "IS",
+    "description": {
+      "short": "Landmannalaugar er íslensk laug og vinsæll ferðamannastaður á Fjallabaksleið nyrðri austur af Heklu; í Friðlandi að fjallabaki. Vegur þangað er aðeins fær að sumarlagi. Mikill jarðhiti er í Landmannal",
+      "history": "Landmannalaugar er íslensk laug og vinsæll ferðamannastaður á Fjallabaksleið nyrðri austur af Heklu; í Friðlandi að fjallabaki. Vegur þangað er aðeins fær að sumarlagi. Mikill jarðhiti er í Landmannalaugum og vinsæl náttúruböð. Jarðhitinn tengist einu mesta háhitasvæði landsins, Torfajökulssvæðinu. Landmannalaugar eru rómaðar fyrir náttúrufegurð og litríkt berg, þar er mikið um líparít, líparíthraun og hrafntinnu. Vinsæl gönguleið Laugavegurinn liggur milli Landmannalauga og Þórsmerkur. Vanalegt er að ganga þá leið á fjórum dögum en stundum er bætt við ferð allt til Skóga yfir Fimmvörðuháls milli Eyjafjallajökuls og Mýrdalsjökuls. [heimild vantar]",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/7d/Landmannalaugar_%28Finn%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Landmannalaugar_%28Finn%29.jpg/330px-Landmannalaugar_%28Finn%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Landmannalaugar_%28Finn%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Landmannalaugar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Landmannalaugar_%28Finn%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/7d/Landmannalaugar_%28Finn%29.jpg"
+    ]
+  },
+  "7eaf8e88f471": {
+    "id": "7eaf8e88f471",
+    "name": "Mývatn",
+    "type": "info_center",
+    "category": "info_center",
+    "lat": 65.6598075,
+    "lon": -16.9742648,
+    "latitude": 65.6598075,
+    "longitude": -16.9742648,
+    "country": "IS",
+    "description": {
+      "short": "Mývatn er stöðuvatn í Suður-Þingeyjarsýslu, skammt frá Kröflu. Mývatn er fjórða stærsta stöðuvatn Íslands, um 37 ferkílómetrar að stærð. Vatnið er fremur grunnt, eða fimm metrar þar sem dýpst er. Í va",
+      "history": "Mývatn er stöðuvatn í Suður-Þingeyjarsýslu, skammt frá Kröflu. Mývatn er fjórða stærsta stöðuvatn Íslands, um 37 ferkílómetrar að stærð. Vatnið er fremur grunnt, eða fimm metrar þar sem dýpst er. Í vatninu eru um 40 litlar eyjar og þykja þær gefa vatninu ægifagurt yfirbragð. Innrennsli í vatnið er að mestu frá lindum sem eru víða við það austan- og sunnanvert. Úr Mývatni rennur Laxá.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/MyvatnPseudoCraters.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/MyvatnPseudoCraters.jpg/330px-MyvatnPseudoCraters.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/MyvatnPseudoCraters.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/M%C3%BDvatn",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/MyvatnPseudoCraters.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2a/MyvatnPseudoCraters.jpg"
+    ]
+  },
+  "4004e485198c": {
+    "id": "4004e485198c",
+    "name": "Ásbyrgi",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 66.0123752,
+    "lon": -16.5047111,
+    "latitude": 66.0123752,
+    "longitude": -16.5047111,
+    "country": "IS",
+    "description": {
+      "short": "Ásbyrgi er hamrakví í Vatnajökulsþjóðgarði, Jökulsárgljúfrum, Norðurþingi í Norður–Þingeyjarsýslu, og eitt af mestu náttúruundrum Íslands. Það er allt að 3,5 km á lengd inn í botn og um 1,1 km á breid",
+      "history": "Ásbyrgi er hamrakví í Vatnajökulsþjóðgarði, Jökulsárgljúfrum, Norðurþingi í Norður–Þingeyjarsýslu, og eitt af mestu náttúruundrum Íslands. Það er allt að 3,5 km á lengd inn í botn og um 1,1 km á breidd í mynni þess og helst svipuð breidd um þrjá km inn eftir því. Fyrstu tvo km er byrgið klofið af Eyjunni, miklu standbergi, sem er um 250 m á breidd og skiptir Ásbyrgi í tvennt. Hamraveggirnir eru um 90 – 100 m háir og eru lægstir fremst en hækka þegar innar dregur.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/74/Aerial_View_of_%C3%81sbyrgi_21.05.2008_15-39-42.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Aerial_View_of_%C3%81sbyrgi_21.05.2008_15-39-42.JPG/330px-Aerial_View_of_%C3%81sbyrgi_21.05.2008_15-39-42.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Aerial_View_of_%C3%81sbyrgi_21.05.2008_15-39-42.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/%C3%81sbyrgi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Aerial_View_of_%C3%81sbyrgi_21.05.2008_15-39-42.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/74/Aerial_View_of_%C3%81sbyrgi_21.05.2008_15-39-42.JPG"
+    ]
+  },
+  "12335f32cbee": {
+    "id": "12335f32cbee",
+    "name": "Snæfellsjökull",
+    "type": "volcano",
+    "category": "volcano",
+    "lat": 64.8069874,
+    "lon": -23.7918953,
+    "latitude": 64.8069874,
+    "longitude": -23.7918953,
+    "country": "IS",
+    "description": {
+      "short": "Snæfellsjökull er smár jökull vestast á Snæfellsnesi og sá eini á því. Undir Snæfellsjökli er virk eldstöð (eldkeila) sem hefur myndast við mörg gos, síðast fyrir um 1.750 árum. Rekja má gossögu hans ",
+      "history": "Snæfellsjökull er smár jökull vestast á Snæfellsnesi og sá eini á því. Undir Snæfellsjökli er virk eldstöð (eldkeila) sem hefur myndast við mörg gos, síðast fyrir um 1.750 árum. Rekja má gossögu hans 700 þúsund ár aftur í tímann og flest gosin í toppgígnum hafa ýmist verið sprengigos eða hraungos. Frá ísaldarlokum hefur gosið yfir 20 sinnum í og við jökulinn og voru þrjú gosanna mikill þeytigos, fyrir 8000 árum, 4000 árum og 1750 árum. Háahraun heitir lítil tota af síðast nefnda hrauninu og hylur mestalla suðurhlíð Snæfellsjökuls. Hægt er að sjá fjallið frá Reykjavík, Reykjanesi og stórum hluta Vesturlands á sólríkum dögum.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/64/Sn%C3%A6fellsj%C3%B6kull_in_the_Morning_%287622876302%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Sn%C3%A6fellsj%C3%B6kull_in_the_Morning_%287622876302%29.jpg/330px-Sn%C3%A6fellsj%C3%B6kull_in_the_Morning_%287622876302%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Sn%C3%A6fellsj%C3%B6kull_in_the_Morning_%287622876302%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Sn%C3%A6fellsj%C3%B6kull",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Sn%C3%A6fellsj%C3%B6kull_in_the_Morning_%287622876302%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Sn%C3%A6fellsj%C3%B6kull_in_the_Morning_%287622876302%29.jpg"
+    ]
+  },
+  "f8dcbef82e5c": {
+    "id": "f8dcbef82e5c",
+    "name": "Dynjandi",
+    "type": "info_center",
+    "category": "info_center",
+    "lat": 65.7364558,
+    "lon": -23.2087114,
+    "latitude": 65.7364558,
+    "longitude": -23.2087114,
+    "country": "IS",
+    "description": {
+      "short": "Dynjandi er 100 metra hár foss í Arnarfirði á Vestfjörðum Íslands. Fossinn kemur ofan af Dynjandisheiði og fyrir neðan hann er einnig eyðibýli sem heitir Dynjandi. Á bjargbrún er fossinn 30 metra brei",
+      "history": "Dynjandi er 100 metra hár foss í Arnarfirði á Vestfjörðum Íslands. Fossinn kemur ofan af Dynjandisheiði og fyrir neðan hann er einnig eyðibýli sem heitir Dynjandi. Á bjargbrún er fossinn 30 metra breiður en 60 metra breiður neðst. Fleiri fossar eru í fossaröðinni: Bæjarfoss, Hundafoss, Göngumannafoss, Strompglúfrafoss og Hæstahjallafoss. Fossinn var friðlýstur árið 1980.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG/330px-Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Dynjandi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG"
+    ]
+  },
+  "cbd2a8538c00": {
+    "id": "cbd2a8538c00",
+    "name": "Kirkjufell",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 64.9220918,
+    "lon": -23.2856038,
+    "latitude": 64.9220918,
+    "longitude": -23.2856038,
+    "country": "IS",
+    "description": {
+      "short": "Kirkjufell. er fjall í Eyrarsveit við vestanverðan Grundarfjörð á norðanverðu Snæfellsnesi, Íslandi. Kirkjufell var kallað Sukkertoppen af dönskum sæförum hér áður fyrr og er stundum lýst sem einu sér",
+      "history": "Kirkjufell. er fjall í Eyrarsveit við vestanverðan Grundarfjörð á norðanverðu Snæfellsnesi, Íslandi. Kirkjufell var kallað Sukkertoppen af dönskum sæförum hér áður fyrr og er stundum lýst sem einu sérkennilegasta ef ekki fegursta fjalli á Snæfellsnesi. Kirkjufell, sem talið er að hafi verið kallað Firðafjall áður en það fékk núverandi nafn, er gegnt fyrir sæmilega góða fjallgöngumenn, en nokkur dæmi eru um að menn hafi þar hrapað til bana í gegn um tíðina. Vestan við Kirkjufell er fjallið Stöðin og þar á milli Hálsvaðall og eru þessi tvö fjöll aðskilin frá meginfjallgarðinum. Fyrir ofan Kirkjufell er tröllslegt hamrafjall, Mýrarhyrna, og má á þessum slóðum sjá, frá sjónahóli jarðfræði, óvenjulega greinilegar minjar um rof jökla og straumvatna og mótun landslags undan jöklum frá síðustu ísöld og á síðustu milljón árum.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/3b/Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg/330px-Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Kirkjufell",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Kirkjufell%2C_Iceland_%28Unsplash_LoKG7kKx7Zc%29.jpg"
+    ]
+  },
+  "0303c0e14151": {
+    "id": "0303c0e14151",
+    "name": "Víti",
+    "type": "volcano",
+    "category": "volcano",
+    "lat": 65.7171018,
+    "lon": -16.7531032,
+    "latitude": 65.7171018,
+    "longitude": -16.7531032,
+    "country": "IS",
+    "description": {
+      "short": "Helvíti eða víti er í ýmsum trúarbrögðum staður þar sem sálir hinna fordæmdu dvelja og þar sem syndurum er refsað eftir dauðann. Nafnið er samsett úr orðunum hel og víti.",
+      "history": "Helvíti eða víti er í ýmsum trúarbrögðum staður þar sem sálir hinna fordæmdu dvelja og þar sem syndurum er refsað eftir dauðann. Nafnið er samsett úr orðunum hel og víti.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Hortus_Deliciarum_-_Hell.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hortus_Deliciarum_-_Hell.jpg/330px-Hortus_Deliciarum_-_Hell.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Hortus_Deliciarum_-_Hell.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Helv%C3%ADti",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Hortus_Deliciarum_-_Hell.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/0f/Hortus_Deliciarum_-_Hell.jpg"
+    ]
+  },
+  "eded6b422840": {
+    "id": "eded6b422840",
+    "name": "Askja",
+    "type": "volcano",
+    "category": "volcano",
+    "lat": 65.0304383,
+    "lon": -16.7468865,
+    "latitude": 65.0304383,
+    "longitude": -16.7468865,
+    "country": "IS",
+    "description": {
+      "short": "Sigketill eða (gos)askja er dæld á fjalli sem getur myndast við ýmsar aðstæður, oftast myndast þeir þegar eldfjallið fellur saman sökum holrúms sem myndast hefur undir því við tæmingu kvikuþróar þess,",
+      "history": "Sigketill eða (gos)askja er dæld á fjalli sem getur myndast við ýmsar aðstæður, oftast myndast þeir þegar eldfjallið fellur saman sökum holrúms sem myndast hefur undir því við tæmingu kvikuþróar þess, en þeir geta einnig myndast við sprengingar í eldfjallinu eða jafnvel við rof eins og í talið er að sigketillinn á Caldera de Taburiente á La Palma eyju í Kanaríeyjaklasanum hafi myndast. Í sigkötlum er oft að finna vatn.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/bb/Aniakchak-caldera_alaska.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Aniakchak-caldera_alaska.jpg/330px-Aniakchak-caldera_alaska.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Aniakchak-caldera_alaska.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Sigketill",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Aniakchak-caldera_alaska.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/bb/Aniakchak-caldera_alaska.jpg"
+    ]
+  },
+  "90266f9c9969": {
+    "id": "90266f9c9969",
+    "name": "Hverir",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 65.6411434,
+    "lon": -16.809182,
+    "latitude": 65.6411434,
+    "longitude": -16.809182,
+    "country": "IS",
+    "description": {
+      "short": "",
+      "history": "",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.5,
+    "wikipedia_url": null,
+    "image": null,
+    "images": []
+  },
+  "52ea7f14c118": {
+    "id": "52ea7f14c118",
+    "name": "Svartifoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 64.0273662,
+    "lon": -16.9750037,
+    "latitude": 64.0273662,
+    "longitude": -16.9750037,
+    "country": "IS",
+    "description": {
+      "short": "Svartifoss er foss í Skaftafelli í Vatnajökulsþjóðgarði. Svartifoss er einn af frægustu fossum landsins, sökum fagurrar umgerðar úr óvenju reglulegum, gildum basaltstuðlum. Stuðlarnir mynduðust fyrir ",
+      "history": "Svartifoss er foss í Skaftafelli í Vatnajökulsþjóðgarði. Svartifoss er einn af frægustu fossum landsins, sökum fagurrar umgerðar úr óvenju reglulegum, gildum basaltstuðlum. Stuðlarnir mynduðust fyrir um 300.000 árum, þegar hraun rann niður Skaftafellsheiði og fyllti gamlan árfarveg. Við hæga kólnun dróst bergið saman og klofnaði þá í stuðla sem standa lóðréttir á kólnunarflötinn.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/67/SvartifossSummer.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SvartifossSummer.jpg/330px-SvartifossSummer.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/6/67/SvartifossSummer.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Svartifoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/SvartifossSummer.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/67/SvartifossSummer.jpg"
+    ]
+  },
+  "199e0286b4ac": {
+    "id": "199e0286b4ac",
+    "name": "Aldeyjarfoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 65.3660611,
+    "lon": -17.3383632,
+    "latitude": 65.3660611,
+    "longitude": -17.3383632,
+    "country": "IS",
+    "description": {
+      "short": "Aldeyjarfoss er foss í Skjálfandafljóti í Bárðardal. Fossinn er umkringdur stuðlabergi en það er hluti af Bárðardalshrauni. Fossinn fellur fram af hrauninu þar sem það leggst upp að eldra bergi. Hvíti",
+      "history": "Aldeyjarfoss er foss í Skjálfandafljóti í Bárðardal. Fossinn er umkringdur stuðlabergi en það er hluti af Bárðardalshrauni. Fossinn fellur fram af hrauninu þar sem það leggst upp að eldra bergi. Hvíti litur jökulfljótsins þykir mynda skemmtilega andstæðu við dökkt stuðlabergið. Fallið er um 20 metrar.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Aldeyjarfoss_%284%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Aldeyjarfoss_%284%29.jpg/330px-Aldeyjarfoss_%284%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Aldeyjarfoss_%284%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Aldeyjarfoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Aldeyjarfoss_%284%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Aldeyjarfoss_%284%29.jpg"
+    ]
+  },
+  "4a23b6deaffd": {
+    "id": "4a23b6deaffd",
+    "name": "Hjálparfoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 64.1152742,
+    "lon": -19.8515236,
+    "latitude": 64.1152742,
+    "longitude": -19.8515236,
+    "country": "IS",
+    "description": {
+      "short": "Hjálparfoss er foss neðarlega í Fossá í Þjórsárdal. Fossinn er tvöfaldur og eru stuðlabergsmyndanir í kringum hann. Nafnið kom til þegar ferðir yfir Sprengisand voru tíðari og ferðalangar fundu gras h",
+      "history": "Hjálparfoss er foss neðarlega í Fossá í Þjórsárdal. Fossinn er tvöfaldur og eru stuðlabergsmyndanir í kringum hann. Nafnið kom til þegar ferðir yfir Sprengisand voru tíðari og ferðalangar fundu gras handa hrossum sínum og hægt var að brynna þeim á öðru en jökulvatni.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hjalparfoss.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hjalparfoss.JPG/330px-Hjalparfoss.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hjalparfoss.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hj%C3%A1lparfoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hjalparfoss.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Hjalparfoss.JPG"
+    ]
+  },
+  "cf2681700d42": {
+    "id": "cf2681700d42",
+    "name": "Gljúfrabúi",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 63.6207562,
+    "lon": -19.9863395,
+    "latitude": 63.6207562,
+    "longitude": -19.9863395,
+    "country": "IS",
+    "description": {
+      "short": "Gljúfrabúi eða Gljúfurárfoss er foss á Suðurlandi, um 600 metrum norður af Seljalandsfossi.",
+      "history": "Gljúfrabúi eða Gljúfurárfoss er foss á Suðurlandi, um 600 metrum norður af Seljalandsfossi.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/2e/Glj%C3%BAfrab%C3%BAi-pjt1.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Glj%C3%BAfrab%C3%BAi-pjt1.jpg/330px-Glj%C3%BAfrab%C3%BAi-pjt1.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Glj%C3%BAfrab%C3%BAi-pjt1.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Glj%C3%BAfrab%C3%BAi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Glj%C3%BAfrab%C3%BAi-pjt1.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2e/Glj%C3%BAfrab%C3%BAi-pjt1.jpg"
+    ]
+  },
+  "c0b81d8efb41": {
+    "id": "c0b81d8efb41",
+    "name": "Fagradalsfjall",
+    "type": "peak",
+    "category": "peak",
+    "lat": 64.44889,
+    "lon": -20.30814,
+    "latitude": 64.44889,
+    "longitude": -20.30814,
+    "country": "IS",
+    "description": {
+      "short": "\n\nFagradalsfjall er móbergsfjall á Reykjanesskaganum vestanverðum. Það er talið vera vestasti hluti Reykjanesfjallgarðsins, en vestan þess eru stök fell. Fagradalsfjall er aflangt frá austri til vestu",
+      "history": "\n\nFagradalsfjall er móbergsfjall á Reykjanesskaganum vestanverðum. Það er talið vera vestasti hluti Reykjanesfjallgarðsins, en vestan þess eru stök fell. Fagradalsfjall er aflangt frá austri til vesturs. Hæsti punkturinn er Langhóll; um 390 metrar á hæð. Það hefur orðið til á ísöld við gos undir jökli og er smáhraunlag á því ofanverðu, sem gefur til kynna að gosið hafi náð lítið eitt upp úr jöklinum. Fjallið flokkast því sem stapi.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b8/Fagradalsfjall_194309.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Fagradalsfjall_194309.jpg/330px-Fagradalsfjall_194309.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Fagradalsfjall_194309.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Fagradalsfjall",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Fagradalsfjall_194309.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b8/Fagradalsfjall_194309.jpg"
+    ]
+  },
+  "a87175a711c2": {
+    "id": "a87175a711c2",
+    "name": "Kerið",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 64.0417168,
+    "lon": -20.8831408,
+    "latitude": 64.0417168,
+    "longitude": -20.8831408,
+    "country": "IS",
+    "description": {
+      "short": "Kerið er gíghóll í Grímsnesi. Það er 270 m langt og um 170 m breitt. Gígurinn er 55 m djúpur og niðri í honum er tjörn. Dýpt tjarnarinnar fer eftir grunnvatnsstöðu, hún er 7 til 14 m djúp.",
+      "history": "Kerið er gíghóll í Grímsnesi. Það er 270 m langt og um 170 m breitt. Gígurinn er 55 m djúpur og niðri í honum er tjörn. Dýpt tjarnarinnar fer eftir grunnvatnsstöðu, hún er 7 til 14 m djúp.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/1a/Keri%C3%B0.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Keri%C3%B0.jpg/330px-Keri%C3%B0.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Keri%C3%B0.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Keri%C3%B0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Keri%C3%B0.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Keri%C3%B0.jpg"
+    ]
+  },
+  "aaf3e7f1c62b": {
+    "id": "aaf3e7f1c62b",
+    "name": "Strokkur",
+    "type": "hot_spring",
+    "category": "hot_spring",
+    "lat": 64.3126964,
+    "lon": -20.3007733,
+    "latitude": 64.3126964,
+    "longitude": -20.3007733,
+    "country": "IS",
+    "description": {
+      "short": "Strokkur getur átt við:Goshverinn Strokk í Haukadal.\nVerkfærið strokk til að strokka smjör.",
+      "history": "Strokkur getur átt við:Goshverinn Strokk í Haukadal.\nVerkfærið strokk til að strokka smjör.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Strokkur",
+    "image": null,
+    "images": []
+  },
+  "f411e1127008": {
+    "id": "f411e1127008",
+    "name": "Eyjafjallajökull",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 63.5430629,
+    "lon": -19.6677319,
+    "latitude": 63.5430629,
+    "longitude": -19.6677319,
+    "country": "IS",
+    "description": {
+      "short": "Eyjafjallajökull er sjötti stærsti jökull Íslands. Undir jöklinum er eldkeila sem hefur gosið fjórum sinnum síðan land byggðist, fyrst árið 920, þá 1612, 1821 og 2010. Öll þessi gos hafa verið frekar ",
+      "history": "Eyjafjallajökull er sjötti stærsti jökull Íslands. Undir jöklinum er eldkeila sem hefur gosið fjórum sinnum síðan land byggðist, fyrst árið 920, þá 1612, 1821 og 2010. Öll þessi gos hafa verið frekar lítil. Þegar gaus árið 1821 stóð gosið til ársins 1823. Gos hófst svo á Fimmvörðuhálsi þann 20. mars 2010 austan við Eyjafjallajökul. Þann 14. apríl sama ár hófst gos undir jökulhettunni.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/2a/VestmannaeyjarEyjafjallajoekull.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/VestmannaeyjarEyjafjallajoekull.jpg/330px-VestmannaeyjarEyjafjallajoekull.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/VestmannaeyjarEyjafjallajoekull.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Eyjafjallaj%C3%B6kull",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/VestmannaeyjarEyjafjallajoekull.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2a/VestmannaeyjarEyjafjallajoekull.jpg"
+    ]
+  },
+  "4067d8b3bbf4": {
+    "id": "4067d8b3bbf4",
+    "name": "Vatnajökull",
+    "type": "info_center",
+    "category": "info_center",
+    "lat": 64.2241405,
+    "lon": -15.6931173,
+    "latitude": 64.2241405,
+    "longitude": -15.6931173,
+    "country": "IS",
+    "description": {
+      "short": "Vatnajökull er þíðjökull staðsettur á suðausturhluta Íslands innan Vatnajökulsþjóðgarðs. Hann er stærsti jökull landsins bæði að flatarmáli og rúmmáli og þriðji stærsti jökull Evrópu að flatarmáli. Hæ",
+      "history": "Vatnajökull er þíðjökull staðsettur á suðausturhluta Íslands innan Vatnajökulsþjóðgarðs. Hann er stærsti jökull landsins bæði að flatarmáli og rúmmáli og þriðji stærsti jökull Evrópu að flatarmáli. Hæð jökulsins er yfirleitt 1,4–1,8 kílómetrar yfir sjávarmáli.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vatnaj%C3%B6kull.jpeg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Vatnaj%C3%B6kull.jpeg/330px-Vatnaj%C3%B6kull.jpeg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vatnaj%C3%B6kull.jpeg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Vatnaj%C3%B6kull",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vatnaj%C3%B6kull.jpeg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vatnaj%C3%B6kull.jpeg"
+    ]
+  },
+  "2c876a9e4bd4": {
+    "id": "2c876a9e4bd4",
+    "name": "Langjökull - norðurbunga",
+    "type": "peak",
+    "category": "peak",
+    "lat": 64.835553,
+    "lon": -19.9161645,
+    "latitude": 64.835553,
+    "longitude": -19.9161645,
+    "country": "IS",
+    "description": {
+      "short": "Langjökull er annar stærsti jökull Íslands, um 950 km² að stærð og hæsti punktur hans í 1.355 m hæð. Jökullinn er vestan við Hofsjökul á miðhálendi Íslands. Er hann talinn þekja tvær eldstöðvar. Hallm",
+      "history": "Langjökull er annar stærsti jökull Íslands, um 950 km² að stærð og hæsti punktur hans í 1.355 m hæð. Jökullinn er vestan við Hofsjökul á miðhálendi Íslands. Er hann talinn þekja tvær eldstöðvar. Hallmundarhraun rann um árið 900 frá eldvörpum við norðvesturbrún Langjökuls og alla leið til byggða í Hvítársíðu eða um 50 kílómetra leið.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c6/Okjokull_tm5_1986257_lrg.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Okjokull_tm5_1986257_lrg.jpg/330px-Okjokull_tm5_1986257_lrg.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Okjokull_tm5_1986257_lrg.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Langj%C3%B6kull",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Okjokull_tm5_1986257_lrg.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Okjokull_tm5_1986257_lrg.jpg"
+    ]
+  },
+  "27982800a319": {
+    "id": "27982800a319",
+    "name": "Hofsjökull",
+    "type": "peak",
+    "category": "peak",
+    "lat": 64.8082544,
+    "lon": -18.8657335,
+    "latitude": 64.8082544,
+    "longitude": -18.8657335,
+    "country": "IS",
+    "description": {
+      "short": "Hofsjökull er þíðjökull á miðhálendi Íslands sem liggur á milli Langjökuls til vesturs og Vatnajökuls til austurs, hann er 830 km² að flatarmáli og 1.765 m hár þar sem hann er hæstur. Hann er þriðji s",
+      "history": "Hofsjökull er þíðjökull á miðhálendi Íslands sem liggur á milli Langjökuls til vesturs og Vatnajökuls til austurs, hann er 830 km² að flatarmáli og 1.765 m hár þar sem hann er hæstur. Hann er þriðji stærsti jökull landsins á eftir Langjökli og Vatnajökli. Hann var áður kenndur við Arnarfell hið mikla og hét þá Arnarfellsjökull en nafni hans var síðan breytt og er hann nú kenndur við Hof í Vesturdal í Skagafirði.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hofsj%C3%B6kull.jpeg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Hofsj%C3%B6kull.jpeg/330px-Hofsj%C3%B6kull.jpeg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hofsj%C3%B6kull.jpeg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hofsj%C3%B6kull",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hofsj%C3%B6kull.jpeg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Hofsj%C3%B6kull.jpeg"
+    ]
+  },
+  "a4dd43308c95": {
+    "id": "a4dd43308c95",
+    "name": "Hekla",
+    "type": "volcano",
+    "category": "volcano",
+    "lat": 63.9927006,
+    "lon": -19.6658171,
+    "latitude": 63.9927006,
+    "longitude": -19.6658171,
+    "country": "IS",
+    "description": {
+      "short": "Hekla er 1.491 m hár eldhryggur og er eitt virkasta og þekktasta eldfjall á Íslandi og gjarnan kölluð Drottning íslenskra eldfjalla.",
+      "history": "Hekla er 1.491 m hár eldhryggur og er eitt virkasta og þekktasta eldfjall á Íslandi og gjarnan kölluð Drottning íslenskra eldfjalla.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e6/2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg/330px-2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hekla",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e6/2006-05-21-153901_Iceland_St%C3%B3rin%C3%BApur.jpg"
+    ]
+  },
+  "95dd6a4a4d89": {
+    "id": "95dd6a4a4d89",
+    "name": "Katla",
+    "type": "restaurant",
+    "category": "restaurant",
+    "lat": 63.7530658,
+    "lon": -20.2358129,
+    "latitude": 63.7530658,
+    "longitude": -20.2358129,
+    "country": "IS",
+    "description": {
+      "short": "Katla er eldstöð staðsett undir Mýrdalsjökli á Íslandi. Katla er stór megineldstöð, ein af stærstu og virkustu megineldstöðvum landsins. Kötlueldstöðin er um 30 km í þvermál og rís hæst yfir 1400 m hæ",
+      "history": "Katla er eldstöð staðsett undir Mýrdalsjökli á Íslandi. Katla er stór megineldstöð, ein af stærstu og virkustu megineldstöðvum landsins. Kötlueldstöðin er um 30 km í þvermál og rís hæst yfir 1400 m hæð yfir sjó. Í miðju eldstöðvarinnar er Kötluaskjan, um 100 ferkílómetrar að stærð og allt að 700 metra djúp. Í henni er víðast 400-700 m þykkur ís. Askjan skiptist í þrjú vatnasvæði: vatnasvæði Kötlujökuls, Sólheimajökuls og Entujökuls.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b2/Katla_1918.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Katla_1918.jpg/330px-Katla_1918.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Katla_1918.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Katla",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Katla_1918.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Katla_1918.jpg"
+    ]
+  },
+  "75a231a9354d": {
+    "id": "75a231a9354d",
+    "name": "Herðubreið",
+    "type": "peak",
+    "category": "peak",
+    "lat": 65.1749197,
+    "lon": -16.3462004,
+    "latitude": 65.1749197,
+    "longitude": -16.3462004,
+    "country": "IS",
+    "description": {
+      "short": "Herðubreið er 1686 metra hátt móbergsfjall norðan Vatnajökuls innan Vatnajökulsþjóðgarðs. Hún er í Ódáðahrauni og er oft nefnd „Drottning íslenskra fjalla“ vegna þess hve mörgum finnst hún formfögur. ",
+      "history": "Herðubreið er 1686 metra hátt móbergsfjall norðan Vatnajökuls innan Vatnajökulsþjóðgarðs. Hún er í Ódáðahrauni og er oft nefnd „Drottning íslenskra fjalla“ vegna þess hve mörgum finnst hún formfögur. Fjallið myndaðist við eldgos undir jökli. Á toppi þess eru hraunlög og hefur gosið því náð upp úr jöklinum. Slík fjöll, þ.e.a.s. móbergsfjöll með hraunlögum að ofan, kallast stapar. Herðubreið var valin þjóðarfjall Íslendinga í kosningu árið 2002.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a3/Her%C3%B0ubrei%C3%B0-Iceland-2.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Her%C3%B0ubrei%C3%B0-Iceland-2.jpg/330px-Her%C3%B0ubrei%C3%B0-Iceland-2.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Her%C3%B0ubrei%C3%B0-Iceland-2.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Her%C3%B0ubrei%C3%B0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Her%C3%B0ubrei%C3%B0-Iceland-2.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a3/Her%C3%B0ubrei%C3%B0-Iceland-2.jpg"
+    ]
+  },
+  "403dc4af8444": {
+    "id": "403dc4af8444",
+    "name": "Hnjúkur",
+    "type": "peak",
+    "category": "peak",
+    "lat": 65.3377842,
+    "lon": -19.5722184,
+    "latitude": 65.3377842,
+    "longitude": -19.5722184,
+    "country": "IS",
+    "description": {
+      "short": "Hvannadalshnjúkur eða Hvannadalshnúkur er hæsti tindur eldkeilunnar undir Öræfajökli og jafnframt hæsti tindur Íslands. Samkvæmt mælingum frá 2005 er hæð hans 2.109,6 metrar yfir sjávarmáli. Tindurinn",
+      "history": "Hvannadalshnjúkur eða Hvannadalshnúkur er hæsti tindur eldkeilunnar undir Öræfajökli og jafnframt hæsti tindur Íslands. Samkvæmt mælingum frá 2005 er hæð hans 2.109,6 metrar yfir sjávarmáli. Tindurinn er staðsettur innan Vatnajökulsþjóðgarðs og er vinsæll hjá fjallgöngufólki, reyndu sem og óreyndu. Tindurinn er ekki flókinn uppgöngu og þarfnast ekki mikillar reynslu eða tækni í fjallgöngum, gangan krefst samt mikils úthalds þar sem oftast er gengið á tindinn og niður aftur á sama deginum. Hækkunin er rúmir 2000 metrar, gangan tekur oftast 12-14 klst í heild.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/c/c5/Oraefajokull-Vatnajokull_National_Park.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Oraefajokull-Vatnajokull_National_Park.JPG/330px-Oraefajokull-Vatnajokull_National_Park.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Oraefajokull-Vatnajokull_National_Park.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hvannadalshnj%C3%BAkur",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Oraefajokull-Vatnajokull_National_Park.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/Oraefajokull-Vatnajokull_National_Park.JPG"
+    ]
+  },
+  "7fad58672a5c": {
+    "id": "7fad58672a5c",
+    "name": "Esja",
+    "type": "peak",
+    "category": "peak",
+    "lat": 64.2450095,
+    "lon": -21.6568563,
+    "latitude": 64.2450095,
+    "longitude": -21.6568563,
+    "country": "IS",
+    "description": {
+      "short": "Esja er fjall á Kjalarnesi, sem nú er innan borgarmarka Reykjavíkur, og er eitt af einkennum höfuðborgarsvæðisins. Hæsti tindur Esju er 914 metrar. Nokkrar gönguleiðir eru upp á fjallið og þar eru vin",
+      "history": "Esja er fjall á Kjalarnesi, sem nú er innan borgarmarka Reykjavíkur, og er eitt af einkennum höfuðborgarsvæðisins. Hæsti tindur Esju er 914 metrar. Nokkrar gönguleiðir eru upp á fjallið og þar eru vinsæl útivistarsvæði, til að mynda við skógræktina við Mógilsá. Vinsælt er að ganga upp að Steini í 597 metrum og þaðan upp á Þverfellshorn í um 780 metrum.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/7/70/Esja_%282571116699%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Esja_%282571116699%29.jpg/330px-Esja_%282571116699%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Esja_%282571116699%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Esja",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Esja_%282571116699%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/70/Esja_%282571116699%29.jpg"
+    ]
+  },
+  "2e01a37e2b11": {
+    "id": "2e01a37e2b11",
+    "name": "Krafla",
+    "type": "peak",
+    "category": "peak",
+    "lat": 65.7142293,
+    "lon": -16.7303151,
+    "latitude": 65.7142293,
+    "longitude": -16.7303151,
+    "country": "IS",
+    "description": {
+      "short": "Krafla er megineldstöð nálægt Mývatni. Hæsti tindur er 818 m. Í henni er sigketill eða askja sem er 10 km í þvermál. Á Kröflusvæðinu er háhitasvæði með leirhverum og gufuhverum, til dæmis við Námafjal",
+      "history": "Krafla er megineldstöð nálægt Mývatni. Hæsti tindur er 818 m. Í henni er sigketill eða askja sem er 10 km í þvermál. Á Kröflusvæðinu er háhitasvæði með leirhverum og gufuhverum, til dæmis við Námafjall. Þar eru um 100 km langar sprungur sem gliðna í eldsumbrotum. Eldgos verða oft á slíkum svæðum.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a4/Colada_krafla.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Colada_krafla.jpg/330px-Colada_krafla.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Colada_krafla.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Krafla",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Colada_krafla.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Colada_krafla.jpg"
+    ]
+  },
+  "b1627495b408": {
+    "id": "b1627495b408",
+    "name": "Námafjall",
+    "type": "peak",
+    "category": "peak",
+    "lat": 65.6401475,
+    "lon": -16.821119,
+    "latitude": 65.6401475,
+    "longitude": -16.821119,
+    "country": "IS",
+    "description": {
+      "short": "Námafjall og umhverfi er háhitasvæði sem liggur um sprungurein sem nær norðan úr Öxarfirði gegnum eldstöðina Kröflu og suður fyrir Hverfell. Jarðhitanum er viðhaldið af kvikuinnskotum frá eldstöðinni.",
+      "history": "Námafjall og umhverfi er háhitasvæði sem liggur um sprungurein sem nær norðan úr Öxarfirði gegnum eldstöðina Kröflu og suður fyrir Hverfell. Jarðhitanum er viðhaldið af kvikuinnskotum frá eldstöðinni.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/6c/N%C3%A1mafjall_Mountain%2C_Iceland%2C_20240716_1148_1382.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/N%C3%A1mafjall_Mountain%2C_Iceland%2C_20240716_1148_1382.jpg/330px-N%C3%A1mafjall_Mountain%2C_Iceland%2C_20240716_1148_1382.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/N%C3%A1mafjall_Mountain%2C_Iceland%2C_20240716_1148_1382.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/N%C3%A1mafjall",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/N%C3%A1mafjall_Mountain%2C_Iceland%2C_20240716_1148_1382.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/N%C3%A1mafjall_Mountain%2C_Iceland%2C_20240716_1148_1382.jpg"
+    ]
+  },
+  "7b2c1c178c35": {
+    "id": "7b2c1c178c35",
+    "name": "Hverfjall",
+    "type": "peak",
+    "category": "peak",
+    "lat": 65.6050606,
+    "lon": -16.873954,
+    "latitude": 65.6050606,
+    "longitude": -16.873954,
+    "country": "IS",
+    "description": {
+      "short": "Hverfjall er fjall austan við Mývatn og vestan við Búrfellshraun í Skútustaðahreppi. Hverfjall er eldgígur sem talinn er hafa myndast í öflugu en stuttu þeytigosi fyrir um 2500 árum.",
+      "history": "Hverfjall er fjall austan við Mývatn og vestan við Búrfellshraun í Skútustaðahreppi. Hverfjall er eldgígur sem talinn er hafa myndast í öflugu en stuttu þeytigosi fyrir um 2500 árum.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/3d/Hverfell%2C_Northern_Iceland.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Hverfell%2C_Northern_Iceland.jpg/330px-Hverfell%2C_Northern_Iceland.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Hverfell%2C_Northern_Iceland.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hverfjall",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Hverfell%2C_Northern_Iceland.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Hverfell%2C_Northern_Iceland.jpg"
+    ]
+  },
+  "2f304b942cb4": {
+    "id": "2f304b942cb4",
+    "name": "Grjótagjá",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 65.6264141,
+    "lon": -16.8829708,
+    "latitude": 65.6264141,
+    "longitude": -16.8829708,
+    "country": "IS",
+    "description": {
+      "short": "Grjótagjá er lítill hellir við Mývatn, en inni í hellinum er lághitavatn. Grjótagjá var vinsæll baðstaður á áttunda áratuginum þar til vatnið hitnaði það mikið að ekki var hægt að baða sig þar. Grótag",
+      "history": "Grjótagjá er lítill hellir við Mývatn, en inni í hellinum er lághitavatn. Grjótagjá var vinsæll baðstaður á áttunda áratuginum þar til vatnið hitnaði það mikið að ekki var hægt að baða sig þar. Grótagjá opnaði þó aftur árið 2004 þegar hitastig vatnsins lækkaði aftur.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/1/15/Grj%C3%B3tagj%C3%A1_caves_in_summer_2009_%282%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Grj%C3%B3tagj%C3%A1_caves_in_summer_2009_%282%29.jpg/330px-Grj%C3%B3tagj%C3%A1_caves_in_summer_2009_%282%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Grj%C3%B3tagj%C3%A1_caves_in_summer_2009_%282%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Grj%C3%B3tagj%C3%A1",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Grj%C3%B3tagj%C3%A1_caves_in_summer_2009_%282%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/Grj%C3%B3tagj%C3%A1_caves_in_summer_2009_%282%29.jpg"
+    ]
+  },
+  "10d37fef4071": {
+    "id": "10d37fef4071",
+    "name": "Stóragjá",
+    "type": "cave",
+    "category": "cave",
+    "lat": 65.6382534,
+    "lon": -16.910064,
+    "latitude": 65.6382534,
+    "longitude": -16.910064,
+    "country": "IS",
+    "description": {
+      "short": "Stóragjá er neðanjarðarlaug í hrauninu við Mývatn, ekki langt frá gatnamótunum við Reykjahlíð og var í eina tíð vinsæll baðstaður. Í raun er Stóragjá tvær neðanjarðarlaugar sem liggja samhliða, önnur ",
+      "history": "Stóragjá er neðanjarðarlaug í hrauninu við Mývatn, ekki langt frá gatnamótunum við Reykjahlíð og var í eina tíð vinsæll baðstaður. Í raun er Stóragjá tvær neðanjarðarlaugar sem liggja samhliða, önnur ætlað karlmönnum, hin konum. Núorðið er ekki talið ráðlegt að baða sig í lauginni vegna saurgerla sem fundist hafa í henni. Hitastig vatnsins er um 29 °C.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/St%C3%B3ragj%C3%A1",
+    "image": null,
+    "images": []
+  },
+  "24a02681a7cd": {
+    "id": "24a02681a7cd",
+    "name": "Borgir",
+    "type": "peak",
+    "category": "peak",
+    "lat": 65.6837513,
+    "lon": -18.1233197,
+    "latitude": 65.6837513,
+    "longitude": -18.1233197,
+    "country": "IS",
+    "description": {
+      "short": "Dimmuborgir eru einstæðar hraunmyndanir við austanvert Mývatn. Mikill fjöldi ferðamanna heimsækir Dimmuborgir á ári hverju.",
+      "history": "Dimmuborgir eru einstæðar hraunmyndanir við austanvert Mývatn. Mikill fjöldi ferðamanna heimsækir Dimmuborgir á ári hverju.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dimmuborgir-st%C3%ADgur.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Dimmuborgir-st%C3%ADgur.jpg/330px-Dimmuborgir-st%C3%ADgur.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dimmuborgir-st%C3%ADgur.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Dimmuborgir",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dimmuborgir-st%C3%ADgur.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dimmuborgir-st%C3%ADgur.jpg"
+    ]
+  },
+  "2e8372bf58f6": {
+    "id": "2e8372bf58f6",
+    "name": "Hljóðaklettar",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 65.9444111,
+    "lon": -16.5330247,
+    "latitude": 65.9444111,
+    "longitude": -16.5330247,
+    "country": "IS",
+    "description": {
+      "short": "Hljóðaklettar er safn stuðlabergskletta í Jökulsárgljúfrum sem tilheyra Vatnajökulsþjóðgarði. Meðal þeirra eru Karl og kerling, Tröllið og Kirkjan. Skammt frá er Dettifoss.",
+      "history": "Hljóðaklettar er safn stuðlabergskletta í Jökulsárgljúfrum sem tilheyra Vatnajökulsþjóðgarði. Meðal þeirra eru Karl og kerling, Tröllið og Kirkjan. Skammt frá er Dettifoss.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hlj%C3%B3daklettar_in_summer_2009_%281%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Hlj%C3%B3daklettar_in_summer_2009_%281%29.jpg/330px-Hlj%C3%B3daklettar_in_summer_2009_%281%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hlj%C3%B3daklettar_in_summer_2009_%281%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hlj%C3%B3%C3%B0aklettar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hlj%C3%B3daklettar_in_summer_2009_%281%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f6/Hlj%C3%B3daklettar_in_summer_2009_%281%29.jpg"
+    ]
+  },
+  "0045c15b2322": {
+    "id": "0045c15b2322",
+    "name": "Hengifoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 65.091364,
+    "lon": -14.887536,
+    "latitude": 65.091364,
+    "longitude": -14.887536,
+    "country": "IS",
+    "description": {
+      "short": "Hengifoss er staðsettur í Hengifossárgljúfri sem staðsett er í norðanverðum Fljótsdal, rétt innan við botn Lagarfljóts. Gljúfrið nær frá heiðarbrún og niður að dalbotni og eiga tveir sveitabæir land a",
+      "history": "Hengifoss er staðsettur í Hengifossárgljúfri sem staðsett er í norðanverðum Fljótsdal, rétt innan við botn Lagarfljóts. Gljúfrið nær frá heiðarbrún og niður að dalbotni og eiga tveir sveitabæir land að því, Melar og Hjarðaból. Melar eru í einkaeigu en Hjarðarból er í eigu ríkisins",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hengifoss_2009_close_gg.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hengifoss_2009_close_gg.jpg/330px-Hengifoss_2009_close_gg.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hengifoss_2009_close_gg.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Hengifoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hengifoss_2009_close_gg.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hengifoss_2009_close_gg.jpg"
+    ]
+  },
+  "db424addaa21": {
+    "id": "db424addaa21",
+    "name": "Litlanesfoss",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 65.082055,
+    "lon": -14.8833535,
+    "latitude": 65.082055,
+    "longitude": -14.8833535,
+    "country": "IS",
+    "description": {
+      "short": "Litlanesfoss er foss í Hengifossá í Fljótsdal, einnig þekktur sem Stuðlabergsfoss. Fossinn er um 30 metra hár og myndar svuntu í klettaþröng. Fossinn er í mikilli klettakór með óvenju reglulegu stuðla",
+      "history": "Litlanesfoss er foss í Hengifossá í Fljótsdal, einnig þekktur sem Stuðlabergsfoss. Fossinn er um 30 metra hár og myndar svuntu í klettaþröng. Fossinn er í mikilli klettakór með óvenju reglulegu stuðlabergi úr háum og beinum súlum.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/68/Litlanesfoss_Waterfall%2C_Iceland_%2843557200181%29.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Litlanesfoss_Waterfall%2C_Iceland_%2843557200181%29.jpg/330px-Litlanesfoss_Waterfall%2C_Iceland_%2843557200181%29.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Litlanesfoss_Waterfall%2C_Iceland_%2843557200181%29.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Litlanesfoss",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Litlanesfoss_Waterfall%2C_Iceland_%2843557200181%29.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/68/Litlanesfoss_Waterfall%2C_Iceland_%2843557200181%29.jpg"
+    ]
+  },
+  "c1b8703ba8e1": {
+    "id": "c1b8703ba8e1",
+    "name": "Fjaðrárgljúfur",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 63.7725995,
+    "lon": -18.1737214,
+    "latitude": 63.7725995,
+    "longitude": -18.1737214,
+    "country": "IS",
+    "description": {
+      "short": "Fjaðrárgljúfur er um 2 km gljúfur sem áin Fjaðrá myndaði undir síðasta jökulskeið fyrir um 9000 árum. Það er um 8km vestur af Kirkjubæjarklaustri og er mest um 100 metra hátt og er að miklu leyti móbe",
+      "history": "Fjaðrárgljúfur er um 2 km gljúfur sem áin Fjaðrá myndaði undir síðasta jökulskeið fyrir um 9000 árum. Það er um 8km vestur af Kirkjubæjarklaustri og er mest um 100 metra hátt og er að miklu leyti móberg.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Fjathrarglijufur.png"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Fjathrarglijufur.png/330px-Fjathrarglijufur.png",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Fjathrarglijufur.png"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Fja%C3%B0r%C3%A1rglj%C3%BAfur",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Fjathrarglijufur.png",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/66/Fjathrarglijufur.png"
+    ]
+  },
+  "54b4ecab3b51": {
+    "id": "54b4ecab3b51",
+    "name": "Látrabjarg",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 65.5021325,
+    "lon": -24.530792,
+    "latitude": 65.5021325,
+    "longitude": -24.530792,
+    "country": "IS",
+    "description": {
+      "short": "Látrabjarg er fuglabjarg á Vestfjörðum. Það er stærsta sjávarbjarg Íslands, 14 km að lengd og 441 metri þar sem það er hæst. Látrabjargi er í daglegu tali skipt í fjóra hluta, sem heita Keflavíkurbjar",
+      "history": "Látrabjarg er fuglabjarg á Vestfjörðum. Það er stærsta sjávarbjarg Íslands, 14 km að lengd og 441 metri þar sem það er hæst. Látrabjargi er í daglegu tali skipt í fjóra hluta, sem heita Keflavíkurbjarg, Látrabjarg, Bæjarbjarg og Breiðavíkurbjarg. Látrabjarg hefur verið nytjað frá landnámstíð. Það er vestasti oddi Íslands. Nafnið kemur af orðinu látur. Bjargið var friðað árið 2021.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/ff/L%C3%A1trabjarg_929.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/L%C3%A1trabjarg_929.jpg/330px-L%C3%A1trabjarg_929.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/L%C3%A1trabjarg_929.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/L%C3%A1trabjarg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/L%C3%A1trabjarg_929.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/ff/L%C3%A1trabjarg_929.jpg"
+    ]
+  },
+  "0735dbecbb76": {
+    "id": "0735dbecbb76",
+    "name": "Dyrhólaey",
+    "type": "landmark",
+    "category": "landmark",
+    "lat": 63.3988334,
+    "lon": -19.1266314,
+    "latitude": 63.3988334,
+    "longitude": -19.1266314,
+    "country": "IS",
+    "description": {
+      "short": "Dyrhólaey er móbergsstapi í Mýrdal á suðurströnd Íslands. Hún dregur nafn sitt af því að gat hefur myndast á þessum um það bil 120 metra háa skaga sem sjórinn flæðir í gegnum. Klettatanginn sem skagar",
+      "history": "Dyrhólaey er móbergsstapi í Mýrdal á suðurströnd Íslands. Hún dregur nafn sitt af því að gat hefur myndast á þessum um það bil 120 metra háa skaga sem sjórinn flæðir í gegnum. Klettatanginn sem skagar fram úr eynni og gatið er í gegnum nefnist Tóin. Dyrhólaey er einnig nefnd Portland af sjómönnum. Hún var lengi syðsti oddi meginlands Íslands en eftir Kötlugosið 1918 hefur Kötlutangi verið syðsti oddi landsins. Í eynni er mikil lundabyggð. Dyrhólaey var friðlýst árið 1978.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/9/9a/Dyrholaey_from_afar.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dyrholaey_from_afar.JPG/330px-Dyrholaey_from_afar.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Dyrholaey_from_afar.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Dyrh%C3%B3laey",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Dyrholaey_from_afar.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Dyrholaey_from_afar.JPG"
+    ]
+  },
+  "003355e3c6e2": {
+    "id": "003355e3c6e2",
+    "name": "Svarta ströndin í Vík í Mýrdal",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 63.4142817,
+    "lon": -19.0103136,
+    "latitude": 63.4142817,
+    "longitude": -19.0103136,
+    "country": "IS",
+    "description": {
+      "short": "Vík er þorp í Mýrdalshreppi í Vestur-Skaftafellssýslu og er syðsti þéttbýlisstaður á Íslandi. Róið var til fiskjar úr fjörunni fyrr á árum en sjósókn var mjög erfið þar sem engin hafnaraðstaða var og ",
+      "history": "Vík er þorp í Mýrdalshreppi í Vestur-Skaftafellssýslu og er syðsti þéttbýlisstaður á Íslandi. Róið var til fiskjar úr fjörunni fyrr á árum en sjósókn var mjög erfið þar sem engin hafnaraðstaða var og mjög brimasamt. Íbúafjöldi 1. janúar 2024 var 639 en 881 manns búa í Mýrdalshreppi.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/6f/Iceland-Vik-Oct2009.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Iceland-Vik-Oct2009.jpg/330px-Iceland-Vik-Oct2009.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Iceland-Vik-Oct2009.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/V%C3%ADk_%C3%AD_M%C3%BDrdal",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Iceland-Vik-Oct2009.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/6f/Iceland-Vik-Oct2009.jpg"
+    ]
+  },
+  "1c0ba2b1690d": {
+    "id": "1c0ba2b1690d",
+    "name": "Höfn",
+    "type": "info_center",
+    "category": "info_center",
+    "lat": 64.2898766,
+    "lon": -15.182209,
+    "latitude": 64.2898766,
+    "longitude": -15.182209,
+    "country": "IS",
+    "description": {
+      "short": "Höfn er staður þar sem skip og bátar geta leitað vars fyrir veðri og vindum eða er lagt til geymslu. Höfn getur verið náttúruleg höfn: náttúrulegt var við höfða, víkur, eyjar eða granda; eða mannvirki",
+      "history": "Höfn er staður þar sem skip og bátar geta leitað vars fyrir veðri og vindum eða er lagt til geymslu. Höfn getur verið náttúruleg höfn: náttúrulegt var við höfða, víkur, eyjar eða granda; eða mannvirki með öldubrjótum, sjóvarnargörðum og hafnargörðum eða blanda af þessu tvennu. Manngerðar hafnir þarfnast oft reglulegrar dýpkunar þar sem þær eru reistar upp við land þar sem dýpi er lítið. Manngerðar hafnir eru oftast með bryggjukanta, bryggjur, kvíar og aðra aðstöðu til að skip geti lagst að landi, hægt sé að sjósetja þau og taka á land, ferma og afferma o.s.frv.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/be/Capri_harbour_from_Anacapri_2013.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Capri_harbour_from_Anacapri_2013.jpg/330px-Capri_harbour_from_Anacapri_2013.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Capri_harbour_from_Anacapri_2013.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/H%C3%B6fn",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Capri_harbour_from_Anacapri_2013.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/be/Capri_harbour_from_Anacapri_2013.jpg"
+    ]
+  },
+  "5814dac4db5e": {
+    "id": "5814dac4db5e",
+    "name": "Minjasafnið á Akureyri",
+    "type": "museum",
+    "category": "museum",
+    "lat": 65.6664658,
+    "lon": -18.0862544,
+    "latitude": 65.6664658,
+    "longitude": -18.0862544,
+    "country": "IS",
+    "description": {
+      "short": "Akureyri er bær í Eyjafirði á Mið-Norðurlandi. Í sveitarfélaginu búa 19.812. Akureyrarbær er fimmta fjölmennasta sveitarfélag Íslands og er annað fjölmennasta utan höfuðborgarsvæðisins á eftir Reykjan",
+      "history": "Akureyri er bær í Eyjafirði á Mið-Norðurlandi. Í sveitarfélaginu búa 19.812. Akureyrarbær er fimmta fjölmennasta sveitarfélag Íslands og er annað fjölmennasta utan höfuðborgarsvæðisins á eftir Reykjanesbæ. Fyrir utan hið eiginlega bæjarland Akureyrar í botni Eyjafjarðar eru eyjarnar Grímsey og Hrísey einnig innan vébanda sveitarfélagsins.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/4/42/Akureyri-12-Zentrum-2018-gje.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Akureyri-12-Zentrum-2018-gje.jpg/330px-Akureyri-12-Zentrum-2018-gje.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Akureyri-12-Zentrum-2018-gje.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Akureyri",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Akureyri-12-Zentrum-2018-gje.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Akureyri-12-Zentrum-2018-gje.jpg"
+    ]
+  },
+  "8d2f3682b83a": {
+    "id": "8d2f3682b83a",
+    "name": "Hvalasafnið á Húsavík",
+    "type": "museum",
+    "category": "museum",
+    "lat": 66.0467906,
+    "lon": -17.3447128,
+    "latitude": 66.0467906,
+    "longitude": -17.3447128,
+    "country": "IS",
+    "description": {
+      "short": "Húsavík er þéttbýli við Skjálfanda í sveitarfélaginu Norðurþingi í Suður-Þingeyjarsýslu. Íbúar voru 2.449 árið 2024. Sjávarútvegur, verslun og ferðaþjónusta eru þar mikilvægustu atvinnuvegir.",
+      "history": "Húsavík er þéttbýli við Skjálfanda í sveitarfélaginu Norðurþingi í Suður-Þingeyjarsýslu. Íbúar voru 2.449 árið 2024. Sjávarútvegur, verslun og ferðaþjónusta eru þar mikilvægustu atvinnuvegir.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/3/37/Husavik_Iceland_2005_1.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Husavik_Iceland_2005_1.JPG/330px-Husavik_Iceland_2005_1.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Husavik_Iceland_2005_1.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/H%C3%BAsav%C3%ADk",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Husavik_Iceland_2005_1.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/37/Husavik_Iceland_2005_1.JPG"
+    ]
+  },
+  "0ffe6813c6bb": {
+    "id": "0ffe6813c6bb",
+    "name": "HI Hostel Seyðisfjörður",
+    "type": "hostel",
+    "category": "hostel",
+    "lat": 65.2661219,
+    "lon": -14.0126772,
+    "latitude": 65.2661219,
+    "longitude": -14.0126772,
+    "country": "IS",
+    "description": {
+      "short": "Seyðisfjörður er kaupstaður í botni samnefnds fjarðar á Austfjörðum. Staðurinn óx kringum síldveiðar- og vinnslu. Íbúar voru 648 árið 2024.",
+      "history": "Seyðisfjörður er kaupstaður í botni samnefnds fjarðar á Austfjörðum. Staðurinn óx kringum síldveiðar- og vinnslu. Íbúar voru 648 árið 2024.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sey%C3%B0isfj%C3%B6r%C3%B0ur_Sept_2019_1.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Sey%C3%B0isfj%C3%B6r%C3%B0ur_Sept_2019_1.jpg/330px-Sey%C3%B0isfj%C3%B6r%C3%B0ur_Sept_2019_1.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sey%C3%B0isfj%C3%B6r%C3%B0ur_Sept_2019_1.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Sey%C3%B0isfj%C3%B6r%C3%B0ur",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sey%C3%B0isfj%C3%B6r%C3%B0ur_Sept_2019_1.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f9/Sey%C3%B0isfj%C3%B6r%C3%B0ur_Sept_2019_1.jpg"
+    ]
+  },
+  "40836f931f26": {
+    "id": "40836f931f26",
+    "name": "Eyja",
+    "type": "cafe",
+    "category": "cafe",
+    "lat": 65.6804721,
+    "lon": -18.0889238,
+    "latitude": 65.6804721,
+    "longitude": -18.0889238,
+    "country": "IS",
+    "description": {
+      "short": "Vestmannaeyjar eru eyjaklasi suður af Íslandi, samtals 15 eyjar og um 30 sker og drangar. Syðsta eyjan er Surtsey og sú nyrsta er Elliðaey. Heimaey er stærst eyjanna og sú eina sem er byggð, en þar er",
+      "history": "Vestmannaeyjar eru eyjaklasi suður af Íslandi, samtals 15 eyjar og um 30 sker og drangar. Syðsta eyjan er Surtsey og sú nyrsta er Elliðaey. Heimaey er stærst eyjanna og sú eina sem er byggð, en þar er Vestmannaeyjabær með um 4.639 íbúa (2024). Heitið Vestmannaeyjar er oft notað sem samheiti yfir Vestmannaeyjabæ.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/6/66/Vestmannaeyjar018.JPG"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Vestmannaeyjar018.JPG/330px-Vestmannaeyjar018.JPG",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Vestmannaeyjar018.JPG"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Vestmannaeyjar",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Vestmannaeyjar018.JPG",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/66/Vestmannaeyjar018.JPG"
+    ]
+  },
+  "60c82c8a0d41": {
+    "id": "60c82c8a0d41",
+    "name": "Gos við Grindavík",
+    "type": "volcano",
+    "category": "volcano",
+    "lat": 63.8513206,
+    "lon": -22.4219879,
+    "latitude": 63.8513206,
+    "longitude": -22.4219879,
+    "country": "IS",
+    "description": {
+      "short": "Grindavík er bær og sveitarfélag á sunnanverðum Reykjanesskaga. Íbúar voru skráðir 1.091 í mars 2025.",
+      "history": "Grindavík er bær og sveitarfélag á sunnanverðum Reykjanesskaga. Íbúar voru skráðir 1.091 í mars 2025.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/2/29/Grindav%C3%ADk_apr%C3%ADl_2025.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Grindav%C3%ADk_apr%C3%ADl_2025.jpg/330px-Grindav%C3%ADk_apr%C3%ADl_2025.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Grindav%C3%ADk_apr%C3%ADl_2025.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Grindav%C3%ADk",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Grindav%C3%ADk_apr%C3%ADl_2025.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/29/Grindav%C3%ADk_apr%C3%ADl_2025.jpg"
+    ]
+  },
+  "01f79ed00b7e": {
+    "id": "01f79ed00b7e",
+    "name": "Borgarnes",
+    "type": "viewpoint",
+    "category": "viewpoint",
+    "lat": 65.3328264,
+    "lon": -13.7232366,
+    "latitude": 65.3328264,
+    "longitude": -13.7232366,
+    "country": "IS",
+    "description": {
+      "short": "Borgarnes er bær á samnefndu nesi við Borgarfjörð. Íbúafjöldi er 2.147 (2024) og er bærinn kjarni sveitarfélagsins Borgarbyggðar og þjónustumiðstöð fyrir nágrannasveitirnar auk þess að vera vinsæll án",
+      "history": "Borgarnes er bær á samnefndu nesi við Borgarfjörð. Íbúafjöldi er 2.147 (2024) og er bærinn kjarni sveitarfélagsins Borgarbyggðar og þjónustumiðstöð fyrir nágrannasveitirnar auk þess að vera vinsæll áningarstaður ferðafólks. Þótt Borgarnes standi við sjó er þar nær engin útgerð stunduð í dag. Áður fyrr voru þó gerð út skipin Hvítá og Eldborg sem var aflahæst á síld nokkrar vertíðir.",
+      "geology": "",
+      "culture": ""
+    },
+    "media": {
+      "images": [
+        "https://upload.wikimedia.org/wikipedia/commons/e/e6/Borgarnes02.jpg"
+      ],
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Borgarnes02.jpg/330px-Borgarnes02.jpg",
+      "hero_image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Borgarnes02.jpg"
+    },
+    "rating": 4.5,
+    "wikipedia_url": "https://is.wikipedia.org/wiki/Borgarnes",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Borgarnes02.jpg",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e6/Borgarnes02.jpg"
+    ]
+  }
+}

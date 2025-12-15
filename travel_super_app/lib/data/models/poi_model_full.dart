@@ -66,21 +66,22 @@ class PoiModelFull extends Equatable {
       type: json['category'] as String? ?? json['type'] as String? ?? 'unknown',
       latitude: (lat as num).toDouble(),
       longitude: (lng as num).toDouble(),
-      description: json['description'] != null
+      description: json['description'] != null && json['description'] is Map
           ? PoiDescription.fromJson(json['description'])
           : null,
-      services: json['services'] != null
+      services: json['services'] != null && json['services'] is Map
           ? PoiServices.fromJson(json['services'])
           : null,
-      visitInfo: json['visit_info'] != null
+      visitInfo: json['visit_info'] != null && json['visit_info'] is Map
           ? VisitInfo.fromJson(json['visit_info'])
           : null,
-      media: json['media'] != null
+      media: json['media'] != null && json['media'] is Map
           ? PoiMedia.fromJson(json['media'])
           : PoiMedia.fromLegacy(json), // Fallback for old format
       rating: (json['rating'] as num?)?.toDouble(),
-      ratings:
-          json['ratings'] != null ? Ratings.fromJson(json['ratings']) : null,
+      ratings: json['ratings'] != null && json['ratings'] is Map
+          ? Ratings.fromJson(json['ratings'])
+          : null,
       country: json['country'] as String?,
       open: json['open'] as String?,
       sources: (json['sources'] as List?)?.map((e) => e.toString()).toList(),
@@ -124,8 +125,7 @@ class PoiDescription extends Equatable {
   final String? geology;
   final String? culture;
 
-  factory PoiDescription.fromJson(Map<String, dynamic> json) =>
-      PoiDescription(
+  factory PoiDescription.fromJson(Map<String, dynamic> json) => PoiDescription(
         short: json['short'] as String?,
         history: json['history'] as String?,
         geology: json['geology'] as String?,
@@ -275,8 +275,7 @@ class PoiMedia extends Equatable {
 
   // Fallback for old format (image, images fields at root)
   factory PoiMedia.fromLegacy(Map<String, dynamic> json) {
-    final images =
-        (json['images'] as List?)?.map((e) => e.toString()).toList();
+    final images = (json['images'] as List?)?.map((e) => e.toString()).toList();
     final image = json['image'] as String?;
 
     return PoiMedia(

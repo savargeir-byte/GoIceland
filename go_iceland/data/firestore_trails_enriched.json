@@ -1,0 +1,4602 @@
+{
+  "trail_hornstrandir": {
+    "id": "trail_hornstrandir",
+    "name": "Hornstrandir",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 140,
+    "duration_hours": 56,
+    "elevation_gain_m": 2500,
+    "lat": 66.4,
+    "lon": -22.3,
+    "latitude": 66.4,
+    "longitude": -22.3,
+    "start": {
+      "lat": 66.4,
+      "lng": -22.3,
+      "name": "Hesteyri"
+    },
+    "end": {
+      "lat": 66.5,
+      "lng": -21.8,
+      "name": "Hornvík"
+    },
+    "description": {
+      "short": "Hornstrandir er friðland í Vestfjörðum með ósnertri náttúru, fuglalífi og landslagi sem býður upp á fjölbreyttar gönguleiðir.",
+      "full": "Hornstrandir er friðland í Vestfjörðum með ósnertri náttúru, fuglalífi og landslagi sem býður upp á fjölbreyttar gönguleiðir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Westfjords"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_1225037": {
+    "id": "trail_1225037",
+    "name": "Laugavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 136.27,
+    "duration_hours": 34.1,
+    "elevation_gain_m": 0,
+    "lat": 63.8447446,
+    "lon": -19.2186215,
+    "latitude": 63.8447446,
+    "longitude": -19.2186215,
+    "start": {
+      "lat": 63.8447446,
+      "lng": -19.2186215,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.6844892,
+      "lng": -19.5125036,
+      "name": "End"
+    },
+    "description": {
+      "short": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "full": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_9977927": {
+    "id": "trail_9977927",
+    "name": "Unnamed Trail",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 19.43,
+    "duration_hours": 4.9,
+    "elevation_gain_m": 0,
+    "lat": 63.8143228,
+    "lon": -22.7164542,
+    "latitude": 63.8143228,
+    "longitude": -22.7164542,
+    "start": {
+      "lat": 63.8143228,
+      "lng": -22.7164542,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.8232005,
+      "lng": -22.7163748,
+      "name": "End"
+    },
+    "description": {
+      "short": "Unnamed Trail er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 19.4 km að lengd og tekur um 4.9 klukkustundir.",
+      "full": "Unnamed Trail er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 19.4 km að lengd og tekur um 4.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227765": {
+    "id": "trail_6227765",
+    "name": "Dimmuborgir",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 19.0,
+    "duration_hours": 4.7,
+    "elevation_gain_m": 0,
+    "lat": 65.591015,
+    "lon": -16.9120395,
+    "latitude": 65.591015,
+    "longitude": -16.9120395,
+    "start": {
+      "lat": 65.591015,
+      "lng": -16.9120395,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.5909956,
+      "lng": -16.9108174,
+      "name": "End"
+    },
+    "description": {
+      "short": "Dimmuborgir er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 19.0 km að lengd og tekur um 4.7 klukkustundir.",
+      "full": "Dimmuborgir er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 19.0 km að lengd og tekur um 4.7 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6124715": {
+    "id": "trail_6124715",
+    "name": "Krysuvik-Thermalgebiet",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 18.37,
+    "duration_hours": 4.6,
+    "elevation_gain_m": 0,
+    "lat": 63.8959075,
+    "lon": -22.0524621,
+    "latitude": 63.8959075,
+    "longitude": -22.0524621,
+    "start": {
+      "lat": 63.8959075,
+      "lng": -22.0524621,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.8973807,
+      "lng": -22.0549972,
+      "name": "End"
+    },
+    "description": {
+      "short": "Krysuvik-Thermalgebiet er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 18.4 km að lengd og tekur um 4.6 klukkustundir.",
+      "full": "Krysuvik-Thermalgebiet er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 18.4 km að lengd og tekur um 4.6 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6124735": {
+    "id": "trail_6124735",
+    "name": "Unnamed Trail",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 16.95,
+    "duration_hours": 4.2,
+    "elevation_gain_m": 0,
+    "lat": 64.0228702,
+    "lon": -21.2116261,
+    "latitude": 64.0228702,
+    "longitude": -21.2116261,
+    "start": {
+      "lat": 64.0228702,
+      "lng": -21.2116261,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0473761,
+      "lng": -21.2217697,
+      "name": "End"
+    },
+    "description": {
+      "short": "Unnamed Trail er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.9 km að lengd og tekur um 4.2 klukkustundir.",
+      "full": "Unnamed Trail er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.9 km að lengd og tekur um 4.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6161045": {
+    "id": "trail_6161045",
+    "name": "Kristinartindar",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 42.05,
+    "duration_hours": 10.5,
+    "elevation_gain_m": 0,
+    "lat": 64.0574562,
+    "lon": -16.9201385,
+    "latitude": 64.0574562,
+    "longitude": -16.9201385,
+    "start": {
+      "lat": 64.0574562,
+      "lng": -16.9201385,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0306727,
+      "lng": -16.9381857,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kristinartindar er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 42.0 km að lengd og tekur um 10.5 klukkustundir.",
+      "full": "Kristinartindar er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 42.0 km að lengd og tekur um 10.5 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_17891091": {
+    "id": "trail_17891091",
+    "name": "Skælingar - Hólaskjól",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 41.77,
+    "duration_hours": 10.4,
+    "elevation_gain_m": 0,
+    "lat": 63.9806312,
+    "lon": -18.5217742,
+    "latitude": 63.9806312,
+    "longitude": -18.5217742,
+    "start": {
+      "lat": 63.9806312,
+      "lng": -18.5217742,
+      "name": "Skælingar"
+    },
+    "end": {
+      "lat": 63.9073883,
+      "lng": -18.6028194,
+      "name": "Hólaskjól"
+    },
+    "description": {
+      "short": "Skælingar - Hólaskjól er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 41.8 km að lengd og tekur um 10.4 klukkustundir.",
+      "full": "Skælingar - Hólaskjól er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 41.8 km að lengd og tekur um 10.4 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_5451031": {
+    "id": "trail_5451031",
+    "name": "Skaftafellsheiði",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 16.6,
+    "duration_hours": 4.2,
+    "elevation_gain_m": 0,
+    "lat": 64.0168507,
+    "lon": -16.9720558,
+    "latitude": 64.0168507,
+    "longitude": -16.9720558,
+    "start": {
+      "lat": 64.0168507,
+      "lng": -16.9720558,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0168507,
+      "lng": -16.9720558,
+      "name": "End"
+    },
+    "description": {
+      "short": "Skaftafellsheiði er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.6 km að lengd og tekur um 4.2 klukkustundir.",
+      "full": "Skaftafellsheiði er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.6 km að lengd og tekur um 4.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://www.vatnajokulsthjodgardur.is/thjodgardurinn/gonguleidir/skaftafell/",
+    "operator": null
+  },
+  "trail_7492896": {
+    "id": "trail_7492896",
+    "name": "Hellismannaleið",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 108.5,
+    "duration_hours": 27.1,
+    "elevation_gain_m": 0,
+    "lat": 64.0511072,
+    "lon": -19.7858585,
+    "latitude": 64.0511072,
+    "longitude": -19.7858585,
+    "start": {
+      "lat": 64.0511072,
+      "lng": -19.7858585,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0468936,
+      "lng": -19.7961665,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hellismannaleið er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 108.5 km að lengd og tekur um 27.1 klukkustundir.",
+      "full": "Hellismannaleið er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 108.5 km að lengd og tekur um 27.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6125515": {
+    "id": "trail_6125515",
+    "name": "Þingvellir",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 16.08,
+    "duration_hours": 4.0,
+    "elevation_gain_m": 0,
+    "lat": 64.2568668,
+    "lon": -21.1270273,
+    "latitude": 64.2568668,
+    "longitude": -21.1270273,
+    "start": {
+      "lat": 64.2568668,
+      "lng": -21.1270273,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.2670412,
+      "lng": -21.1156984,
+      "name": "End"
+    },
+    "description": {
+      "short": "Þingvellir er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.1 km að lengd og tekur um 4.0 klukkustundir.",
+      "full": "Þingvellir er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.1 km að lengd og tekur um 4.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6223863": {
+    "id": "trail_6223863",
+    "name": "Stórurð",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 40.11,
+    "duration_hours": 10.0,
+    "elevation_gain_m": 0,
+    "lat": 65.5164528,
+    "lon": -13.9910245,
+    "latitude": 65.5164528,
+    "longitude": -13.9910245,
+    "start": {
+      "lat": 65.5164528,
+      "lng": -13.9910245,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.560748,
+      "lng": -13.9967898,
+      "name": "End"
+    },
+    "description": {
+      "short": "Stórurð er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 40.1 km að lengd og tekur um 10.0 klukkustundir.",
+      "full": "Stórurð er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 40.1 km að lengd og tekur um 10.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_3323267": {
+    "id": "trail_3323267",
+    "name": "Kerlingardalsvegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 16.04,
+    "duration_hours": 4.0,
+    "elevation_gain_m": 0,
+    "lat": 63.5304989,
+    "lon": -18.8891679,
+    "latitude": 63.5304989,
+    "longitude": -18.8891679,
+    "start": {
+      "lat": 63.5304989,
+      "lng": -18.8891679,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.4242525,
+      "lng": -18.9035691,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kerlingardalsvegur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.0 km að lengd og tekur um 4.0 klukkustundir.",
+      "full": "Kerlingardalsvegur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 16.0 km að lengd og tekur um 4.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6133192": {
+    "id": "trail_6133192",
+    "name": "Suðurnámur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 15.67,
+    "duration_hours": 3.9,
+    "elevation_gain_m": 0,
+    "lat": 63.9887898,
+    "lon": -19.0857274,
+    "latitude": 63.9887898,
+    "longitude": -19.0857274,
+    "start": {
+      "lat": 63.9887898,
+      "lng": -19.0857274,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9983526,
+      "lng": -19.0512051,
+      "name": "End"
+    },
+    "description": {
+      "short": "Suðurnámur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 15.7 km að lengd og tekur um 3.9 klukkustundir.",
+      "full": "Suðurnámur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 15.7 km að lengd og tekur um 3.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_5451032": {
+    "id": "trail_5451032",
+    "name": "Kristínartindar",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 15.51,
+    "duration_hours": 3.9,
+    "elevation_gain_m": 0,
+    "lat": 64.0168507,
+    "lon": -16.9720558,
+    "latitude": 64.0168507,
+    "longitude": -16.9720558,
+    "start": {
+      "lat": 64.0168507,
+      "lng": -16.9720558,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0168507,
+      "lng": -16.9720558,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kristínartindar er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 15.5 km að lengd og tekur um 3.9 klukkustundir.",
+      "full": "Kristínartindar er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 15.5 km að lengd og tekur um 3.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://www.vatnajokulsthjodgardur.is/thjodgardurinn/gonguleidir/skaftafell/",
+    "operator": null
+  },
+  "trail_17890094": {
+    "id": "trail_17890094",
+    "name": "Heimaey hringur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 38.47,
+    "duration_hours": 9.6,
+    "elevation_gain_m": 0,
+    "lat": 63.4407358,
+    "lon": -20.3019439,
+    "latitude": 63.4407358,
+    "longitude": -20.3019439,
+    "start": {
+      "lat": 63.4407358,
+      "lng": -20.3019439,
+      "name": "Skansinn"
+    },
+    "end": {
+      "lat": 63.4398326,
+      "lng": -20.3050368,
+      "name": "Skansinn"
+    },
+    "description": {
+      "short": "Heimaey hringur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 38.5 km að lengd og tekur um 9.6 klukkustundir.",
+      "full": "Heimaey hringur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 38.5 km að lengd og tekur um 9.6 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://www.vestmannaeyjar.is/en/hiking/heimaey-hringur-en",
+    "operator": null
+  },
+  "trail_19681143": {
+    "id": "trail_19681143",
+    "name": "Reykjavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 101.6,
+    "duration_hours": 25.4,
+    "elevation_gain_m": 0,
+    "lat": 63.8613239,
+    "lon": -22.2835457,
+    "latitude": 63.8613239,
+    "longitude": -22.2835457,
+    "start": {
+      "lat": 63.8613239,
+      "lng": -22.2835457,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0252823,
+      "lng": -21.4133839,
+      "name": "End"
+    },
+    "description": {
+      "short": "Reykjavegur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 101.6 km að lengd og tekur um 25.4 klukkustundir.",
+      "full": "Reykjavegur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 101.6 km að lengd og tekur um 25.4 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_17889526": {
+    "id": "trail_17889526",
+    "name": "Hringbrautin",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 98.67,
+    "duration_hours": 24.7,
+    "elevation_gain_m": 0,
+    "lat": 64.5671819,
+    "lon": -19.2732715,
+    "latitude": 64.5671819,
+    "longitude": -19.2732715,
+    "start": {
+      "lat": 64.5671819,
+      "lng": -19.2732715,
+      "name": "Ásgarður"
+    },
+    "end": {
+      "lat": 64.6497677,
+      "lng": -19.3011891,
+      "name": "Ásgarður"
+    },
+    "description": {
+      "short": "Hringbrautin er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 98.7 km að lengd og tekur um 24.7 klukkustundir.",
+      "full": "Hringbrautin er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 98.7 km að lengd og tekur um 24.7 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://ust.is/library/sida/Nattura/Kerlingarfjoll%20-%20trail%20guide.pdf",
+    "operator": null
+  },
+  "trail_w571249620": {
+    "id": "trail_w571249620",
+    "name": "Reykjavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 14.72,
+    "duration_hours": 3.7,
+    "elevation_gain_m": 0,
+    "lat": 63.978694,
+    "lon": -21.6479705,
+    "latitude": 63.978694,
+    "longitude": -21.6479705,
+    "start": {
+      "lat": 63.978694,
+      "lng": -21.6479705,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0249604,
+      "lng": -21.4520602,
+      "name": "End"
+    },
+    "description": {
+      "short": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.7 km að lengd og tekur um 3.7 klukkustundir.",
+      "full": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.7 km að lengd og tekur um 3.7 klukkustundir.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w51205930": {
+    "id": "trail_w51205930",
+    "name": "Kjalvegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 14.68,
+    "duration_hours": 3.7,
+    "elevation_gain_m": 0,
+    "lat": 64.6171306,
+    "lon": -19.7564829,
+    "latitude": 64.6171306,
+    "longitude": -19.7564829,
+    "start": {
+      "lat": 64.6171306,
+      "lng": -19.7564829,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.7149137,
+      "lng": -19.5967172,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kjalvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.7 km að lengd og tekur um 3.7 klukkustundir.",
+      "full": "Kjalvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.7 km að lengd og tekur um 3.7 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w169557066": {
+    "id": "trail_w169557066",
+    "name": "Leggjabrjótur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 14.58,
+    "duration_hours": 3.6,
+    "elevation_gain_m": 0,
+    "lat": 64.2983068,
+    "lon": -21.1216001,
+    "latitude": 64.2983068,
+    "longitude": -21.1216001,
+    "start": {
+      "lat": 64.2983068,
+      "lng": -21.1216001,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.3812063,
+      "lng": -21.2882907,
+      "name": "End"
+    },
+    "description": {
+      "short": "Leggjabrjótur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.6 km að lengd og tekur um 3.6 klukkustundir.",
+      "full": "Leggjabrjótur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.6 km að lengd og tekur um 3.6 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": "mountain_hiking",
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w535561738": {
+    "id": "trail_w535561738",
+    "name": "Reykjavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 14.53,
+    "duration_hours": 3.6,
+    "elevation_gain_m": 0,
+    "lat": 63.8613239,
+    "lon": -22.2835457,
+    "latitude": 63.8613239,
+    "longitude": -22.2835457,
+    "start": {
+      "lat": 63.8613239,
+      "lng": -22.2835457,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9232659,
+      "lng": -22.0857141,
+      "name": "End"
+    },
+    "description": {
+      "short": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.5 km að lengd og tekur um 3.6 klukkustundir.",
+      "full": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.5 km að lengd og tekur um 3.6 klukkustundir.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16274346": {
+    "id": "trail_16274346",
+    "name": "Askja hiking trails",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 35.38,
+    "duration_hours": 8.8,
+    "elevation_gain_m": 0,
+    "lat": 65.0478948,
+    "lon": -16.7246326,
+    "latitude": 65.0478948,
+    "longitude": -16.7246326,
+    "start": {
+      "lat": 65.0478948,
+      "lng": -16.7246326,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.0422776,
+      "lng": -16.5952089,
+      "name": "End"
+    },
+    "description": {
+      "short": "Gönguleiðir við Öskjuvatn og Víti, bláa lónið í miðju hálendisjökla.",
+      "full": "Gönguleiðir við Öskjuvatn og Víti, bláa lónið í miðju hálendisjökla.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16276692": {
+    "id": "trail_16276692",
+    "name": "Unnamed Trail",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 14.02,
+    "duration_hours": 3.5,
+    "elevation_gain_m": 0,
+    "lat": 65.8111862,
+    "lon": -18.0063704,
+    "latitude": 65.8111862,
+    "longitude": -18.0063704,
+    "start": {
+      "lat": 65.8111862,
+      "lng": -18.0063704,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.7664873,
+      "lng": -17.9897384,
+      "name": "End"
+    },
+    "description": {
+      "short": "Unnamed Trail er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.0 km að lengd og tekur um 3.5 klukkustundir.",
+      "full": "Unnamed Trail er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 14.0 km að lengd og tekur um 3.5 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227819": {
+    "id": "trail_6227819",
+    "name": "Holmatungur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 34.82,
+    "duration_hours": 8.7,
+    "elevation_gain_m": 0,
+    "lat": 65.883064,
+    "lon": -16.450751,
+    "latitude": 65.883064,
+    "longitude": -16.450751,
+    "start": {
+      "lat": 65.883064,
+      "lng": -16.450751,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.8920893,
+      "lng": -16.4682208,
+      "name": "End"
+    },
+    "description": {
+      "short": "Holmatungur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 34.8 km að lengd og tekur um 8.7 klukkustundir.",
+      "full": "Holmatungur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 34.8 km að lengd og tekur um 8.7 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w295654452": {
+    "id": "trail_w295654452",
+    "name": "Vestadalsvatn",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 13.9,
+    "duration_hours": 3.5,
+    "elevation_gain_m": 0,
+    "lat": 65.2836141,
+    "lon": -14.0237111,
+    "latitude": 65.2836141,
+    "longitude": -14.0237111,
+    "start": {
+      "lat": 65.2836141,
+      "lng": -14.0237111,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.3328236,
+      "lng": -14.2315129,
+      "name": "End"
+    },
+    "description": {
+      "short": "Vestadalsvatn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.9 km að lengd og tekur um 3.5 klukkustundir.",
+      "full": "Vestadalsvatn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.9 km að lengd og tekur um 3.5 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "East Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6126272": {
+    "id": "trail_6126272",
+    "name": "Basaltküste von Arnarstapi",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 13.75,
+    "duration_hours": 3.4,
+    "elevation_gain_m": 0,
+    "lat": 64.7662776,
+    "lon": -23.6276061,
+    "latitude": 64.7662776,
+    "longitude": -23.6276061,
+    "start": {
+      "lat": 64.7662776,
+      "lng": -23.6276061,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.7661661,
+      "lng": -23.6274105,
+      "name": "End"
+    },
+    "description": {
+      "short": "Basaltküste von Arnarstapi er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.8 km að lengd og tekur um 3.4 klukkustundir.",
+      "full": "Basaltküste von Arnarstapi er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.8 km að lengd og tekur um 3.4 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6224393": {
+    "id": "trail_6224393",
+    "name": "Látrabjarg",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 13.35,
+    "duration_hours": 3.3,
+    "elevation_gain_m": 0,
+    "lat": 65.5025184,
+    "lon": -24.5292229,
+    "latitude": 65.5025184,
+    "longitude": -24.5292229,
+    "start": {
+      "lat": 65.5025184,
+      "lng": -24.5292229,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.5005942,
+      "lng": -24.5270792,
+      "name": "End"
+    },
+    "description": {
+      "short": "Látrabjarg er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.3 km að lengd og tekur um 3.3 klukkustundir.",
+      "full": "Látrabjarg er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.3 km að lengd og tekur um 3.3 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w740160908": {
+    "id": "trail_w740160908",
+    "name": "Selvogsgata",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 13.21,
+    "duration_hours": 3.3,
+    "elevation_gain_m": 0,
+    "lat": 63.9640609,
+    "lon": -21.7433638,
+    "latitude": 63.9640609,
+    "longitude": -21.7433638,
+    "start": {
+      "lat": 63.9640609,
+      "lng": -21.7433638,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.8731776,
+      "lng": -21.6944964,
+      "name": "End"
+    },
+    "description": {
+      "short": "Selvogsgata er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.2 km að lengd og tekur um 3.3 klukkustundir.",
+      "full": "Selvogsgata er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 13.2 km að lengd og tekur um 3.3 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_17892722": {
+    "id": "trail_17892722",
+    "name": "Strútur - Hvanngil",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 31.94,
+    "duration_hours": 8.0,
+    "elevation_gain_m": 0,
+    "lat": 63.847449,
+    "lon": -19.1033079,
+    "latitude": 63.847449,
+    "longitude": -19.1033079,
+    "start": {
+      "lat": 63.847449,
+      "lng": -19.1033079,
+      "name": "Strútur"
+    },
+    "end": {
+      "lat": 63.831926,
+      "lng": -19.2049438,
+      "name": "Hvanngil"
+    },
+    "description": {
+      "short": "Strútur - Hvanngil er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 31.9 km að lengd og tekur um 8.0 klukkustundir.",
+      "full": "Strútur - Hvanngil er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 31.9 km að lengd og tekur um 8.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16275827": {
+    "id": "trail_16275827",
+    "name": "Vaðlaheiði",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 12.71,
+    "duration_hours": 3.2,
+    "elevation_gain_m": 0,
+    "lat": 65.6805563,
+    "lon": -17.9616487,
+    "latitude": 65.6805563,
+    "longitude": -17.9616487,
+    "start": {
+      "lat": 65.6805563,
+      "lng": -17.9616487,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.6624921,
+      "lng": -18.0353811,
+      "name": "End"
+    },
+    "description": {
+      "short": "Vaðlaheiði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 12.7 km að lengd og tekur um 3.2 klukkustundir.",
+      "full": "Vaðlaheiði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 12.7 km að lengd og tekur um 3.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227838": {
+    "id": "trail_6227838",
+    "name": "Unnamed Trail",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 12.48,
+    "duration_hours": 3.1,
+    "elevation_gain_m": 0,
+    "lat": 66.0298243,
+    "lon": -16.4793795,
+    "latitude": 66.0298243,
+    "longitude": -16.4793795,
+    "start": {
+      "lat": 66.0298243,
+      "lng": -16.4793795,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 66.0283357,
+      "lng": -16.4865571,
+      "name": "End"
+    },
+    "description": {
+      "short": "Unnamed Trail er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 12.5 km að lengd og tekur um 3.1 klukkustundir.",
+      "full": "Unnamed Trail er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 12.5 km að lengd og tekur um 3.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w965331828": {
+    "id": "trail_w965331828",
+    "name": "N-4",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 12.28,
+    "duration_hours": 3.1,
+    "elevation_gain_m": 0,
+    "lat": 64.734873,
+    "lon": -18.071957,
+    "latitude": 64.734873,
+    "longitude": -18.071957,
+    "start": {
+      "lat": 64.734873,
+      "lng": -18.071957,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.6913673,
+      "lng": -17.8956383,
+      "name": "End"
+    },
+    "description": {
+      "short": "N-4 er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 12.3 km að lengd og tekur um 3.1 klukkustundir.",
+      "full": "N-4 er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 12.3 km að lengd og tekur um 3.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": "mountain_hiking",
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6173454": {
+    "id": "trail_6173454",
+    "name": "Strutsfoss",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 11.94,
+    "duration_hours": 3.0,
+    "elevation_gain_m": 0,
+    "lat": 64.9276187,
+    "lon": -15.0582161,
+    "latitude": 64.9276187,
+    "longitude": -15.0582161,
+    "start": {
+      "lat": 64.9276187,
+      "lng": -15.0582161,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.9270752,
+      "lng": -15.0609418,
+      "name": "End"
+    },
+    "description": {
+      "short": "Strutsfoss er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.9 km að lengd og tekur um 3.0 klukkustundir.",
+      "full": "Strutsfoss er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.9 km að lengd og tekur um 3.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "East Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6130098": {
+    "id": "trail_6130098",
+    "name": "Vogelfelsen bei Vik",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 11.92,
+    "duration_hours": 3.0,
+    "elevation_gain_m": 0,
+    "lat": 63.4185455,
+    "lon": -19.0106646,
+    "latitude": 63.4185455,
+    "longitude": -19.0106646,
+    "start": {
+      "lat": 63.4185455,
+      "lng": -19.0106646,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.4178466,
+      "lng": -19.0096315,
+      "name": "End"
+    },
+    "description": {
+      "short": "Vogelfelsen bei Vik er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.9 km að lengd og tekur um 3.0 klukkustundir.",
+      "full": "Vogelfelsen bei Vik er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.9 km að lengd og tekur um 3.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6133137": {
+    "id": "trail_6133137",
+    "name": "Brennisteinsalda",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 11.75,
+    "duration_hours": 2.9,
+    "elevation_gain_m": 0,
+    "lat": 63.9902575,
+    "lon": -19.1026928,
+    "latitude": 63.9902575,
+    "longitude": -19.1026928,
+    "start": {
+      "lat": 63.9902575,
+      "lng": -19.1026928,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.981753,
+      "lng": -19.0889962,
+      "name": "End"
+    },
+    "description": {
+      "short": "Brennisteinsalda er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.8 km að lengd og tekur um 2.9 klukkustundir.",
+      "full": "Brennisteinsalda er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.8 km að lengd og tekur um 2.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16192539": {
+    "id": "trail_16192539",
+    "name": "Educational Path",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 29.25,
+    "duration_hours": 7.3,
+    "elevation_gain_m": 0,
+    "lat": 64.1058245,
+    "lon": -21.2750502,
+    "latitude": 64.1058245,
+    "longitude": -21.2750502,
+    "start": {
+      "lat": 64.1058245,
+      "lng": -21.2750502,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.1052345,
+      "lng": -21.2878746,
+      "name": "End"
+    },
+    "description": {
+      "short": "Educational Path er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 29.2 km að lengd og tekur um 7.3 klukkustundir.",
+      "full": "Educational Path er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 29.2 km að lengd og tekur um 7.3 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": "Orkuveita Reykjavíkur"
+  },
+  "trail_7329838": {
+    "id": "trail_7329838",
+    "name": "Unnamed Trail",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 11.53,
+    "duration_hours": 2.9,
+    "elevation_gain_m": 0,
+    "lat": 64.0578237,
+    "lon": -21.2345644,
+    "latitude": 64.0578237,
+    "longitude": -21.2345644,
+    "start": {
+      "lat": 64.0578237,
+      "lng": -21.2345644,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0593616,
+      "lng": -21.237823,
+      "name": "End"
+    },
+    "description": {
+      "short": "Unnamed Trail er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.5 km að lengd og tekur um 2.9 klukkustundir.",
+      "full": "Unnamed Trail er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.5 km að lengd og tekur um 2.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": "hiking",
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": "Orkuveita Reykjavíkur"
+  },
+  "trail_6173471": {
+    "id": "trail_6173471",
+    "name": "bei Bakkagerdi",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 28.25,
+    "duration_hours": 7.1,
+    "elevation_gain_m": 0,
+    "lat": 65.5141805,
+    "lon": -13.7031365,
+    "latitude": 65.5141805,
+    "longitude": -13.7031365,
+    "start": {
+      "lat": 65.5141805,
+      "lng": -13.7031365,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.5192087,
+      "lng": -13.7766008,
+      "name": "End"
+    },
+    "description": {
+      "short": "bei Bakkagerdi er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 28.2 km að lengd og tekur um 7.1 klukkustundir.",
+      "full": "bei Bakkagerdi er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 28.2 km að lengd og tekur um 7.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w734129566": {
+    "id": "trail_w734129566",
+    "name": "Hlíðavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 11.13,
+    "duration_hours": 2.8,
+    "elevation_gain_m": 0,
+    "lat": 63.969691,
+    "lon": -21.7558651,
+    "latitude": 63.969691,
+    "longitude": -21.7558651,
+    "start": {
+      "lat": 63.969691,
+      "lng": -21.7558651,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.8778668,
+      "lng": -21.7008674,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hlíðavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.1 km að lengd og tekur um 2.8 klukkustundir.",
+      "full": "Hlíðavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 11.1 km að lengd og tekur um 2.8 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w535570558": {
+    "id": "trail_w535570558",
+    "name": "Reykjavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 10.95,
+    "duration_hours": 2.7,
+    "elevation_gain_m": 0,
+    "lat": 63.9232822,
+    "lon": -22.0855727,
+    "latitude": 63.9232822,
+    "longitude": -22.0855727,
+    "start": {
+      "lat": 63.9232822,
+      "lng": -22.0855727,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.977602,
+      "lng": -21.9518942,
+      "name": "End"
+    },
+    "description": {
+      "short": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.9 km að lengd og tekur um 2.7 klukkustundir.",
+      "full": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.9 km að lengd og tekur um 2.7 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6129970": {
+    "id": "trail_6129970",
+    "name": "Austrurafréttur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 27.35,
+    "duration_hours": 6.8,
+    "elevation_gain_m": 0,
+    "lat": 63.5303511,
+    "lon": -18.887561,
+    "latitude": 63.5303511,
+    "longitude": -18.887561,
+    "start": {
+      "lat": 63.5303511,
+      "lng": -18.887561,
+      "name": "Þakgil"
+    },
+    "end": {
+      "lat": 63.5590585,
+      "lng": -18.9243874,
+      "name": "Þakgil"
+    },
+    "description": {
+      "short": "Austrurafréttur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 27.4 km að lengd og tekur um 6.8 klukkustundir.",
+      "full": "Austrurafréttur er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 27.4 km að lengd og tekur um 6.8 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w560123988": {
+    "id": "trail_w560123988",
+    "name": "Gjósta - Svarthöfði",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 10.87,
+    "duration_hours": 2.7,
+    "elevation_gain_m": 0,
+    "lat": 64.6402936,
+    "lon": -17.8957346,
+    "latitude": 64.6402936,
+    "longitude": -17.8957346,
+    "start": {
+      "lat": 64.6402936,
+      "lng": -17.8957346,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.70214,
+      "lng": -17.79047,
+      "name": "End"
+    },
+    "description": {
+      "short": "Gjósta - Svarthöfði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.9 km að lengd og tekur um 2.7 klukkustundir.",
+      "full": "Gjósta - Svarthöfði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.9 km að lengd og tekur um 2.7 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w24431630": {
+    "id": "trail_w24431630",
+    "name": "Kjalvegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 10.42,
+    "duration_hours": 2.6,
+    "elevation_gain_m": 0,
+    "lat": 64.7518904,
+    "lon": -19.6247637,
+    "latitude": 64.7518904,
+    "longitude": -19.6247637,
+    "start": {
+      "lat": 64.7518904,
+      "lng": -19.6247637,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.820201,
+      "lng": -19.6953872,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kjalvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.4 km að lengd og tekur um 2.6 klukkustundir.",
+      "full": "Kjalvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.4 km að lengd og tekur um 2.6 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w1090198781": {
+    "id": "trail_w1090198781",
+    "name": "Hrauntungustígur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 10.32,
+    "duration_hours": 2.6,
+    "elevation_gain_m": 0,
+    "lat": 63.9553264,
+    "lon": -22.0215628,
+    "latitude": 63.9553264,
+    "longitude": -22.0215628,
+    "start": {
+      "lat": 63.9553264,
+      "lng": -22.0215628,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0269735,
+      "lng": -21.9730566,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hrauntungustígur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.3 km að lengd og tekur um 2.6 klukkustundir.",
+      "full": "Hrauntungustígur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.3 km að lengd og tekur um 2.6 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w517361958": {
+    "id": "trail_w517361958",
+    "name": "Hellismannaleið",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 25.7,
+    "duration_hours": 6.4,
+    "elevation_gain_m": 0,
+    "lat": 64.0792506,
+    "lon": -19.6588701,
+    "latitude": 64.0792506,
+    "longitude": -19.6588701,
+    "start": {
+      "lat": 64.0792506,
+      "lng": -19.6588701,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0574505,
+      "lng": -19.2460265,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hellismannaleið er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 25.7 km að lengd og tekur um 6.4 klukkustundir.",
+      "full": "Hellismannaleið er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 25.7 km að lengd og tekur um 6.4 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": "demanding_mountain_hiking",
+      "trail_visibility": "good",
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6133182": {
+    "id": "trail_6133182",
+    "name": "Hrafntinnusker",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 25.12,
+    "duration_hours": 6.3,
+    "elevation_gain_m": 0,
+    "lat": 63.9945967,
+    "lon": -19.0599369,
+    "latitude": 63.9945967,
+    "longitude": -19.0599369,
+    "start": {
+      "lat": 63.9945967,
+      "lng": -19.0599369,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9336146,
+      "lng": -19.2005739,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hrafntinnusker er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 25.1 km að lengd og tekur um 6.3 klukkustundir.",
+      "full": "Hrafntinnusker er erfiðþung gönguleið fyrir mjög reynda göngumenn. Leiðin er 25.1 km að lengd og tekur um 6.3 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6133094": {
+    "id": "trail_6133094",
+    "name": "Grjotagja",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 10.0,
+    "duration_hours": 2.5,
+    "elevation_gain_m": 0,
+    "lat": 65.6397825,
+    "lon": -16.9094521,
+    "latitude": 65.6397825,
+    "longitude": -16.9094521,
+    "start": {
+      "lat": 65.6397825,
+      "lng": -16.9094521,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.6398719,
+      "lng": -16.9094989,
+      "name": "End"
+    },
+    "description": {
+      "short": "Grjotagja er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.0 km að lengd og tekur um 2.5 klukkustundir.",
+      "full": "Grjotagja er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.0 km að lengd og tekur um 2.5 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_fimmvorduhals": {
+    "id": "trail_fimmvorduhals",
+    "name": "Fimmvörðuháls",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 25,
+    "duration_hours": 10,
+    "elevation_gain_m": 1000,
+    "lat": 63.5321,
+    "lon": -19.5117,
+    "latitude": 63.5321,
+    "longitude": -19.5117,
+    "start": {
+      "lat": 63.5321,
+      "lng": -19.5117,
+      "name": "Skógafoss"
+    },
+    "end": {
+      "lat": 63.6833,
+      "lng": -19.4667,
+      "name": "Þórsmörk"
+    },
+    "description": {
+      "short": "Fimmvörðuháls er 25 km gönguleið milli Skógafoss og Þórsmerkur yfir hálendiðvið Eyjafjallajökul með glæsilegu útsýni.",
+      "full": "Fimmvörðuháls er 25 km gönguleið milli Skógafoss og Þórsmerkur yfir hálendiðvið Eyjafjallajökul með glæsilegu útsýni.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w70224082": {
+    "id": "trail_w70224082",
+    "name": "Efstivegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.96,
+    "duration_hours": 2.5,
+    "elevation_gain_m": 0,
+    "lat": 64.8482259,
+    "lon": -23.9193244,
+    "latitude": 64.8482259,
+    "longitude": -23.9193244,
+    "start": {
+      "lat": 64.8482259,
+      "lng": -23.9193244,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.7708063,
+      "lng": -23.8737709,
+      "name": "End"
+    },
+    "description": {
+      "short": "Efstivegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.0 km að lengd og tekur um 2.5 klukkustundir.",
+      "full": "Efstivegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 10.0 km að lengd og tekur um 2.5 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16276803": {
+    "id": "trail_16276803",
+    "name": "Glérá",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 24.82,
+    "duration_hours": 6.2,
+    "elevation_gain_m": 0,
+    "lat": 65.6525864,
+    "lon": -18.1733355,
+    "latitude": 65.6525864,
+    "longitude": -18.1733355,
+    "start": {
+      "lat": 65.6525864,
+      "lng": -18.1733355,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.6525864,
+      "lng": -18.1733355,
+      "name": "End"
+    },
+    "description": {
+      "short": "Glérá er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 24.8 km að lengd og tekur um 6.2 klukkustundir.",
+      "full": "Glérá er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 24.8 km að lengd og tekur um 6.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_14434017": {
+    "id": "trail_14434017",
+    "name": "Hallormsstaðaháls",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.92,
+    "duration_hours": 2.5,
+    "elevation_gain_m": 0,
+    "lat": 65.0960683,
+    "lon": -14.7081832,
+    "latitude": 65.0960683,
+    "longitude": -14.7081832,
+    "start": {
+      "lat": 65.0960683,
+      "lng": -14.7081832,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.0959242,
+      "lng": -14.7352581,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hallormsstaðaháls er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.9 km að lengd og tekur um 2.5 klukkustundir.",
+      "full": "Hallormsstaðaháls er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.9 km að lengd og tekur um 2.5 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": "hiking",
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "East Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://hengifoss.is/en/hallormsstadur",
+    "operator": null
+  },
+  "trail_w496463827": {
+    "id": "trail_w496463827",
+    "name": "Almenningsvegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.91,
+    "duration_hours": 2.5,
+    "elevation_gain_m": 0,
+    "lat": 64.0127814,
+    "lon": -22.183491,
+    "latitude": 64.0127814,
+    "longitude": -22.183491,
+    "start": {
+      "lat": 64.0127814,
+      "lng": -22.183491,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9927002,
+      "lng": -22.3673033,
+      "name": "End"
+    },
+    "description": {
+      "short": "Almenningsvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.9 km að lengd og tekur um 2.5 klukkustundir.",
+      "full": "Almenningsvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.9 km að lengd og tekur um 2.5 klukkustundir.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://ferlir.is/almenningsvegurinn/",
+    "operator": null
+  },
+  "trail_6227862": {
+    "id": "trail_6227862",
+    "name": "Vogelfelsen beim Vulkan Raudinupur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 24.67,
+    "duration_hours": 6.2,
+    "elevation_gain_m": 0,
+    "lat": 66.5074386,
+    "lon": -16.54029,
+    "latitude": 66.5074386,
+    "longitude": -16.54029,
+    "start": {
+      "lat": 66.5074386,
+      "lng": -16.54029,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 66.5074386,
+      "lng": -16.54029,
+      "name": "End"
+    },
+    "description": {
+      "short": "Vogelfelsen beim Vulkan Raudinupur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 24.7 km að lengd og tekur um 6.2 klukkustundir.",
+      "full": "Vogelfelsen beim Vulkan Raudinupur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 24.7 km að lengd og tekur um 6.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_12497164": {
+    "id": "trail_12497164",
+    "name": "Þverfellshorn",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.76,
+    "duration_hours": 2.4,
+    "elevation_gain_m": 0,
+    "lat": 64.2152986,
+    "lon": -21.7196485,
+    "latitude": 64.2152986,
+    "longitude": -21.7196485,
+    "start": {
+      "lat": 64.2152986,
+      "lng": -21.7196485,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.2094,
+      "lng": -21.7139433,
+      "name": "End"
+    },
+    "description": {
+      "short": "Þverfellshorn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.8 km að lengd og tekur um 2.4 klukkustundir.",
+      "full": "Þverfellshorn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.8 km að lengd og tekur um 2.4 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6161020": {
+    "id": "trail_6161020",
+    "name": "Morsárdalur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 24.22,
+    "duration_hours": 6.1,
+    "elevation_gain_m": 0,
+    "lat": 64.0164677,
+    "lon": -16.9678902,
+    "latitude": 64.0164677,
+    "longitude": -16.9678902,
+    "start": {
+      "lat": 64.0164677,
+      "lng": -16.9678902,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0170508,
+      "lng": -16.9843948,
+      "name": "End"
+    },
+    "description": {
+      "short": "Morsárdalur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 24.2 km að lengd og tekur um 6.1 klukkustundir.",
+      "full": "Morsárdalur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 24.2 km að lengd og tekur um 6.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16346133": {
+    "id": "trail_16346133",
+    "name": "Grænagil",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.67,
+    "duration_hours": 2.4,
+    "elevation_gain_m": 0,
+    "lat": 63.9826684,
+    "lon": -19.0845582,
+    "latitude": 63.9826684,
+    "longitude": -19.0845582,
+    "start": {
+      "lat": 63.9826684,
+      "lng": -19.0845582,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9906048,
+      "lng": -19.0615841,
+      "name": "End"
+    },
+    "description": {
+      "short": "Grænagil er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.7 km að lengd og tekur um 2.4 klukkustundir.",
+      "full": "Grænagil er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.7 km að lengd og tekur um 2.4 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w41210976": {
+    "id": "trail_w41210976",
+    "name": "T2",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.65,
+    "duration_hours": 2.4,
+    "elevation_gain_m": 0,
+    "lat": 63.9847848,
+    "lon": -19.0591599,
+    "latitude": 63.9847848,
+    "longitude": -19.0591599,
+    "start": {
+      "lat": 63.9847848,
+      "lng": -19.0591599,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9641354,
+      "lng": -19.1169476,
+      "name": "End"
+    },
+    "description": {
+      "short": "T2 er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.7 km að lengd og tekur um 2.4 klukkustundir.",
+      "full": "T2 er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.7 km að lengd og tekur um 2.4 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": "mountain_hiking",
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w166482376": {
+    "id": "trail_w166482376",
+    "name": "Laugavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.65,
+    "duration_hours": 2.4,
+    "elevation_gain_m": 0,
+    "lat": 63.8649111,
+    "lon": -19.2197442,
+    "latitude": 63.8649111,
+    "longitude": -19.2197442,
+    "start": {
+      "lat": 63.8649111,
+      "lng": -19.2197442,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9296451,
+      "lng": -19.1625136,
+      "name": "End"
+    },
+    "description": {
+      "short": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "full": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": "demanding_mountain_hiking",
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227823": {
+    "id": "trail_6227823",
+    "name": "Hljóðaklettar - Rauðhólar",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.57,
+    "duration_hours": 2.4,
+    "elevation_gain_m": 0,
+    "lat": 65.9330614,
+    "lon": -16.5414363,
+    "latitude": 65.9330614,
+    "longitude": -16.5414363,
+    "start": {
+      "lat": 65.9330614,
+      "lng": -16.5414363,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.931354,
+      "lng": -16.5469214,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hljóðaklettar - Rauðhólar er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.6 km að lengd og tekur um 2.4 klukkustundir.",
+      "full": "Hljóðaklettar - Rauðhólar er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.6 km að lengd og tekur um 2.4 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_5451033": {
+    "id": "trail_5451033",
+    "name": "Svatifoss and Sjónarnípa",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.33,
+    "duration_hours": 2.3,
+    "elevation_gain_m": 0,
+    "lat": 64.0168507,
+    "lon": -16.9720558,
+    "latitude": 64.0168507,
+    "longitude": -16.9720558,
+    "start": {
+      "lat": 64.0168507,
+      "lng": -16.9720558,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0306727,
+      "lng": -16.9381857,
+      "name": "End"
+    },
+    "description": {
+      "short": "Svatifoss and Sjónarnípa er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.3 km að lengd og tekur um 2.3 klukkustundir.",
+      "full": "Svatifoss and Sjónarnípa er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.3 km að lengd og tekur um 2.3 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://www.vatnajokulsthjodgardur.is/thjodgardurinn/gonguleidir/skaftafell/",
+    "operator": null
+  },
+  "trail_19462841": {
+    "id": "trail_19462841",
+    "name": "Remundargil",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.21,
+    "duration_hours": 2.3,
+    "elevation_gain_m": 0,
+    "lat": 63.5303511,
+    "lon": -18.887561,
+    "latitude": 63.5303511,
+    "longitude": -18.887561,
+    "start": {
+      "lat": 63.5303511,
+      "lng": -18.887561,
+      "name": "Þakgil"
+    },
+    "end": {
+      "lat": 63.5387285,
+      "lng": -18.8550777,
+      "name": "Remundargil"
+    },
+    "description": {
+      "short": "Remundargil er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.2 km að lengd og tekur um 2.3 klukkustundir.",
+      "full": "Remundargil er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.2 km að lengd og tekur um 2.3 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6160995": {
+    "id": "trail_6160995",
+    "name": "Wasserfallrunde im Skaftafell-Nationalpark",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.18,
+    "duration_hours": 2.3,
+    "elevation_gain_m": 0,
+    "lat": 64.016477,
+    "lon": -16.9667743,
+    "latitude": 64.016477,
+    "longitude": -16.9667743,
+    "start": {
+      "lat": 64.016477,
+      "lng": -16.9667743,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0164677,
+      "lng": -16.9678902,
+      "name": "End"
+    },
+    "description": {
+      "short": "Wasserfallrunde im Skaftafell-Nationalpark er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.2 km að lengd og tekur um 2.3 klukkustundir.",
+      "full": "Wasserfallrunde im Skaftafell-Nationalpark er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 9.2 km að lengd og tekur um 2.3 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w37683997": {
+    "id": "trail_w37683997",
+    "name": "Laugavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 9.17,
+    "duration_hours": 2.3,
+    "elevation_gain_m": 0,
+    "lat": 63.7123879,
+    "lon": -19.4871066,
+    "latitude": 63.7123879,
+    "longitude": -19.4871066,
+    "start": {
+      "lat": 63.7123879,
+      "lng": -19.4871066,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.7538593,
+      "lng": -19.3607533,
+      "name": "End"
+    },
+    "description": {
+      "short": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "full": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": "demanding_mountain_hiking",
+      "trail_visibility": null,
+      "network": null,
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_396940": {
+    "id": "trail_396940",
+    "name": "Fimmvörðuháls",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "expert",
+    "distance_km": 59.47,
+    "duration_hours": 14.9,
+    "elevation_gain_m": 0,
+    "lat": 63.6779156,
+    "lon": -19.482233,
+    "latitude": 63.6779156,
+    "longitude": -19.482233,
+    "start": {
+      "lat": 63.6779156,
+      "lng": -19.482233,
+      "name": "Skógar"
+    },
+    "end": {
+      "lat": 63.6109723,
+      "lng": -19.4409433,
+      "name": "Básar"
+    },
+    "description": {
+      "short": "Fimmvörðuháls er 25 km gönguleið milli Skógafoss og Þórsmerkur yfir hálendiðvið Eyjafjallajökul með glæsilegu útsýni.",
+      "full": "Fimmvörðuháls er 25 km gönguleið milli Skógafoss og Þórsmerkur yfir hálendiðvið Eyjafjallajökul með glæsilegu útsýni.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "South Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": "Ferðafélagið Útivist"
+  },
+  "trail_16275828": {
+    "id": "trail_16275828",
+    "name": "Vaðlaheiði",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.84,
+    "duration_hours": 2.2,
+    "elevation_gain_m": 0,
+    "lat": 65.7063057,
+    "lon": -17.9010326,
+    "latitude": 65.7063057,
+    "longitude": -17.9010326,
+    "start": {
+      "lat": 65.7063057,
+      "lng": -17.9010326,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.7062704,
+      "lng": -17.9005176,
+      "name": "End"
+    },
+    "description": {
+      "short": "Vaðlaheiði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.8 km að lengd og tekur um 2.2 klukkustundir.",
+      "full": "Vaðlaheiði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.8 km að lengd og tekur um 2.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6224418": {
+    "id": "trail_6224418",
+    "name": "Kaldalón",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.79,
+    "duration_hours": 2.2,
+    "elevation_gain_m": 0,
+    "lat": 66.0957922,
+    "lon": -22.3561117,
+    "latitude": 66.0957922,
+    "longitude": -22.3561117,
+    "start": {
+      "lat": 66.0957922,
+      "lng": -22.3561117,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 66.1191809,
+      "lng": -22.2883778,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kaldalón er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.8 km að lengd og tekur um 2.2 klukkustundir.",
+      "full": "Kaldalón er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.8 km að lengd og tekur um 2.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_12910201": {
+    "id": "trail_12910201",
+    "name": "Gönguleið C",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.77,
+    "duration_hours": 2.2,
+    "elevation_gain_m": 0,
+    "lat": 63.8553864,
+    "lon": -22.3070282,
+    "latitude": 63.8553864,
+    "longitude": -22.3070282,
+    "start": {
+      "lat": 63.8553864,
+      "lng": -22.3070282,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.8735888,
+      "lng": -22.2626009,
+      "name": "Geldingadalagos"
+    },
+    "description": {
+      "short": "Gönguleið C er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.8 km að lengd og tekur um 2.2 klukkustundir.",
+      "full": "Gönguleið C er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.8 km að lengd og tekur um 2.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6133108": {
+    "id": "trail_6133108",
+    "name": "Blahnukur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.59,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 63.9767748,
+    "lon": -19.0691719,
+    "latitude": 63.9767748,
+    "longitude": -19.0691719,
+    "start": {
+      "lat": 63.9767748,
+      "lng": -19.0691719,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9905976,
+      "lng": -19.0607577,
+      "name": "End"
+    },
+    "description": {
+      "short": "Blahnukur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.6 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Blahnukur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.6 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16276653": {
+    "id": "trail_16276653",
+    "name": "Ystuvíkurfjall",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.57,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 65.8293935,
+    "lon": -18.028139,
+    "latitude": 65.8293935,
+    "longitude": -18.028139,
+    "start": {
+      "lat": 65.8293935,
+      "lng": -18.028139,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.8150613,
+      "lng": -17.9879294,
+      "name": "End"
+    },
+    "description": {
+      "short": "Ystuvíkurfjall er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.6 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Ystuvíkurfjall er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.6 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w330774553": {
+    "id": "trail_w330774553",
+    "name": "Kjalvegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.57,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 64.8645643,
+    "lon": -19.5592311,
+    "latitude": 64.8645643,
+    "longitude": -19.5592311,
+    "start": {
+      "lat": 64.8645643,
+      "lng": -19.5592311,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.8192897,
+      "lng": -19.6951079,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kjalvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.6 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Kjalvegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.6 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227770": {
+    "id": "trail_6227770",
+    "name": "Hafragilsfoss und Dettifoss",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 21.36,
+    "duration_hours": 5.3,
+    "elevation_gain_m": 0,
+    "lat": 65.8124744,
+    "lon": -16.388463,
+    "latitude": 65.8124744,
+    "longitude": -16.388463,
+    "start": {
+      "lat": 65.8124744,
+      "lng": -16.388463,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.8123241,
+      "lng": -16.3925195,
+      "name": "End"
+    },
+    "description": {
+      "short": "Gönguleiðir að Dettifossi, öflugasta fossi Evrópu.",
+      "full": "Gönguleiðir að Dettifossi, öflugasta fossi Evrópu.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6126237": {
+    "id": "trail_6126237",
+    "name": "Eldborg",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.48,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 64.7741209,
+    "lon": -22.3036711,
+    "latitude": 64.7741209,
+    "longitude": -22.3036711,
+    "start": {
+      "lat": 64.7741209,
+      "lng": -22.3036711,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.7955636,
+      "lng": -22.3203574,
+      "name": "End"
+    },
+    "description": {
+      "short": "Eldborg er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.5 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Eldborg er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.5 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w506579891": {
+    "id": "trail_w506579891",
+    "name": "Konungsvegurinn",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.47,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 64.1650406,
+    "lon": -21.4246437,
+    "latitude": 64.1650406,
+    "longitude": -21.4246437,
+    "start": {
+      "lat": 64.1650406,
+      "lng": -21.4246437,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.2001814,
+      "lng": -21.2727405,
+      "name": "End"
+    },
+    "description": {
+      "short": "Konungsvegurinn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.5 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Konungsvegurinn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.5 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w536083859": {
+    "id": "trail_w536083859",
+    "name": "Reykjavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.46,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 63.9928174,
+    "lon": -21.7755578,
+    "latitude": 63.9928174,
+    "longitude": -21.7755578,
+    "start": {
+      "lat": 63.9928174,
+      "lng": -21.7755578,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9824192,
+      "lng": -21.6541278,
+      "name": "End"
+    },
+    "description": {
+      "short": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.5 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.5 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_17878243": {
+    "id": "trail_17878243",
+    "name": "Vatnahringur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.39,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 64.0749927,
+    "lon": -21.747856,
+    "latitude": 64.0749927,
+    "longitude": -21.747856,
+    "start": {
+      "lat": 64.0749927,
+      "lng": -21.747856,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0749927,
+      "lng": -21.747856,
+      "name": "End"
+    },
+    "description": {
+      "short": "Vatnahringur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.4 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Vatnahringur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.4 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": "is:Skógræktarfélag_Reykjavíkur"
+  },
+  "trail_6173423": {
+    "id": "trail_6173423",
+    "name": "Hólar",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.36,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 65.095383,
+    "lon": -14.7378355,
+    "latitude": 65.095383,
+    "longitude": -14.7378355,
+    "start": {
+      "lat": 65.095383,
+      "lng": -14.7378355,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.0959242,
+      "lng": -14.7352581,
+      "name": "End"
+    },
+    "description": {
+      "short": "Hólar er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.4 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Hólar er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.4 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": "hiking",
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "East Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://hengifoss.is/en/hallormsstadur",
+    "operator": null
+  },
+  "trail_5449040": {
+    "id": "trail_5449040",
+    "name": "Svartifoss - Sjónarsker - Sel",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.33,
+    "duration_hours": 2.1,
+    "elevation_gain_m": 0,
+    "lat": 64.0168507,
+    "lon": -16.9720558,
+    "latitude": 64.0168507,
+    "longitude": -16.9720558,
+    "start": {
+      "lat": 64.0168507,
+      "lng": -16.9720558,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0164795,
+      "lng": -16.9726987,
+      "name": "End"
+    },
+    "description": {
+      "short": "Svartifoss - Sjónarsker - Sel er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.3 km að lengd og tekur um 2.1 klukkustundir.",
+      "full": "Svartifoss - Sjónarsker - Sel er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.3 km að lengd og tekur um 2.1 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": "https://www.vatnajokulsthjodgardur.is/thjodgardurinn/gonguleidir/skaftafell/",
+    "operator": null
+  },
+  "trail_13548": {
+    "id": "trail_13548",
+    "name": "Kjalvegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 20.66,
+    "duration_hours": 5.2,
+    "elevation_gain_m": 0,
+    "lat": 64.7518904,
+    "lon": -19.6247637,
+    "latitude": 64.7518904,
+    "longitude": -19.6247637,
+    "start": {
+      "lat": 64.7518904,
+      "lng": -19.6247637,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.8670244,
+      "lng": -19.5643508,
+      "name": "End"
+    },
+    "description": {
+      "short": "Kjalvegur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 20.7 km að lengd og tekur um 5.2 klukkustundir.",
+      "full": "Kjalvegur er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 20.7 km að lengd og tekur um 5.2 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_laugavegur": {
+    "id": "trail_laugavegur",
+    "name": "Laugavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 55,
+    "duration_hours": 16,
+    "elevation_gain_m": 470,
+    "lat": 63.9833,
+    "lon": -19.0581,
+    "latitude": 63.9833,
+    "longitude": -19.0581,
+    "start": {
+      "lat": 63.9833,
+      "lng": -19.0581,
+      "name": "Landmannalaugar"
+    },
+    "end": {
+      "lat": 63.6833,
+      "lng": -19.4667,
+      "name": "Þórsmörk"
+    },
+    "description": {
+      "short": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "full": "Laugavegur er eitt vinsælasta gönguleiðin á Íslandi, 55 km leið frá Landmannalaugum til Þórsmerkur í gegnum náttúrulega og fjölbreytta náttúru með litríkum fjöllum, laugum og jöklum.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w517114788": {
+    "id": "trail_w517114788",
+    "name": "T2",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.18,
+    "duration_hours": 2.0,
+    "elevation_gain_m": 0,
+    "lat": 63.9985425,
+    "lon": -19.1166058,
+    "latitude": 63.9985425,
+    "longitude": -19.1166058,
+    "start": {
+      "lat": 63.9985425,
+      "lng": -19.1166058,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9548684,
+      "lng": -19.1454331,
+      "name": "End"
+    },
+    "description": {
+      "short": "T2 er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.2 km að lengd og tekur um 2.0 klukkustundir.",
+      "full": "T2 er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.2 km að lengd og tekur um 2.0 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": "mountain_hiking",
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w108330687": {
+    "id": "trail_w108330687",
+    "name": "Dreki-Öskjuvatn",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.13,
+    "duration_hours": 2.0,
+    "elevation_gain_m": 0,
+    "lat": 65.0428401,
+    "lon": -16.5960702,
+    "latitude": 65.0428401,
+    "longitude": -16.5960702,
+    "start": {
+      "lat": 65.0428401,
+      "lng": -16.5960702,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.046877,
+      "lng": -16.7234169,
+      "name": "End"
+    },
+    "description": {
+      "short": "Dreki-Öskjuvatn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.1 km að lengd og tekur um 2.0 klukkustundir.",
+      "full": "Dreki-Öskjuvatn er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.1 km að lengd og tekur um 2.0 klukkustundir.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": "mountain_hiking",
+      "trail_visibility": "intermediate",
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227854": {
+    "id": "trail_6227854",
+    "name": "Felseninsel Eyjan",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.11,
+    "duration_hours": 2.0,
+    "elevation_gain_m": 0,
+    "lat": 66.0260833,
+    "lon": -16.4960172,
+    "latitude": 66.0260833,
+    "longitude": -16.4960172,
+    "start": {
+      "lat": 66.0260833,
+      "lng": -16.4960172,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 66.0287165,
+      "lng": -16.4991758,
+      "name": "End"
+    },
+    "description": {
+      "short": "Felseninsel Eyjan er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.1 km að lengd og tekur um 2.0 klukkustundir.",
+      "full": "Felseninsel Eyjan er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.1 km að lengd og tekur um 2.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_17856423": {
+    "id": "trail_17856423",
+    "name": "Skógarhringur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 8.05,
+    "duration_hours": 2.0,
+    "elevation_gain_m": 0,
+    "lat": 64.075262,
+    "lon": -21.739171,
+    "latitude": 64.075262,
+    "longitude": -21.739171,
+    "start": {
+      "lat": 64.075262,
+      "lng": -21.739171,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0738626,
+      "lng": -21.7441731,
+      "name": "End"
+    },
+    "description": {
+      "short": "Skógarhringur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.1 km að lengd og tekur um 2.0 klukkustundir.",
+      "full": "Skógarhringur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 8.1 km að lengd og tekur um 2.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": "is:Skógræktarfélag_Reykjavíkur"
+  },
+  "trail_16346132": {
+    "id": "trail_16346132",
+    "name": "Skálli",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "challenging",
+    "distance_km": 20.09,
+    "duration_hours": 5.0,
+    "elevation_gain_m": 0,
+    "lat": 63.9847848,
+    "lon": -19.0591599,
+    "latitude": 63.9847848,
+    "longitude": -19.0591599,
+    "start": {
+      "lat": 63.9847848,
+      "lng": -19.0591599,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9529159,
+      "lng": -19.0432012,
+      "name": "End"
+    },
+    "description": {
+      "short": "Skálli er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 20.1 km að lengd og tekur um 5.0 klukkustundir.",
+      "full": "Skálli er krefjandi gönguleið fyrir reyndan göngumann með stórkostlegu útsýni. Leiðin er 20.1 km að lengd og tekur um 5.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w751562697": {
+    "id": "trail_w751562697",
+    "name": "Stórhöfðastígur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.94,
+    "duration_hours": 2.0,
+    "elevation_gain_m": 0,
+    "lat": 64.0274185,
+    "lon": -21.9411533,
+    "latitude": 64.0274185,
+    "longitude": -21.9411533,
+    "start": {
+      "lat": 64.0274185,
+      "lng": -21.9411533,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9646804,
+      "lng": -21.9845869,
+      "name": "End"
+    },
+    "description": {
+      "short": "Stórhöfðastígur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.9 km að lengd og tekur um 2.0 klukkustundir.",
+      "full": "Stórhöfðastígur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.9 km að lengd og tekur um 2.0 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6125813": {
+    "id": "trail_6125813",
+    "name": "Baejarfell",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.84,
+    "duration_hours": 2.0,
+    "elevation_gain_m": 0,
+    "lat": 64.6944576,
+    "lon": -20.8739754,
+    "latitude": 64.6944576,
+    "longitude": -20.8739754,
+    "start": {
+      "lat": 64.6944576,
+      "lng": -20.8739754,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.6939787,
+      "lng": -20.871875,
+      "name": "End"
+    },
+    "description": {
+      "short": "Baejarfell er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.8 km að lengd og tekur um 2.0 klukkustundir.",
+      "full": "Baejarfell er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.8 km að lengd og tekur um 2.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_16189784": {
+    "id": "trail_16189784",
+    "name": "F208-Grænihryggur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.81,
+    "duration_hours": 2.0,
+    "elevation_gain_m": 0,
+    "lat": 63.9852163,
+    "lon": -18.9675334,
+    "latitude": 63.9852163,
+    "longitude": -18.9675334,
+    "start": {
+      "lat": 63.9852163,
+      "lng": -18.9675334,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9357331,
+      "lng": -19.0027282,
+      "name": "End"
+    },
+    "description": {
+      "short": "F208-Grænihryggur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.8 km að lengd og tekur um 2.0 klukkustundir.",
+      "full": "F208-Grænihryggur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.8 km að lengd og tekur um 2.0 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_12497891": {
+    "id": "trail_12497891",
+    "name": "Gönguleið B",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.77,
+    "duration_hours": 1.9,
+    "elevation_gain_m": 0,
+    "lat": 63.8852324,
+    "lon": -22.3005831,
+    "latitude": 63.8852324,
+    "longitude": -22.3005831,
+    "start": {
+      "lat": 63.8852324,
+      "lng": -22.3005831,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.8732588,
+      "lng": -22.3020492,
+      "name": "Geldingadalsgos"
+    },
+    "description": {
+      "short": "Gönguleið B er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.8 km að lengd og tekur um 1.9 klukkustundir.",
+      "full": "Gönguleið B er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.8 km að lengd og tekur um 1.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "lwn",
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6224298": {
+    "id": "trail_6224298",
+    "name": "Rundwanderung im Vatnsdalur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.69,
+    "duration_hours": 1.9,
+    "elevation_gain_m": 0,
+    "lat": 65.5871712,
+    "lon": -23.1262959,
+    "latitude": 65.5871712,
+    "longitude": -23.1262959,
+    "start": {
+      "lat": 65.5871712,
+      "lng": -23.1262959,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.5882659,
+      "lng": -23.1266355,
+      "name": "End"
+    },
+    "description": {
+      "short": "Rundwanderung im Vatnsdalur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.7 km að lengd og tekur um 1.9 klukkustundir.",
+      "full": "Rundwanderung im Vatnsdalur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.7 km að lengd og tekur um 1.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227870": {
+    "id": "trail_6227870",
+    "name": "Raudanes",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.62,
+    "duration_hours": 1.9,
+    "elevation_gain_m": 0,
+    "lat": 66.2428223,
+    "lon": -15.7110677,
+    "latitude": 66.2428223,
+    "longitude": -15.7110677,
+    "start": {
+      "lat": 66.2428223,
+      "lng": -15.7110677,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 66.2428223,
+      "lng": -15.7110677,
+      "name": "End"
+    },
+    "description": {
+      "short": "Raudanes er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.6 km að lengd og tekur um 1.9 klukkustundir.",
+      "full": "Raudanes er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.6 km að lengd og tekur um 1.9 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w108352763": {
+    "id": "trail_w108352763",
+    "name": "Jökuldalur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.53,
+    "duration_hours": 1.9,
+    "elevation_gain_m": 0,
+    "lat": 64.7381971,
+    "lon": -18.0700491,
+    "latitude": 64.7381971,
+    "longitude": -18.0700491,
+    "start": {
+      "lat": 64.7381971,
+      "lng": -18.0700491,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.6961455,
+      "lng": -17.9632417,
+      "name": "End"
+    },
+    "description": {
+      "short": "Jökuldalur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.5 km að lengd og tekur um 1.9 klukkustundir.",
+      "full": "Jökuldalur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.5 km að lengd og tekur um 1.9 klukkustundir.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": "hiking",
+      "trail_visibility": "intermediate",
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w844998890": {
+    "id": "trail_w844998890",
+    "name": "Skógfellavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.53,
+    "duration_hours": 1.9,
+    "elevation_gain_m": 0,
+    "lat": 63.9079001,
+    "lon": -22.3647173,
+    "latitude": 63.9079001,
+    "longitude": -22.3647173,
+    "start": {
+      "lat": 63.9079001,
+      "lng": -22.3647173,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 63.9650168,
+      "lng": -22.3843646,
+      "name": "End"
+    },
+    "description": {
+      "short": "Skógfellavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.5 km að lengd og tekur um 1.9 klukkustundir.",
+      "full": "Skógfellavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.5 km að lengd og tekur um 1.9 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": "hiking",
+      "trail_visibility": "good",
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w229926883": {
+    "id": "trail_w229926883",
+    "name": "Glerárdalur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.43,
+    "duration_hours": 1.9,
+    "elevation_gain_m": 0,
+    "lat": 65.581194,
+    "lon": -18.2958132,
+    "latitude": 65.581194,
+    "longitude": -18.2958132,
+    "start": {
+      "lat": 65.581194,
+      "lng": -18.2958132,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.6317433,
+      "lng": -18.2089518,
+      "name": "End"
+    },
+    "description": {
+      "short": "Glerárdalur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.9 klukkustundir.",
+      "full": "Glerárdalur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.9 klukkustundir.",
+      "terrain": "grass",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "grass",
+      "sac_scale": null,
+      "trail_visibility": "intermediate",
+      "network": null,
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w548388488": {
+    "id": "trail_w548388488",
+    "name": "Reykjavegur",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.43,
+    "duration_hours": 1.9,
+    "elevation_gain_m": 0,
+    "lat": 63.9779985,
+    "lon": -21.9517687,
+    "latitude": 63.9779985,
+    "longitude": -21.9517687,
+    "start": {
+      "lat": 63.9779985,
+      "lng": -21.9517687,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0222601,
+      "lng": -21.8675984,
+      "name": "End"
+    },
+    "description": {
+      "short": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.9 klukkustundir.",
+      "full": "Reykjavegur er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.9 klukkustundir.",
+      "terrain": "unpaved",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "unpaved",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w560131184": {
+    "id": "trail_w560131184",
+    "name": "Gjósta - Svarthöfði",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.38,
+    "duration_hours": 1.8,
+    "elevation_gain_m": 0,
+    "lat": 64.68767,
+    "lon": -17.86506,
+    "latitude": 64.68767,
+    "longitude": -17.86506,
+    "start": {
+      "lat": 64.68767,
+      "lng": -17.86506,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.6402476,
+      "lng": -17.89561,
+      "name": "End"
+    },
+    "description": {
+      "short": "Gjósta - Svarthöfði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.8 klukkustundir.",
+      "full": "Gjósta - Svarthöfði er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.8 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_w40616490": {
+    "id": "trail_w40616490",
+    "name": "Klettsgata",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.36,
+    "duration_hours": 1.8,
+    "elevation_gain_m": 0,
+    "lat": 64.8158827,
+    "lon": -23.5075239,
+    "latitude": 64.8158827,
+    "longitude": -23.5075239,
+    "start": {
+      "lat": 64.8158827,
+      "lng": -23.5075239,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.821609,
+      "lng": -23.3844769,
+      "name": "End"
+    },
+    "description": {
+      "short": "Klettsgata er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.8 klukkustundir.",
+      "full": "Klettsgata er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.4 km að lengd og tekur um 1.8 klukkustundir.",
+      "terrain": "ground",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "ground",
+      "sac_scale": "hiking",
+      "trail_visibility": null,
+      "network": null,
+      "region": "West Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227735": {
+    "id": "trail_6227735",
+    "name": "Krafla",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.25,
+    "duration_hours": 1.8,
+    "elevation_gain_m": 0,
+    "lat": 65.7131399,
+    "lon": -16.7745995,
+    "latitude": 65.7131399,
+    "longitude": -16.7745995,
+    "start": {
+      "lat": 65.7131399,
+      "lng": -16.7745995,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.7174444,
+      "lng": -16.7590837,
+      "name": "End"
+    },
+    "description": {
+      "short": "Krafla er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.2 km að lengd og tekur um 1.8 klukkustundir.",
+      "full": "Krafla er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.2 km að lengd og tekur um 1.8 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_6227873": {
+    "id": "trail_6227873",
+    "name": "Fuglabjagarnes",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.21,
+    "duration_hours": 1.8,
+    "elevation_gain_m": 0,
+    "lat": 65.8581777,
+    "lon": -14.751572,
+    "latitude": 65.8581777,
+    "longitude": -14.751572,
+    "start": {
+      "lat": 65.8581777,
+      "lng": -14.751572,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 65.8479793,
+      "lng": -14.7322618,
+      "name": "End"
+    },
+    "description": {
+      "short": "Fuglabjagarnes er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.2 km að lengd og tekur um 1.8 klukkustundir.",
+      "full": "Fuglabjagarnes er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.2 km að lengd og tekur um 1.8 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": "rwn",
+      "region": "North Iceland"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  },
+  "trail_5449017": {
+    "id": "trail_5449017",
+    "name": "Skaftafellsjökull",
+    "type": "hiking",
+    "category": "hiking",
+    "difficulty": "moderate",
+    "distance_km": 7.1,
+    "duration_hours": 1.8,
+    "elevation_gain_m": 0,
+    "lat": 64.0163858,
+    "lon": -16.9655621,
+    "latitude": 64.0163858,
+    "longitude": -16.9655621,
+    "start": {
+      "lat": 64.0163858,
+      "lng": -16.9655621,
+      "name": "Start"
+    },
+    "end": {
+      "lat": 64.0251008,
+      "lng": -16.9380889,
+      "name": "End"
+    },
+    "description": {
+      "short": "Skaftafellsjökull er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.1 km að lengd og tekur um 1.8 klukkustundir.",
+      "full": "Skaftafellsjökull er miðlungs erfið gönguleið með fallegu útsýni yfir íslenska náttúru. Leiðin er 7.1 km að lengd og tekur um 1.8 klukkustundir.",
+      "terrain": "trail",
+      "highlights": ""
+    },
+    "trail_info": {
+      "surface": "trail",
+      "sac_scale": null,
+      "trail_visibility": null,
+      "network": null,
+      "region": "Central Highlands"
+    },
+    "media": {
+      "images": [],
+      "thumbnail": null,
+      "hero_image": null
+    },
+    "rating": 4.2,
+    "country": "IS",
+    "website": null,
+    "operator": null
+  }
+}

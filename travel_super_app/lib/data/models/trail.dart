@@ -8,6 +8,7 @@ class Trail {
   final double? elevation; // meters
   final String description;
   final String? imageUrl;
+  final String? mapImage; // OpenStreetMap embed URL
   final List<String>? images;
   final List<TrailPoint> route;
   final double? rating;
@@ -26,6 +27,7 @@ class Trail {
     required this.route,
     this.elevation,
     this.imageUrl,
+    this.mapImage,
     this.images,
     this.rating,
     this.region,
@@ -45,11 +47,20 @@ class Trail {
       id: json['id'] as String? ?? '',
       name: json['name'] as String? ?? 'Unknown Trail',
       difficulty: json['difficulty'] as String? ?? 'moderate',
-      distance: (json['distance'] as num?)?.toDouble() ?? 0.0,
-      duration: json['duration'] as int? ?? 0,
-      elevation: (json['elevation'] as num?)?.toDouble(),
-      description: json['description'] as String? ?? '',
+      distance: (json['distance'] as num?)?.toDouble() ??
+          (json['lengthKm'] as num?)?.toDouble() ??
+          (json['length_km'] as num?)?.toDouble() ??
+          0.0,
+      duration: (json['duration'] as int?) ??
+          (json['durationMin'] as int?) ??
+          (json['duration_min'] as int?) ??
+          0,
+      elevation: (json['elevation'] as num?)?.toDouble() ??
+          (json['elevationGain'] as num?)?.toDouble() ??
+          (json['elevation_gain'] as num?)?.toDouble(),
+      description: _extractDescription(json),
       imageUrl: _extractImageUrl(json),
+      mapImage: json['mapImage'] as String? ?? json['map_preview'] as String?,
       images: (json['images'] as List<dynamic>?)?.cast<String>(),
       route: route,
       rating: (json['rating'] as num?)?.toDouble(),
@@ -72,6 +83,7 @@ class Trail {
       'route': route.map((p) => p.toJson()).toList(),
       if (elevation != null) 'elevation': elevation,
       if (imageUrl != null) 'imageUrl': imageUrl,
+      if (mapImage != null) 'mapImage': mapImage,
       if (images != null) 'images': images,
       if (rating != null) 'rating': rating,
       if (region != null) 'region': region,
@@ -81,15 +93,38 @@ class Trail {
     };
   }
 
+  static String _extractDescription(Map<String, dynamic> json) {
+    // Try direct description field first
+    if (json['description'] != null) {
+      final desc = json['description'];
+      if (desc is String) return desc;
+      // Handle multi-language description
+      if (desc is Map) {
+        return desc['en'] ?? desc['is'] ?? desc.values.first ?? '';
+      }
+    }
+
+    // Try content field (from enriched data)
+    if (json['content'] is Map) {
+      final content = json['content'] as Map<String, dynamic>;
+      final enContent = content['en'] as Map<String, dynamic>?;
+      if (enContent != null && enContent['description'] != null) {
+        return enContent['description'] as String;
+      }
+    }
+
+    return '';
+  }
+
   static String? _extractImageUrl(Map<String, dynamic> json) {
     if (json['imageUrl'] != null) return json['imageUrl'] as String;
     if (json['image'] != null) return json['image'] as String;
-    
+
     final images = json['images'] as List<dynamic>?;
     if (images != null && images.isNotEmpty) {
       return images.first as String;
     }
-    
+
     return null;
   }
 
@@ -107,7 +142,8 @@ class Trail {
   String get formattedDistance => '${distance.toStringAsFixed(1)} km';
 
   @override
-  String toString() => 'Trail(name: $name, difficulty: $difficulty, distance: ${formattedDistance})';
+  String toString() =>
+      'Trail(name: $name, difficulty: $difficulty, distance: $formattedDistance)';
 }
 
 /// 📍 Trail Point - GPS coordinate on a trail route

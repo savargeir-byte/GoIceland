@@ -1,0 +1,172 @@
+{
+  "summary": {
+    "total": 13,
+    "complete": 0,
+    "missing_images_only": 0,
+    "missing_descriptions_only": 13,
+    "missing_both": 0
+  },
+  "missing_images": [],
+  "missing_descriptions": [
+    {
+      "name": "Skógafoss",
+      "category": "waterfall",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Gullfoss",
+      "category": "waterfall",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Seljalandsfoss",
+      "category": "waterfall",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Dettifoss",
+      "category": "waterfall",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Blue Lagoon",
+      "category": "hot_spring",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Geysir",
+      "category": "geyser",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Jökulsárlón",
+      "category": "glacier_lagoon",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Reynisfjara",
+      "category": "beach",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Diamond Beach",
+      "category": "beach",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Kirkjufell",
+      "category": "viewpoint",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Grillmarkaðurinn",
+      "category": "restaurant",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Dill Restaurant",
+      "category": "restaurant",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    },
+    {
+      "name": "Reykjavík Roasters",
+      "category": "cafe",
+      "lat": null,
+      "lng": null,
+      "images_count": 1,
+      "has_en_desc": false,
+      "has_zh_desc": false,
+      "has_is_desc": false,
+      "osm_id": "",
+      "place_id": ""
+    }
+  ],
+  "missing_both": [],
+  "restaurants_no_images": [],
+  "hotels_no_images": [],
+  "cafes_no_images": []
+}

@@ -1,9 +1,11 @@
+import 'dart:math' as math;
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'dart:math' as math;
 
+import '../../../core/constants/categories.dart';
 import '../../../data/models/poi_model_full.dart';
 import '../../places/widgets/place_detail_full.dart';
 
@@ -81,7 +83,8 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  double _calculateDistance(double lat1, double lon1, double lat2, double lon2) {
+  double _calculateDistance(
+      double lat1, double lon1, double lat2, double lon2) {
     const R = 6371;
     final dLat = _toRadians(lat2 - lat1);
     final dLon = _toRadians(lon2 - lon1);
@@ -139,7 +142,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontWeight: FontWeight.bold,
                 fontSize: 26,
                 letterSpacing: 1.2,
-                shadows: [Shadow(offset: Offset(0, 1), blurRadius: 3, color: Colors.black26)],
+                shadows: [
+                  Shadow(
+                      offset: Offset(0, 1),
+                      blurRadius: 3,
+                      color: Colors.black26)
+                ],
               ),
             ),
             const SizedBox(height: 2),
@@ -161,7 +169,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [const Color(0xFF0A4D8C), const Color(0xFF1E88E5), Colors.blue.shade400],
+                  colors: [
+                    const Color(0xFF0A4D8C),
+                    const Color(0xFF1E88E5),
+                    Colors.blue.shade400
+                  ],
                 ),
               ),
             ),
@@ -227,7 +239,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Icon(
                   _isLoadingLocation
                       ? Icons.location_searching
-                      : _locationError != null ? Icons.location_off : Icons.my_location,
+                      : _locationError != null
+                          ? Icons.location_off
+                          : Icons.my_location,
                   color: Colors.white,
                   size: 28,
                 ),
@@ -240,7 +254,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     Text(
                       _isLoadingLocation
                           ? 'Finding your location...'
-                          : _locationError != null ? 'Location Unavailable' : 'GPS Active',
+                          : _locationError != null
+                              ? 'Location Unavailable'
+                              : 'GPS Active',
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
@@ -254,7 +270,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           : _locationError != null
                               ? 'Enable location to see nearby places'
                               : 'Showing places sorted by distance',
-                      style: TextStyle(fontSize: 13, color: Colors.white.withOpacity(0.9)),
+                      style: TextStyle(
+                          fontSize: 13, color: Colors.white.withOpacity(0.9)),
                     ),
                   ],
                 ),
@@ -265,7 +282,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     foregroundColor: Colors.orange.shade700,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
                   ),
                   child: const Text('Retry'),
                 ),
@@ -283,19 +301,32 @@ class _HomeScreenState extends State<HomeScreen> {
         child: StreamBuilder<QuerySnapshot>(
           stream: FirebaseFirestore.instance.collection('places').snapshots(),
           builder: (context, snapshot) {
-            final placeCount = snapshot.hasData ? snapshot.data!.docs.length : 0;
+            final placeCount =
+                snapshot.hasData ? snapshot.data!.docs.length : 0;
             return Row(
               children: [
                 Expanded(
-                  child: _buildStatCard(icon: Icons.place, count: '$placeCount', label: 'Places', color: Colors.blue),
+                  child: _buildStatCard(
+                      icon: Icons.place,
+                      count: '$placeCount',
+                      label: 'Places',
+                      color: Colors.blue),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
-                  child: _buildStatCard(icon: Icons.terrain, count: '401', label: 'Trails', color: Colors.green),
+                  child: _buildStatCard(
+                      icon: Icons.terrain,
+                      count: '401',
+                      label: 'Trails',
+                      color: Colors.green),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
-                  child: _buildStatCard(icon: Icons.photo_library, count: '1K+', label: 'Photos', color: Colors.purple),
+                  child: _buildStatCard(
+                      icon: Icons.photo_library,
+                      count: '1K+',
+                      label: 'Photos',
+                      color: Colors.purple),
                 ),
               ],
             );
@@ -305,23 +336,33 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildStatCard({required IconData icon, required String count, required String label, required Color color}) {
+  Widget _buildStatCard(
+      {required IconData icon,
+      required String count,
+      required String label,
+      required Color color}) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 8, offset: const Offset(0, 2)),
+          BoxShadow(
+              color: Colors.black.withOpacity(0.05),
+              blurRadius: 8,
+              offset: const Offset(0, 2)),
         ],
       ),
       child: Column(
         children: [
           Icon(icon, color: color, size: 28),
           const SizedBox(height: 8),
-          Text(count, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: color)),
+          Text(count,
+              style: TextStyle(
+                  fontSize: 20, fontWeight: FontWeight.bold, color: color)),
           const SizedBox(height: 4),
-          Text(label, style: TextStyle(fontSize: 12, color: Colors.grey.shade600)),
+          Text(label,
+              style: TextStyle(fontSize: 12, color: Colors.grey.shade600)),
         ],
       ),
     );
@@ -337,30 +378,51 @@ class _HomeScreenState extends State<HomeScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           children: [
             _buildCategoryChip('All', null, Icons.grid_view),
-            _buildCategoryChip('Waterfall', 'waterfall', Icons.water),
-            _buildCategoryChip('Restaurant', 'restaurant', Icons.restaurant),
-            _buildCategoryChip('Viewpoint', 'viewpoint', Icons.landscape),
-            _buildCategoryChip('Museum', 'museum', Icons.museum),
-            _buildCategoryChip('Beach', 'beach', Icons.beach_access),
-            _buildCategoryChip('Hiking', 'hiking', Icons.hiking),
-            _buildCategoryChip('Activities', 'activity', Icons.sports),
-            _buildCategoryChip('Sightseeing', 'sightseeing', Icons.photo_camera),
+            ...PlaceCategories.all.take(12).map((cat) => _buildCategoryChip(
+                  '${cat.emoji} ${cat.label}',
+                  cat.id,
+                  _getCategoryIcon(cat.id),
+                )),
           ],
         ),
       ),
     );
   }
 
+  IconData _getCategoryIcon(String categoryId) {
+    // Map common categories to icons
+    const iconMap = {
+      'viewpoint': Icons.landscape,
+      'landmark': Icons.tour,
+      'restaurant': Icons.restaurant,
+      'cafe': Icons.local_cafe,
+      'hotel': Icons.hotel,
+      'hostel': Icons.bed,
+      'museum': Icons.museum,
+      'hot_spring': Icons.hot_tub,
+      'volcano': Icons.terrain,
+      'peak': Icons.landscape_outlined,
+      'cave': Icons.dark_mode,
+      'camping': Icons.cabin,
+      'waterfall': Icons.water_drop,
+      'glacier': Icons.ac_unit,
+      'beach': Icons.beach_access,
+    };
+    return iconMap[categoryId] ?? Icons.place;
+  }
+
   Widget _buildCategoryChip(String label, String? category, IconData icon) {
     final isSelected = _selectedCategory == category;
-    
+
     return Padding(
       padding: const EdgeInsets.only(right: 8),
       child: FilterChip(
         label: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 18, color: isSelected ? Colors.white : Colors.blue.shade700),
+            Icon(icon,
+                size: 18,
+                color: isSelected ? Colors.white : Colors.blue.shade700),
             const SizedBox(width: 6),
             Text(label),
           ],
@@ -396,11 +458,16 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Icon(Icons.near_me, color: Colors.blue.shade700, size: 20),
             ),
             const SizedBox(width: 12),
-            const Text('Nearest Attractions', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, letterSpacing: 0.5)),
+            const Text('Nearest Attractions',
+                style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 0.5)),
             const Spacer(),
             if (_userLocation != null)
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
                   color: Colors.green.shade50,
                   borderRadius: BorderRadius.circular(20),
@@ -409,9 +476,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.gps_fixed, size: 14, color: Colors.green.shade700),
+                    Icon(Icons.gps_fixed,
+                        size: 14, color: Colors.green.shade700),
                     const SizedBox(width: 4),
-                    Text('Sorted', style: TextStyle(fontSize: 12, color: Colors.green.shade700, fontWeight: FontWeight.w600)),
+                    Text('Sorted',
+                        style: TextStyle(
+                            fontSize: 12,
+                            color: Colors.green.shade700,
+                            fontWeight: FontWeight.w600)),
                   ],
                 ),
               ),
@@ -427,42 +499,56 @@ class _HomeScreenState extends State<HomeScreen> {
       builder: (context, snapshot) {
         if (snapshot.hasError) {
           return SliverToBoxAdapter(
-            child: Center(child: Padding(padding: const EdgeInsets.all(16), child: Text('Error: ${snapshot.error}'))),
+            child: Center(
+                child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Text('Error: ${snapshot.error}'))),
           );
         }
 
         if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
           return const SliverToBoxAdapter(
-            child: Center(child: Padding(padding: EdgeInsets.all(16), child: Text('No places found'))),
+            child: Center(
+                child: Padding(
+                    padding: EdgeInsets.all(16),
+                    child: Text('No places found'))),
           );
         }
 
         List<Map<String, dynamic>> placesWithDistance = [];
-        
+
         for (var doc in snapshot.data!.docs) {
           final data = doc.data() as Map<String, dynamic>;
           final latRaw = data['lat'] ?? data['latitude'];
           final lngRaw = data['lng'] ?? data['longitude'];
-          
+
           if (latRaw == null || lngRaw == null) continue;
-          
-          final lat = latRaw is num ? latRaw.toDouble() : double.tryParse(latRaw.toString());
-          final lng = lngRaw is num ? lngRaw.toDouble() : double.tryParse(lngRaw.toString());
-          
+
+          final lat = latRaw is num
+              ? latRaw.toDouble()
+              : double.tryParse(latRaw.toString());
+          final lng = lngRaw is num
+              ? lngRaw.toDouble()
+              : double.tryParse(lngRaw.toString());
+
           if (lat == null || lng == null) continue;
 
           // Filter by category
           if (_selectedCategory != null) {
-            final category = (data['category'] ?? data['type'] ?? '').toString().toLowerCase();
+            final category = (data['category'] ?? data['type'] ?? '')
+                .toString()
+                .toLowerCase();
             if (!category.contains(_selectedCategory!.toLowerCase())) continue;
           }
 
           double? distance;
           if (_userLocation != null) {
-            distance = _calculateDistance(_userLocation!.latitude, _userLocation!.longitude, lat, lng);
+            distance = _calculateDistance(
+                _userLocation!.latitude, _userLocation!.longitude, lat, lng);
           }
 
-          placesWithDistance.add({'data': data, 'distance': distance, 'lat': lat, 'lng': lng});
+          placesWithDistance.add(
+              {'data': data, 'distance': distance, 'lat': lat, 'lng': lng});
         }
 
         if (_userLocation != null) {
@@ -483,7 +569,7 @@ class _HomeScreenState extends State<HomeScreen> {
               final placeData = nearbyPlaces[index];
               final data = placeData['data'] as Map<String, dynamic>;
               final distance = placeData['distance'] as double?;
-              
+
               return _buildPlaceCard(data, distance);
             },
             childCount: nearbyPlaces.length,
@@ -496,8 +582,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildPlaceCard(Map<String, dynamic> data, double? distance) {
     final name = data['name'] ?? 'Unknown';
     final category = data['category'] ?? data['type'] ?? '';
-    final rating = data['rating'] is num ? (data['rating'] as num).toDouble() : null;
-    
+    final rating =
+        data['rating'] is num ? (data['rating'] as num).toDouble() : null;
+
     String? shortDesc;
     if (data['description'] is Map) {
       final desc = data['description'] as Map<String, dynamic>;
@@ -510,12 +597,16 @@ class _HomeScreenState extends State<HomeScreen> {
     if (data['media'] is Map) {
       final media = data['media'] as Map<String, dynamic>;
       imageUrl = media['hero_image'] ?? media['thumbnail'];
-      if (imageUrl == null && media['images'] is List && (media['images'] as List).isNotEmpty) {
+      if (imageUrl == null &&
+          media['images'] is List &&
+          (media['images'] as List).isNotEmpty) {
         imageUrl = media['images'][0];
       }
     }
     imageUrl ??= data['image'];
-    if (imageUrl == null && data['images'] is List && (data['images'] as List).isNotEmpty) {
+    if (imageUrl == null &&
+        data['images'] is List &&
+        (data['images'] as List).isNotEmpty) {
       imageUrl = data['images'][0];
     }
 
@@ -523,7 +614,12 @@ class _HomeScreenState extends State<HomeScreen> {
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.08), blurRadius: 10, offset: const Offset(0, 4))],
+        boxShadow: [
+          BoxShadow(
+              color: Colors.black.withOpacity(0.08),
+              blurRadius: 10,
+              offset: const Offset(0, 4))
+        ],
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
@@ -533,10 +629,14 @@ class _HomeScreenState extends State<HomeScreen> {
             onTap: () {
               try {
                 final place = PoiModelFull.fromJson(data);
-                Navigator.push(context, MaterialPageRoute(builder: (_) => PlaceDetailFull(place: place)));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => PlaceDetailFull(place: place)));
               } catch (e) {
                 print('Error opening detail: $e');
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Could not open: $e')));
+                ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Could not open: $e')));
               }
             },
             child: Column(
@@ -553,11 +653,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           fit: BoxFit.cover,
                           placeholder: (context, url) => Container(
                             color: Colors.grey.shade200,
-                            child: const Center(child: CircularProgressIndicator()),
+                            child: const Center(
+                                child: CircularProgressIndicator()),
                           ),
                           errorWidget: (context, url, error) => Container(
                             color: Colors.grey.shade200,
-                            child: Center(child: Icon(Icons.image_not_supported, size: 48, color: Colors.grey.shade400)),
+                            child: Center(
+                                child: Icon(Icons.image_not_supported,
+                                    size: 48, color: Colors.grey.shade400)),
                           ),
                         ),
                       )
@@ -566,15 +669,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         width: double.infinity,
                         height: 180,
                         color: Colors.grey.shade200,
-                        child: Icon(Icons.landscape, size: 64, color: Colors.grey.shade400),
+                        child: Icon(Icons.landscape,
+                            size: 64, color: Colors.grey.shade400),
                       ),
-                    
                     if (distance != null)
                       Positioned(
                         top: 12,
                         right: 12,
                         child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 6),
                           decoration: BoxDecoration(
                             color: Colors.black.withOpacity(0.7),
                             borderRadius: BorderRadius.circular(20),
@@ -582,32 +686,40 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              const Icon(Icons.location_on, color: Colors.white, size: 14),
+                              const Icon(Icons.location_on,
+                                  color: Colors.white, size: 14),
                               const SizedBox(width: 4),
-                              Text(_formatDistance(distance), style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold)),
+                              Text(_formatDistance(distance),
+                                  style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold)),
                             ],
                           ),
                         ),
                       ),
-                    
                     Positioned(
                       top: 12,
                       left: 12,
                       child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 5),
                         decoration: BoxDecoration(
                           color: Colors.blue.shade700.withOpacity(0.9),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text(
                           category.replaceAll('_', ' ').toUpperCase(),
-                          style: const TextStyle(fontSize: 11, color: Colors.white, fontWeight: FontWeight.bold, letterSpacing: 0.5),
+                          style: const TextStyle(
+                              fontSize: 11,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 0.5),
                         ),
                       ),
                     ),
                   ],
                 ),
-                
                 Padding(
                   padding: const EdgeInsets.all(16),
                   child: Column(
@@ -618,7 +730,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           Expanded(
                             child: Text(
                               name,
-                              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 0.3),
+                              style: const TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 0.3),
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -626,14 +741,22 @@ class _HomeScreenState extends State<HomeScreen> {
                           if (rating != null) ...[
                             const SizedBox(width: 8),
                             Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                              decoration: BoxDecoration(color: Colors.amber.shade50, borderRadius: BorderRadius.circular(8)),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 8, vertical: 4),
+                              decoration: BoxDecoration(
+                                  color: Colors.amber.shade50,
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  Icon(Icons.star, size: 16, color: Colors.amber.shade700),
+                                  Icon(Icons.star,
+                                      size: 16, color: Colors.amber.shade700),
                                   const SizedBox(width: 4),
-                                  Text(rating.toStringAsFixed(1), style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.amber.shade900)),
+                                  Text(rating.toStringAsFixed(1),
+                                      style: TextStyle(
+                                          fontSize: 13,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.amber.shade900)),
                                 ],
                               ),
                             ),
@@ -642,15 +765,26 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       if (shortDesc != null) ...[
                         const SizedBox(height: 8),
-                        Text(shortDesc, style: TextStyle(fontSize: 14, color: Colors.grey.shade700, height: 1.4), maxLines: 2, overflow: TextOverflow.ellipsis),
+                        Text(shortDesc,
+                            style: TextStyle(
+                                fontSize: 14,
+                                color: Colors.grey.shade700,
+                                height: 1.4),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis),
                       ],
                       const SizedBox(height: 12),
                       Row(
                         children: [
                           const Spacer(),
-                          Text('View Details', style: TextStyle(fontSize: 14, color: Colors.blue.shade700, fontWeight: FontWeight.w600)),
+                          Text('View Details',
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.blue.shade700,
+                                  fontWeight: FontWeight.w600)),
                           const SizedBox(width: 4),
-                          Icon(Icons.arrow_forward, size: 16, color: Colors.blue.shade700),
+                          Icon(Icons.arrow_forward,
+                              size: 16, color: Colors.blue.shade700),
                         ],
                       ),
                     ],

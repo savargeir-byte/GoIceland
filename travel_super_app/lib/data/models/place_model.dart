@@ -35,17 +35,30 @@ class PlaceModel {
         'meta': meta,
       };
 
-  factory PlaceModel.fromMap(Map<String, dynamic> m) => PlaceModel(
-        id: m['id'],
-        name: m['name'],
-        type: m['type'],
-        lat: (m['lat'] as num).toDouble(),
-        lng: (m['lng'] as num).toDouble(),
-        rating: m['rating'] != null ? (m['rating'] as num).toDouble() : null,
-        images: List<String>.from(m['images'] ?? []),
-        description: m['description'],
-        meta: m['meta'] != null ? Map<String, dynamic>.from(m['meta']) : null,
-      );
+  factory PlaceModel.fromMap(Map<String, dynamic> m) {
+    // Safe meta parsing - handle both Map and other types
+    Map<String, dynamic>? metaData;
+    if (m['meta'] != null) {
+      if (m['meta'] is Map) {
+        metaData = Map<String, dynamic>.from(m['meta']);
+      } else if (m['meta'] is String) {
+        // If meta is a string, ignore it
+        metaData = null;
+      }
+    }
+
+    return PlaceModel(
+      id: m['id'],
+      name: m['name'],
+      type: m['type'],
+      lat: (m['lat'] as num).toDouble(),
+      lng: (m['lng'] as num).toDouble(),
+      rating: m['rating'] != null ? (m['rating'] as num).toDouble() : null,
+      images: List<String>.from(m['images'] ?? []),
+      description: m['description'],
+      meta: metaData,
+    );
+  }
 
   /// Create PlaceModel from Firestore document data
   factory PlaceModel.fromFirestore(Map<String, dynamic> data) =>

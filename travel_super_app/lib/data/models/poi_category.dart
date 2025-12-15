@@ -50,6 +50,8 @@ class PoiCategory {
         return Icons.whatshot;
       case 'glacier':
         return Icons.ac_unit;
+      case 'glacier_lagoon':
+        return Icons.water;
       case 'volcano':
         return Icons.terrain;
       case 'beach':
@@ -58,6 +60,8 @@ class PoiCategory {
         return Icons.restaurant;
       case 'cafe':
         return Icons.local_cafe;
+      case 'bar':
+        return Icons.local_bar;
       case 'hotel':
         return Icons.hotel;
       case 'museum':
@@ -66,6 +70,27 @@ class PoiCategory {
         return Icons.church;
       case 'hiking':
         return Icons.hiking;
+      case 'peak':
+        return Icons.terrain;
+      case 'cave':
+        return Icons.explore;
+      case 'viewpoint':
+        return Icons.visibility;
+      case 'lighthouse':
+        return Icons.lightbulb_outline;
+      case 'pool':
+        return Icons.pool;
+      case 'camping':
+        return Icons.deck;
+      case 'shop':
+        return Icons.shopping_bag;
+      case 'attraction':
+        return Icons.star;
+      case 'park':
+      case 'national_park':
+        return Icons.park;
+      case 'canyon':
+        return Icons.landscape;
       default:
         return Icons.place;
     }
@@ -228,6 +253,114 @@ class IcelandCategories {
     emoji: '🏞️',
   );
 
+  static const peak = PoiCategory(
+    id: 'peak',
+    name: 'peak',
+    displayName: 'Peaks',
+    icon: Icons.terrain,
+    color: Colors.blueGrey,
+    emoji: '⛰️',
+  );
+
+  static const cave = PoiCategory(
+    id: 'cave',
+    name: 'cave',
+    displayName: 'Caves',
+    icon: Icons.explore,
+    color: Colors.grey,
+    emoji: '🕳️',
+  );
+
+  static const viewpoint = PoiCategory(
+    id: 'viewpoint',
+    name: 'viewpoint',
+    displayName: 'Viewpoints',
+    icon: Icons.visibility,
+    color: Colors.blue,
+    emoji: '👁️',
+  );
+
+  static const lighthouse = PoiCategory(
+    id: 'lighthouse',
+    name: 'lighthouse',
+    displayName: 'Lighthouses',
+    icon: Icons.lightbulb_outline,
+    color: Colors.amber,
+    emoji: '🗼',
+  );
+
+  static const pool = PoiCategory(
+    id: 'pool',
+    name: 'pool',
+    displayName: 'Pools',
+    icon: Icons.pool,
+    color: Colors.blue,
+    emoji: '🏊',
+  );
+
+  static const camping = PoiCategory(
+    id: 'camping',
+    name: 'camping',
+    displayName: 'Camping',
+    icon: Icons.deck,
+    color: Colors.green,
+    emoji: '⛺',
+  );
+
+  static const bar = PoiCategory(
+    id: 'bar',
+    name: 'bar',
+    displayName: 'Bars',
+    icon: Icons.local_bar,
+    color: Colors.amber,
+    emoji: '🍺',
+  );
+
+  static const shop = PoiCategory(
+    id: 'shop',
+    name: 'shop',
+    displayName: 'Shops',
+    icon: Icons.shopping_bag,
+    color: Colors.pink,
+    emoji: '🛍️',
+  );
+
+  static const attraction = PoiCategory(
+    id: 'attraction',
+    name: 'attraction',
+    displayName: 'Attractions',
+    icon: Icons.star,
+    color: Colors.orange,
+    emoji: '🎯',
+  );
+
+  static const glacierLagoon = PoiCategory(
+    id: 'glacier_lagoon',
+    name: 'glacier_lagoon',
+    displayName: 'Glacier Lagoons',
+    icon: Icons.water,
+    color: Colors.cyan,
+    emoji: '🌊',
+  );
+
+  static const park = PoiCategory(
+    id: 'park',
+    name: 'park',
+    displayName: 'Parks',
+    icon: Icons.park,
+    color: Colors.lightGreen,
+    emoji: '🌳',
+  );
+
+  static const other = PoiCategory(
+    id: 'other',
+    name: 'other',
+    displayName: 'Other',
+    icon: Icons.place,
+    color: Colors.grey,
+    emoji: '📍',
+  );
+
   /// Get all categories as a list
   static List<PoiCategory> get allCategories => [
         all,
@@ -235,16 +368,28 @@ class IcelandCategories {
         hotSpring,
         geyser,
         glacier,
+        glacierLagoon,
         volcano,
         beach,
         restaurant,
         cafe,
+        bar,
         hotel,
         museum,
         church,
         hiking,
         canyon,
         nationalPark,
+        peak,
+        cave,
+        viewpoint,
+        lighthouse,
+        pool,
+        camping,
+        shop,
+        attraction,
+        park,
+        other,
       ];
 
   /// Get category by ID

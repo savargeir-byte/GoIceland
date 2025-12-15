@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 
+import '../../../core/constants/categories.dart';
 import '../../../data/models/poi_model_full.dart';
 import '../../places/widgets/place_detail_full.dart';
 
@@ -38,27 +39,31 @@ class _MapScreenState extends State<MapScreen> {
             stream: FirebaseFirestore.instance.collection('places').snapshots(),
             builder: (context, placesSnapshot) {
               // Debug Firebase connection
-              print('📡 Places snapshot state: ${placesSnapshot.connectionState}');
+              print(
+                  '📡 Places snapshot state: ${placesSnapshot.connectionState}');
               if (placesSnapshot.hasError) {
                 print('❌ Places error: ${placesSnapshot.error}');
               }
-              
+
               return StreamBuilder<QuerySnapshot>(
                 stream:
                     FirebaseFirestore.instance.collection('trails').snapshots(),
                 builder: (context, trailsSnapshot) {
                   // Debug Firebase connection
-                  print('📡 Trails snapshot state: ${trailsSnapshot.connectionState}');
+                  print(
+                      '📡 Trails snapshot state: ${trailsSnapshot.connectionState}');
                   if (trailsSnapshot.hasError) {
                     print('❌ Trails error: ${trailsSnapshot.error}');
                   }
-                  
+
                   // Debug logging
                   if (placesSnapshot.hasData) {
-                    print('🏔️ Places count: ${placesSnapshot.data!.docs.length}');
+                    print(
+                        '🏔️ Places count: ${placesSnapshot.data!.docs.length}');
                   }
                   if (trailsSnapshot.hasData) {
-                    print('🥾 Trails count: ${trailsSnapshot.data!.docs.length}');
+                    print(
+                        '🥾 Trails count: ${trailsSnapshot.data!.docs.length}');
                   }
 
                   // Build markers
@@ -71,7 +76,8 @@ class _MapScreenState extends State<MapScreen> {
                       ? _buildPolylinesSync(trailsSnapshot.data!.docs)
                       : <Polyline>[];
 
-                  print('🗺️ Rendering ${markers.length} markers and ${polylines.length} polylines');
+                  print(
+                      '🗺️ Rendering ${markers.length} markers and ${polylines.length} polylines');
 
                   return FlutterMap(
                     mapController: _mapController,
@@ -199,9 +205,13 @@ class _MapScreenState extends State<MapScreen> {
         if (latRaw == null || lngRaw == null) continue;
 
         // Convert to double safely
-        final lat = latRaw is num ? latRaw.toDouble() : double.tryParse(latRaw.toString());
-        final lng = lngRaw is num ? lngRaw.toDouble() : double.tryParse(lngRaw.toString());
-        
+        final lat = latRaw is num
+            ? latRaw.toDouble()
+            : double.tryParse(latRaw.toString());
+        final lng = lngRaw is num
+            ? lngRaw.toDouble()
+            : double.tryParse(lngRaw.toString());
+
         if (lat == null || lng == null) {
           print('  ❌ ${data['name']}: Invalid coordinates ($latRaw, $lngRaw)');
           continue;
@@ -280,7 +290,7 @@ class _MapScreenState extends State<MapScreen> {
   void _showPlaceBottomSheet(Map<String, dynamic> data) {
     final name = data['name'] ?? 'Unknown';
     final category = data['category'] ?? data['type'] ?? '';
-    
+
     // Get description from multiple possible fields
     String? description;
     if (data['description'] is Map) {
@@ -292,7 +302,7 @@ class _MapScreenState extends State<MapScreen> {
       final desc = data['descriptions'] as Map<String, dynamic>;
       description = desc['short'] ?? desc['history'];
     }
-    
+
     // Truncate long descriptions
     if (description != null && description.length > 200) {
       description = '${description.substring(0, 200)}...';
@@ -303,27 +313,32 @@ class _MapScreenState extends State<MapScreen> {
     if (data['media'] is Map) {
       final media = data['media'] as Map<String, dynamic>;
       imageUrl = media['hero_image'] ?? media['thumbnail'];
-      if (imageUrl == null && media['images'] is List && (media['images'] as List).isNotEmpty) {
+      if (imageUrl == null &&
+          media['images'] is List &&
+          (media['images'] as List).isNotEmpty) {
         imageUrl = media['images'][0];
       }
     }
     imageUrl ??= data['image'];
-    if (imageUrl == null && data['images'] is List && (data['images'] as List).isNotEmpty) {
+    if (imageUrl == null &&
+        data['images'] is List &&
+        (data['images'] as List).isNotEmpty) {
       imageUrl = data['images'][0];
     }
 
     // Get rating
-    final rating = data['rating'] ?? (data['ratings'] is Map ? data['ratings']['google'] : null);
-    
+    final rating = data['rating'] ??
+        (data['ratings'] is Map ? data['ratings']['google'] : null);
+
     // Get region/location
     final region = data['region'] ?? data['municipality'] ?? data['area'];
-    
+
     // Get tags
     List<String>? tags;
     if (data['tags'] is List) {
       tags = (data['tags'] as List).map((e) => e.toString()).toList();
     }
-    
+
     // Get coordinates
     final lat = data['lat'] ?? data['latitude'];
     final lng = data['lng'] ?? data['longitude'];
@@ -357,7 +372,7 @@ class _MapScreenState extends State<MapScreen> {
                   ),
                 ),
               ),
-              
+
               // Image
               if (imageUrl != null)
                 ClipRRect(
@@ -370,13 +385,14 @@ class _MapScreenState extends State<MapScreen> {
                     errorWidget: (context, url, error) => Container(
                       height: 200,
                       color: Colors.grey[200],
-                      child: const Icon(Icons.image_not_supported, size: 50, color: Colors.grey),
+                      child: const Icon(Icons.image_not_supported,
+                          size: 50, color: Colors.grey),
                     ),
                   ),
                 ),
-              
+
               const SizedBox(height: 16),
-              
+
               // Name and Category
               Row(
                 children: [
@@ -390,7 +406,8 @@ class _MapScreenState extends State<MapScreen> {
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
                       color: _getCategoryColor(category).withOpacity(0.2),
                       borderRadius: BorderRadius.circular(12),
@@ -406,9 +423,9 @@ class _MapScreenState extends State<MapScreen> {
                   ),
                 ],
               ),
-              
+
               const SizedBox(height: 12),
-              
+
               // Rating and Region
               Row(
                 children: [
@@ -439,7 +456,7 @@ class _MapScreenState extends State<MapScreen> {
                   ],
                 ],
               ),
-              
+
               // Coordinates
               if (lat != null && lng != null) ...[
                 const SizedBox(height: 8),
@@ -458,31 +475,35 @@ class _MapScreenState extends State<MapScreen> {
                   ],
                 ),
               ],
-              
+
               // Tags
               if (tags != null && tags.isNotEmpty) ...[
                 const SizedBox(height: 12),
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,
-                  children: tags.take(5).map((tag) => Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: Colors.blue.shade50,
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Colors.blue.shade200),
-                    ),
-                    child: Text(
-                      tag,
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.blue.shade700,
-                      ),
-                    ),
-                  )).toList(),
+                  children: tags
+                      .take(5)
+                      .map((tag) => Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.blue.shade50,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(color: Colors.blue.shade200),
+                            ),
+                            child: Text(
+                              tag,
+                              style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.blue.shade700,
+                              ),
+                            ),
+                          ))
+                      .toList(),
                 ),
               ],
-              
+
               // Description
               if (description != null) ...[
                 const SizedBox(height: 16),
@@ -495,9 +516,9 @@ class _MapScreenState extends State<MapScreen> {
                   ),
                 ),
               ],
-              
+
               const SizedBox(height: 20),
-              
+
               // View Details Button
               SizedBox(
                 width: double.infinity,
@@ -597,7 +618,7 @@ class _MapScreenState extends State<MapScreen> {
         Switch(
           value: value,
           onChanged: onChanged,
-          activeColor: Colors.blue,
+          activeThumbColor: Colors.blue,
           materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
         ),
       ],
@@ -621,8 +642,12 @@ class _MapScreenState extends State<MapScreen> {
         final lngRaw = polylineData[i + 1];
         if (latRaw != null && lngRaw != null) {
           // Convert to double safely
-          final lat = latRaw is num ? latRaw.toDouble() : double.tryParse(latRaw.toString());
-          final lng = lngRaw is num ? lngRaw.toDouble() : double.tryParse(lngRaw.toString());
+          final lat = latRaw is num
+              ? latRaw.toDouble()
+              : double.tryParse(latRaw.toString());
+          final lng = lngRaw is num
+              ? lngRaw.toDouble()
+              : double.tryParse(lngRaw.toString());
           if (lat != null && lng != null) {
             points.add(LatLng(lat, lng));
           }
@@ -669,14 +694,26 @@ class _MapScreenState extends State<MapScreen> {
       child: Row(
         children: [
           _filterChip('All', null, Icons.place),
-          _filterChip('Waterfalls', 'waterfall', Icons.water),
-          _filterChip('Glaciers', 'glacier', Icons.ac_unit),
-          _filterChip('Hot Springs', 'hot_spring', Icons.hot_tub),
-          _filterChip('Beaches', 'beach', Icons.beach_access),
-          _filterChip('Trails', 'trail', Icons.hiking),
+          ...PlaceCategories.byGroup('nature').take(5).map((cat) => _filterChip(
+                '${cat.emoji} ${cat.label}',
+                cat.id,
+                _getCategoryIconForMap(cat.id),
+              )),
+          _filterChip('🥾 Trails', 'trail', Icons.hiking),
         ],
       ),
     );
+  }
+
+  IconData _getCategoryIconForMap(String categoryId) {
+    const iconMap = {
+      'waterfall': Icons.water,
+      'glacier': Icons.ac_unit,
+      'hot_spring': Icons.hot_tub,
+      'beach': Icons.beach_access,
+      'volcano': Icons.terrain,
+    };
+    return iconMap[categoryId] ?? Icons.place;
   }
 
   Widget _filterChip(String label, String? category, IconData icon) {
