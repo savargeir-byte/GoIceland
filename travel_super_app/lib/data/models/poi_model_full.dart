@@ -60,15 +60,22 @@ class PoiModelFull extends Equatable {
       throw FormatException('Missing coordinates for POI: ${json['name']}');
     }
 
+    // Handle description from both old and new format
+    PoiDescription? description;
+    if (json['description'] != null && json['description'] is Map) {
+      description = PoiDescription.fromJson(json['description']);
+    } else if (json['content'] != null && json['content'] is Map) {
+      // New format: content.en.description, content.en.history, etc.
+      description = PoiDescription.fromContent(json['content']);
+    }
+
     return PoiModelFull(
       id: json['id'] as String? ?? '',
       name: json['name'] as String? ?? 'Unknown',
       type: json['category'] as String? ?? json['type'] as String? ?? 'unknown',
       latitude: (lat as num).toDouble(),
       longitude: (lng as num).toDouble(),
-      description: json['description'] != null && json['description'] is Map
-          ? PoiDescription.fromJson(json['description'])
-          : null,
+      description: description,
       services: json['services'] != null && json['services'] is Map
           ? PoiServices.fromJson(json['services'])
           : null,
@@ -131,6 +138,19 @@ class PoiDescription extends Equatable {
         geology: json['geology'] as String?,
         culture: json['culture'] as String?,
       );
+
+  /// Parse from new content.en structure
+  factory PoiDescription.fromContent(Map<String, dynamic> content) {
+    final en = content['en'] as Map<String, dynamic>?;
+    if (en == null) return const PoiDescription();
+    
+    return PoiDescription(
+      short: en['description'] as String?,
+      history: en['history'] as String?,
+      geology: en['geology'] as String?,
+      culture: en['culture'] as String?,
+    );
+  }
 
   Map<String, dynamic> toJson() => {
         'short': short,

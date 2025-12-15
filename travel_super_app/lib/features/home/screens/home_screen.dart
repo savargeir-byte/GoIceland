@@ -152,7 +152,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 2),
             Text(
-              'Discover Iceland\'s Wonders',
+              'Explore • Trails • Profile',
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.normal,
@@ -164,40 +164,21 @@ class _HomeScreenState extends State<HomeScreen> {
         background: Stack(
           fit: StackFit.expand,
           children: [
+            Image.asset(
+              'assets/images/app_banner.png',
+              fit: BoxFit.cover,
+            ),
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
                   colors: [
-                    const Color(0xFF0A4D8C),
-                    const Color(0xFF1E88E5),
-                    Colors.blue.shade400
+                    Colors.black.withOpacity(0.3),
+                    Colors.transparent,
+                    Colors.black.withOpacity(0.7),
                   ],
-                ),
-              ),
-            ),
-            Positioned(
-              right: -50,
-              top: -50,
-              child: Container(
-                width: 200,
-                height: 200,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.white.withOpacity(0.1),
-                ),
-              ),
-            ),
-            Positioned(
-              left: -30,
-              bottom: -30,
-              child: Container(
-                width: 150,
-                height: 150,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.white.withOpacity(0.08),
+                  stops: const [0.0, 0.5, 1.0],
                 ),
               ),
             ),
