@@ -1,8 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'screens/admin_login_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+
+import '../firebase_options.dart';
 import 'screens/admin_dashboard_screen.dart';
+import 'screens/admin_login_screen.dart';
 
 /// 🔐 Admin App Entry Point
 ///
@@ -65,6 +67,13 @@ class AdminApp extends StatelessWidget {
 /// Initialize and run admin app
 Future<void> runAdminApp() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const AdminApp());
+}
+
+/// Main entry point for admin app
+void main() async {
+  await runAdminApp();
 }

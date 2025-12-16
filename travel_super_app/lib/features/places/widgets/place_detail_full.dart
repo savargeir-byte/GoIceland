@@ -62,6 +62,25 @@ class PlaceDetailFull extends StatelessWidget {
     return SliverAppBar(
       expandedHeight: 300,
       pinned: true,
+      actions: [
+        // Show on Map button
+        IconButton(
+          icon: const Icon(Icons.map_outlined),
+          tooltip: 'Show on Map',
+          onPressed: () {
+            Navigator.of(context).pop(); // Close detail screen
+            // Navigate to map tab and center on location
+            // This will require passing coordinates back to parent
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                    '📍 ${place.name} at ${place.latitude.toStringAsFixed(4)}, ${place.longitude.toStringAsFixed(4)}'),
+                duration: const Duration(seconds: 2),
+              ),
+            );
+          },
+        ),
+      ],
       flexibleSpace: FlexibleSpaceBar(
         title: Text(
           place.name,

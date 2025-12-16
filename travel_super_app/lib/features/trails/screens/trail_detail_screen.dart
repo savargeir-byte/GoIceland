@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -61,20 +60,36 @@ class _TrailDetailScreenState extends State<TrailDetailScreen> {
     final surface = data['surface'] as String?;
 
     String? description;
-    if (data['descriptions'] != null) {
+    if (data['content'] != null && data['content'] is Map) {
+      final content = data['content'] as Map<String, dynamic>;
+      if (content['en'] != null && content['en'] is Map) {
+        final en = content['en'] as Map<String, dynamic>;
+        description = en['description'] as String?;
+      }
+    }
+    // Fallback to old format
+    if (description == null && data['descriptions'] != null) {
       final desc = data['descriptions'];
       description = desc['saga_og_menning'] ?? desc['short'];
     }
+    description ??= data['description'];
 
     // Get polyline for map
     final polylineData = data['polyline'] as List?;
     List<LatLng> points = [];
     if (polylineData != null && polylineData.isNotEmpty) {
-      for (int i = 0; i < polylineData.length - 1; i += 2) {
-        final lat = polylineData[i];
-        final lng = polylineData[i + 1];
-        if (lat != null && lng != null) {
-          points.add(LatLng(lat.toDouble(), lng.toDouble()));
+      for (var point in polylineData) {
+        if (point is Map) {
+          final lat = point['lat'];
+          final lng = point['lng'];
+          if (lat != null && lng != null) {
+            points.add(LatLng(
+              (lat is num ? lat.toDouble() : double.tryParse(lat.toString())) ??
+                  0,
+              (lng is num ? lng.toDouble() : double.tryParse(lng.toString())) ??
+                  0,
+            ));
+          }
         }
       }
     }
@@ -104,12 +119,12 @@ class _TrailDetailScreenState extends State<TrailDetailScreen> {
                   ],
                 ),
               ),
-              background: points.isNotEmpty
-                  ? _buildTrailMap(points, difficulty ?? 'moderate')
-                  : Container(
-                      color: Colors.grey[300],
-                      child: const Icon(Icons.hiking, size: 80),
-                    ),
+              background: _buildTrailMapOrFallback(
+                points,
+                difficulty ?? 'moderate',
+                data['startLat'] ?? data['start_lat'] ?? data['latitude'],
+                data['startLng'] ?? data['start_lng'] ?? data['longitude'],
+              ),
             ),
             actions: [
               // Save button
@@ -141,6 +156,70 @@ class _TrailDetailScreenState extends State<TrailDetailScreen> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget _buildTrailMapOrFallback(
+    List<LatLng> points,
+    String difficulty,
+    dynamic startLat,
+    dynamic startLng,
+  ) {
+    // If we have polyline points, use them
+    if (points.isNotEmpty) {
+      return _buildTrailMap(points, difficulty);
+    }
+
+    // Otherwise, show single marker at start location
+    if (startLat != null && startLng != null) {
+      final lat = (startLat is num
+              ? startLat.toDouble()
+              : double.tryParse(startLat.toString())) ??
+          0;
+      final lng = (startLng is num
+              ? startLng.toDouble()
+              : double.tryParse(startLng.toString())) ??
+          0;
+
+      if (lat != 0 && lng != 0) {
+        final center = LatLng(lat, lng);
+        return FlutterMap(
+          mapController: _mapController,
+          options: MapOptions(
+            initialCenter: center,
+            initialZoom: 13.0,
+            interactionOptions: const InteractionOptions(
+              flags: InteractiveFlag.drag | InteractiveFlag.pinchZoom,
+            ),
+          ),
+          children: [
+            TileLayer(
+              urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+              userAgentPackageName: 'com.example.travel_super_app',
+            ),
+            MarkerLayer(
+              markers: [
+                Marker(
+                  point: center,
+                  width: 40,
+                  height: 40,
+                  child: const Icon(
+                    Icons.hiking,
+                    color: Colors.green,
+                    size: 40,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        );
+      }
+    }
+
+    // Final fallback
+    return Container(
+      color: Colors.grey[300],
+      child: const Icon(Icons.hiking, size: 80, color: Colors.grey),
     );
   }
 

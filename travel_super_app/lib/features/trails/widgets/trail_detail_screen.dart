@@ -17,7 +17,7 @@ class TrailDetailScreen extends StatelessWidget {
     final duration = trail['duration_hours'] as num?;
     final elevation = trail['elevation_gain_m'] as num?;
     final description = trail['description'] ?? 'No description available';
-    
+
     // Get images
     String? heroImage;
     List<String> images = [];
@@ -74,7 +74,8 @@ class TrailDetailScreen extends StatelessWidget {
                             colors: [Colors.green[700]!, Colors.green[300]!],
                           ),
                         ),
-                        child: const Icon(Icons.terrain, size: 80, color: Colors.white70),
+                        child: const Icon(Icons.terrain,
+                            size: 80, color: Colors.white70),
                       ),
                     )
                   else
@@ -84,7 +85,8 @@ class TrailDetailScreen extends StatelessWidget {
                           colors: [Colors.green[700]!, Colors.green[300]!],
                         ),
                       ),
-                      child: const Icon(Icons.terrain, size: 80, color: Colors.white70),
+                      child: const Icon(Icons.terrain,
+                          size: 80, color: Colors.white70),
                     ),
                   // Gradient overlay
                   Container(
@@ -197,7 +199,7 @@ class TrailDetailScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          'Trail Location',
+                          'Trail Route',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -205,44 +207,13 @@ class TrailDetailScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 12),
                         Container(
-                          height: 200,
+                          height: 250,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(12),
                             border: Border.all(color: Colors.grey[300]!),
                           ),
                           clipBehavior: Clip.antiAlias,
-                          child: FlutterMap(
-                            options: MapOptions(
-                              initialCenter: LatLng(
-                                (startLat is num ? startLat.toDouble() : double.tryParse(startLat.toString())) ?? 0,
-                                (startLng is num ? startLng.toDouble() : double.tryParse(startLng.toString())) ?? 0,
-                              ),
-                              initialZoom: 12,
-                            ),
-                            children: [
-                              TileLayer(
-                                urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                                userAgentPackageName: 'com.goiceland.app',
-                              ),
-                              MarkerLayer(
-                                markers: [
-                                  Marker(
-                                    point: LatLng(
-                                      (startLat is num ? startLat.toDouble() : double.tryParse(startLat.toString())) ?? 0,
-                                      (startLng is num ? startLng.toDouble() : double.tryParse(startLng.toString())) ?? 0,
-                                    ),
-                                    width: 40,
-                                    height: 40,
-                                    child: const Icon(
-                                      Icons.hiking,
-                                      color: Colors.green,
-                                      size: 40,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                          child: _buildTrailMap(startLat, startLng),
                         ),
                       ],
                     ),
@@ -292,7 +263,8 @@ class TrailDetailScreen extends StatelessWidget {
                                 fit: BoxFit.cover,
                                 placeholder: (context, url) => Container(
                                   color: Colors.grey[200],
-                                  child: const Center(child: CircularProgressIndicator()),
+                                  child: const Center(
+                                      child: CircularProgressIndicator()),
                                 ),
                                 errorWidget: (context, url, error) => Container(
                                   color: Colors.grey[200],
@@ -375,5 +347,138 @@ class TrailDetailScreen extends StatelessWidget {
       default:
         return Colors.grey;
     }
+  }
+
+  Widget _buildTrailMap(dynamic startLat, dynamic startLng) {
+    // Debug print
+    print('🗺️ Building trail map for: ${trail['name']}');
+    print('   startLat: $startLat, startLng: $startLng');
+    print('   Has polyline: ${trail.containsKey('polyline')}');
+    if (trail.containsKey('polyline')) {
+      print('   Polyline type: ${trail['polyline'].runtimeType}');
+      print('   Polyline data: ${trail['polyline']}');
+    }
+
+    // Parse polyline from trail data
+    List<LatLng> polylinePoints = [];
+    if (trail['polyline'] is List) {
+      final polylineData = trail['polyline'] as List;
+      print('   Polyline list has ${polylineData.length} items');
+      for (var point in polylineData) {
+        if (point is Map) {
+          final lat = point['lat'];
+          final lng = point['lng'];
+          if (lat != null && lng != null) {
+            polylinePoints.add(LatLng(
+              (lat is num ? lat.toDouble() : double.tryParse(lat.toString())) ??
+                  0,
+              (lng is num ? lng.toDouble() : double.tryParse(lng.toString())) ??
+                  0,
+            ));
+          }
+        }
+      }
+    }
+    print('   Parsed ${polylinePoints.length} polyline points');
+
+    // Calculate center and zoom based on polyline
+    LatLng center;
+    double zoom = 12;
+
+    if (polylinePoints.isNotEmpty) {
+      // Use first point as center
+      center = polylinePoints.first;
+      // Adjust zoom based on trail length
+      final distance = trail['distance_km'] ?? trail['lengthKm'];
+      if (distance != null && distance is num) {
+        if (distance < 5) {
+          zoom = 14;
+        } else if (distance < 15) {
+          zoom = 12;
+        } else {
+          zoom = 10;
+        }
+      }
+    } else {
+      // Fallback to start coordinates
+      center = LatLng(
+        (startLat is num
+                ? startLat.toDouble()
+                : double.tryParse(startLat.toString())) ??
+            0,
+        (startLng is num
+                ? startLng.toDouble()
+                : double.tryParse(startLng.toString())) ??
+            0,
+      );
+    }
+
+    return FlutterMap(
+      options: MapOptions(
+        initialCenter: center,
+        initialZoom: zoom,
+      ),
+      children: [
+        TileLayer(
+          urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+          userAgentPackageName: 'com.goiceland.app',
+        ),
+        // Draw trail polyline
+        if (polylinePoints.isNotEmpty)
+          PolylineLayer(
+            polylines: [
+              Polyline(
+                points: polylinePoints,
+                color: Colors.blue,
+                strokeWidth: 4.0,
+              ),
+            ],
+          ),
+        // Markers for start and end
+        if (polylinePoints.length >= 2)
+          MarkerLayer(
+            markers: [
+              // Start marker
+              Marker(
+                point: polylinePoints.first,
+                width: 40,
+                height: 40,
+                child: const Icon(
+                  Icons.flag,
+                  color: Colors.green,
+                  size: 32,
+                ),
+              ),
+              // End marker
+              Marker(
+                point: polylinePoints.last,
+                width: 40,
+                height: 40,
+                child: const Icon(
+                  Icons.flag_circle,
+                  color: Colors.red,
+                  size: 32,
+                ),
+              ),
+            ],
+          )
+        else
+          // Single marker if no polyline
+          MarkerLayer(
+            markers: [
+              Marker(
+                point: center,
+                width: 40,
+                height: 40,
+                child: const Icon(
+                  Icons.hiking,
+                  color: Colors.green,
+                  size: 40,
+                ),
+              ),
+            ],
+          ),
+      ],
+    );
   }
 }

@@ -143,7 +143,7 @@ class PoiDescription extends Equatable {
   factory PoiDescription.fromContent(Map<String, dynamic> content) {
     final en = content['en'] as Map<String, dynamic>?;
     if (en == null) return const PoiDescription();
-    
+
     return PoiDescription(
       short: en['description'] as String?,
       history: en['history'] as String?,

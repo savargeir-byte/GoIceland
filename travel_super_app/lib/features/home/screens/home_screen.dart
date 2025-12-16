@@ -567,11 +567,22 @@ class _HomeScreenState extends State<HomeScreen> {
         data['rating'] is num ? (data['rating'] as num).toDouble() : null;
 
     String? shortDesc;
-    if (data['description'] is Map) {
-      final desc = data['description'] as Map<String, dynamic>;
-      shortDesc = desc['short'];
-    } else if (data['description'] is String) {
-      shortDesc = data['description'] as String;
+    // Try new content.en.description format first
+    if (data['content'] is Map) {
+      final content = data['content'] as Map<String, dynamic>;
+      if (content['en'] is Map) {
+        final en = content['en'] as Map<String, dynamic>;
+        shortDesc = en['description'] as String?;
+      }
+    }
+    // Fallback to old description format
+    if (shortDesc == null) {
+      if (data['description'] is Map) {
+        final desc = data['description'] as Map<String, dynamic>;
+        shortDesc = desc['short'];
+      } else if (data['description'] is String) {
+        shortDesc = data['description'] as String;
+      }
     }
 
     String? imageUrl;
